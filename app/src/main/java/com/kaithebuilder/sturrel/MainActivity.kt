@@ -7,11 +7,17 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavType
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
+import androidx.navigation.navArgument
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.sturrelTypes.Vocab
 import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.ui.theme.SturrelTheme
+import java.util.UUID
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -55,9 +61,28 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    VocabListView(
-                        folder = rootFolder
-                    )
+                    val navController = rememberNavController()
+                    NavHost(navController = navController, startDestination = "root") {
+                        composable("root") {
+                            FolderListView(
+                                folderId = rootFolder.id,
+                                nav = navController
+                            )
+                        }
+                        composable(
+                            "folder/{folderId}",
+                            arguments = listOf(navArgument("folderId") { type = NavType.StringType })
+                        ) { backStackEntry ->
+                            FolderListView(
+                                folderId = UUID.fromString(
+                                    backStackEntry.arguments!!
+                                        .getString("folderId")!!
+                                        .toString()
+                                ),
+                                nav = navController
+                            )
+                        }
+                    }
                 }
             }
         }

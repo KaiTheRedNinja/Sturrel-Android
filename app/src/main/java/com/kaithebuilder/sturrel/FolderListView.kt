@@ -1,11 +1,11 @@
 package com.kaithebuilder.sturrel
 
+import androidx.compose.foundation.clickable
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -23,16 +23,18 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.model.pinYin.PinYin
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
-import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
 import java.util.UUID
 
 @Composable
-fun VocabListView(
-    folder: VocabFolder
+fun FolderListView(
+    folderId: UUID,
+    nav: NavHostController
 ) {
+    val folder = FoldersDataManager.instance.getFolder(folderId = folderId)!!
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -54,7 +56,9 @@ fun VocabListView(
         )
 
         LazyColumn(
-            Modifier.padding(all = 10.dp)
+            Modifier
+                .fillMaxWidth()
+                .padding(all = 10.dp)
         ) {
             item {
                 Text(
@@ -64,7 +68,14 @@ fun VocabListView(
                 )
             }
             items(folder.subfolders) { uuid ->
-                FolderListPreview(id = uuid)
+                Box(
+                    modifier = Modifier.clickable {
+                        println("UUID: $uuid")
+                        nav.navigate("folder/$uuid")
+                    }
+                ) {
+                    FolderListPreview(id = uuid)
+                }
                 Divider()
             }
 

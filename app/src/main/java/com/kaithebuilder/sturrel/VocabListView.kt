@@ -2,8 +2,11 @@ package com.kaithebuilder.sturrel
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -20,6 +23,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.TextUnitType
 import androidx.compose.ui.unit.dp
+import com.kaithebuilder.sturrel.model.pinYin.PinYin
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
@@ -43,7 +47,10 @@ fun VocabListView(
                 fontSize = TextUnit(value = 30.0F, type = TextUnitType.Sp)
             ),
             fontWeight = FontWeight.Black,
-            modifier = Modifier.padding(top = 30.dp)
+            modifier = Modifier.padding(top = 10.dp)
+        )
+        Divider(
+            modifier = Modifier.offset(y = 10.dp)
         )
 
         LazyColumn(
@@ -101,10 +108,14 @@ fun VocabListPreview(id: UUID) {
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.padding(15.dp)
+        modifier = Modifier.fillMaxWidth().padding(15.dp)
     ) {
         Text(
-            text = vocabDetails.word
+            text = vocabDetails.word,
+            modifier = Modifier.weight(1f)
+        )
+        Text(
+            text = PinYin.instance.getPinyinString(vocabDetails.word)
         )
     }
 }

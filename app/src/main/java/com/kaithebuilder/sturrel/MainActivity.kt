@@ -6,23 +6,19 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.sturrelTypes.Vocab
 import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.ui.theme.SturrelTheme
-import java.util.UUID
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         val sampleFolders = mutableListOf<VocabFolder>()
-        for (i in 1..10) {
+        for (i in 1..5) {
             val folderName = "Sample Folder $i"
             val vocabFolder = VocabFolder(name = folderName, subfolders = emptyList(), vocab = emptyList())
             sampleFolders.add(vocabFolder)
@@ -31,7 +27,7 @@ class MainActivity : ComponentActivity() {
 
         val sampleVocabs = mutableListOf<Vocab>()
         for (i in 1..10) {
-            val vocabName = "Sample Vocab $i"
+            val vocabName = "你好世界 $i"
             val vocab = Vocab(
                 word = vocabName,
                 isHCL = false,

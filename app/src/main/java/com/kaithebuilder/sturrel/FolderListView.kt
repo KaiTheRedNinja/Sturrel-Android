@@ -27,6 +27,7 @@ import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.model.pinYin.PinYin
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
+import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
 import java.util.UUID
 
 @Composable
@@ -35,6 +36,14 @@ fun FolderListView(
     nav: NavHostController
 ) {
     val folder = FoldersDataManager.instance.getFolder(folderId = folderId)!!
+    FolderListViewContents(folder = folder, nav = nav)
+}
+
+@Composable
+private fun FolderListViewContents(
+    folder: VocabFolder,
+    nav: NavHostController
+) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -95,7 +104,7 @@ fun FolderListView(
 }
 
 @Composable
-fun FolderListPreview(id: UUID) {
+private fun FolderListPreview(id: UUID) {
     val folderDetails = FoldersDataManager.instance.getFolder(id)!!
 
     Row(
@@ -114,12 +123,14 @@ fun FolderListPreview(id: UUID) {
 }
 
 @Composable
-fun VocabListPreview(id: UUID) {
+private fun VocabListPreview(id: UUID) {
     val vocabDetails = VocabDataManager.instance.getVocab(id)!!
 
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.fillMaxWidth().padding(15.dp)
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(15.dp)
     ) {
         Text(
             text = vocabDetails.word,

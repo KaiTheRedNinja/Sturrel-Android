@@ -8,8 +8,8 @@ data class Vocab(
     val isHCL: Boolean,
     val englishDefinition: String,
     val definition: String,
-    val sentences: Array<String>,
-    val wordBuilding: Array<String>
+    val sentences: List<String>,
+    val wordBuilding: List<String>
 ) {
 
 }

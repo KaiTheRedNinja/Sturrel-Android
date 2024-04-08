@@ -39,8 +39,8 @@ class MainActivity : ComponentActivity() {
                 isHCL = false,
                 englishDefinition =  "",
                 definition = "",
-                sentences = emptyArray(),
-                wordBuilding = emptyArray()
+                sentences = emptyList(),
+                wordBuilding = emptyList()
             )
             sampleVocabs.add(vocab)
             VocabDataManager.instance.saveVocab(vocab)
@@ -77,6 +77,19 @@ class MainActivity : ComponentActivity() {
                                 folderId = UUID.fromString(
                                     backStackEntry.arguments!!
                                         .getString("folderId")!!
+                                        .toString()
+                                ),
+                                nav = navController
+                            )
+                        }
+                        composable(
+                            "vocab/{vocabId}",
+                            arguments = listOf(navArgument("vocabId") { type = NavType.StringType })
+                        ) { backStackEntry ->
+                            VocabDetailView(
+                                vocabId = UUID.fromString(
+                                    backStackEntry.arguments!!
+                                        .getString("vocabId")!!
                                         .toString()
                                 ),
                                 nav = navController

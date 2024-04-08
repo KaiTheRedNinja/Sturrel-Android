@@ -96,7 +96,14 @@ private fun FolderListViewContents(
                 )
             }
             items(folder.vocab) { uuid ->
-                VocabListPreview(id = uuid)
+                Box(
+                    modifier = Modifier.clickable {
+                        println("UUID: $uuid")
+                        nav.navigate("vocab/$uuid")
+                    }
+                ) {
+                    VocabListPreview(id = uuid)
+                }
                 Divider()
             }
         }

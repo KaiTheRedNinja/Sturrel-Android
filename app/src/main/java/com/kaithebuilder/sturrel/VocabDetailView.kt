@@ -10,8 +10,16 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.Divider
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -40,31 +48,31 @@ fun VocabDetailView(
     VocabDetailViewContents(vocab = vocab, nav = nav)
 }
 
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 private fun VocabDetailViewContents(
     vocab: Vocab,
     nav: NavHostController
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight(),
-        // on below line we are specifying horizontal alignment
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = vocab.word,
-            style = TextStyle(
-                color = Color.Black,
-                fontSize = TextUnit(value = 30.0F, type = TextUnitType.Sp)
-            ),
-            fontWeight = FontWeight.Black,
-            modifier = Modifier.padding(top = 10.dp)
-        )
-        Divider(
-            modifier = Modifier.offset(y = 10.dp)
-        )
-
+    Scaffold(
+        topBar = {
+            CenterAlignedTopAppBar(
+                title = {
+                    Text(text = vocab.word)
+                },
+                navigationIcon = {
+                    IconButton(onClick = {
+                        nav.popBackStack()
+                    }) {
+                        Icon(
+                            imageVector = Icons.Filled.ArrowBack,
+                            contentDescription = "Localized description"
+                        )
+                    }
+                },
+            )
+        }
+    ) { padding ->
         LazyColumn(
             Modifier
                 .fillMaxWidth()

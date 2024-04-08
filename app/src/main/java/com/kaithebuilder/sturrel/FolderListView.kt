@@ -44,26 +44,7 @@ private fun FolderListViewContents(
     folder: VocabFolder,
     nav: NavHostController
 ) {
-    Column(
-        modifier = Modifier
-            .fillMaxWidth()
-            .fillMaxHeight(),
-        // on below line we are specifying horizontal alignment
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text(
-            text = folder.name,
-            style = TextStyle(
-                color = Color.Black,
-                fontSize = TextUnit(value = 30.0F, type = TextUnitType.Sp)
-            ),
-            fontWeight = FontWeight.Black,
-            modifier = Modifier.padding(top = 10.dp)
-        )
-        Divider(
-            modifier = Modifier.offset(y = 10.dp)
-        )
-
+    ToolbarView(title = folder.name, nav = nav) {
         LazyColumn(
             Modifier
                 .fillMaxWidth()

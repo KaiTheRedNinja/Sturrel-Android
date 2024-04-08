@@ -3,6 +3,8 @@ package com.kaithebuilder.sturrel
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.animation.AnimatedContentTransitionScope
+import androidx.compose.animation.slideIn
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -71,7 +73,17 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(
                             "folder/{folderId}",
-                            arguments = listOf(navArgument("folderId") { type = NavType.StringType })
+                            arguments = listOf(navArgument("folderId") { type = NavType.StringType }),
+                            enterTransition = {
+                                slideIntoContainer(
+                                    towards = AnimatedContentTransitionScope.SlideDirection.Left
+                                )
+                            },
+                            exitTransition = {
+                                slideOutOfContainer(
+                                    towards = AnimatedContentTransitionScope.SlideDirection.Right
+                                )
+                            }
                         ) { backStackEntry ->
                             FolderListView(
                                 folderId = UUID.fromString(
@@ -84,7 +96,17 @@ class MainActivity : ComponentActivity() {
                         }
                         composable(
                             "vocab/{vocabId}",
-                            arguments = listOf(navArgument("vocabId") { type = NavType.StringType })
+                            arguments = listOf(navArgument("vocabId") { type = NavType.StringType }),
+                            enterTransition = {
+                                slideIntoContainer(
+                                    towards = AnimatedContentTransitionScope.SlideDirection.Left
+                                )
+                            },
+                            exitTransition = {
+                                slideOutOfContainer(
+                                    towards = AnimatedContentTransitionScope.SlideDirection.Right
+                                )
+                            }
                         ) { backStackEntry ->
                             VocabDetailView(
                                 vocabId = UUID.fromString(

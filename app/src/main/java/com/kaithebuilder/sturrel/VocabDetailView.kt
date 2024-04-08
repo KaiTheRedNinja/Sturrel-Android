@@ -54,25 +54,7 @@ private fun VocabDetailViewContents(
     vocab: Vocab,
     nav: NavHostController
 ) {
-    Scaffold(
-        topBar = {
-            CenterAlignedTopAppBar(
-                title = {
-                    Text(text = vocab.word)
-                },
-                navigationIcon = {
-                    IconButton(onClick = {
-                        nav.popBackStack()
-                    }) {
-                        Icon(
-                            imageVector = Icons.Filled.ArrowBack,
-                            contentDescription = "Localized description"
-                        )
-                    }
-                },
-            )
-        }
-    ) { padding ->
+    ToolbarView(title = vocab.word, nav = nav) {
         LazyColumn(
             Modifier
                 .fillMaxWidth()

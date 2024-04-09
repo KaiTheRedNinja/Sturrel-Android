@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.AnimatedContentTransitionScope
-import androidx.compose.animation.slideIn
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
@@ -14,6 +13,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.kaithebuilder.sturrel.model.pinYin.FileManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.sturrelTypes.Vocab
@@ -32,6 +32,8 @@ class MainActivity : ComponentActivity() {
             sampleFolders.add(vocabFolder)
             FoldersDataManager.instance.saveFolder(vocabFolder)
         }
+
+        FileManager.instance.filesDir = this.filesDir
 
         val sampleVocabs = mutableListOf<Vocab>()
         for (i in 1..10) {

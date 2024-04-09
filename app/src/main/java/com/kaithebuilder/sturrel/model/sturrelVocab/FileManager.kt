@@ -1,8 +1,10 @@
-package com.kaithebuilder.sturrel.model.pinYin
+package com.kaithebuilder.sturrel.model.sturrelVocab
 
 import com.google.gson.Gson
+import java.io.BufferedReader
 import java.io.File
 import java.io.FileNotFoundException
+import java.io.InputStream
 import java.util.UUID
 
 class FileManager private constructor() {
@@ -15,8 +17,8 @@ class FileManager private constructor() {
     var filesDir: File? = null
     val json = Gson()
 
-    fun <T> read(filename: FileName, decodeType: Class<T>): T {
-        val filePath = "${filesDir!!.path}/${filename.path}"
+    fun <T> read(filename: FileName, decodeType: Class<T>, dir: File? = null): T {
+        val filePath = "${(dir ?: filesDir)!!.path}/${filename.path}"
         println("Reading from $filePath")
         val file = File(filePath)
 
@@ -28,8 +30,13 @@ class FileManager private constructor() {
         return json.fromJson(content, decodeType)
     }
 
-    fun <T> write(filename: FileName, data: T) {
-        val filePath = "${filesDir!!.path}/${filename.path}"
+    fun <T> read(stream: InputStream, decodeType: Class<T>): T {
+        val content = stream.bufferedReader().use(BufferedReader::readText)
+        return json.fromJson(content, decodeType)
+    }
+
+    fun <T> write(filename: FileName, data: T, dir: File? = null) {
+        val filePath = "${(dir ?: filesDir)!!.path}/${filename.path}"
         println("Writing to $filePath")
         val file = File(filePath)
 

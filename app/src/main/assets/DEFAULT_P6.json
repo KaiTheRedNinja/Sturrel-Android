@@ -1,0 +1,3160 @@
+{
+  "name": "P6",
+  "folders": [
+    {
+      "id": "567cb10e-5e03-42bb-a34c-596cc2b0b3fd",
+      "name": "\u5c0f\u516d\u9ad8\u7ea7\u534e\u65876A\u7b2c1\u8bfe",
+      "vocab": [
+        "12c281c7-9b94-4795-b71f-4efdb375da48",
+        "10421bcc-c6e4-4352-b620-1b2e990c19b7",
+        "23bf8c70-6178-4e1e-8320-d2717a5244b2",
+        "fdd2fd3b-df61-4e3f-9bec-f8800c08b5d1",
+        "49ed5c5e-68a1-4e5c-8bbe-b4f01b132e4b",
+        "bf0648c0-0f78-427c-9fc0-39cae867fa40",
+        "988fd512-f859-45f2-a3b6-4ca6e4af6e24",
+        "47b9cd7a-a091-423f-b592-7b60d2ee1ef5",
+        "2c76b96e-0af5-4eae-8ead-ae6cee165783",
+        "3f7295d2-05eb-4b8c-b233-d8f0c6b4db3f",
+        "af4bdd46-08cf-4ecf-a14e-c7348f719ffb",
+        "9bd67c78-c31a-443c-93ba-c8da12187306",
+        "a80df399-ac27-466e-b4e2-dd996f979ddb",
+        "7c77bbaf-56c3-44db-a4ff-d0faebf6f3e6"
+      ]
+    },
+    {
+      "id": "40c4280f-ca0b-42e4-b378-65cd9d7d42c6",
+      "name": "\u5c0f\u516d\u9ad8\u7ea7\u534e\u65876A\u7b2c2\u8bfe",
+      "vocab": [
+        "3b60a766-1c82-4a6c-a40f-8ccc93687141",
+        "dda51682-9735-4449-9dbc-b07a7cc27a5d",
+        "abe938b5-8cb8-4b4c-b13b-5b20fffe8846",
+        "1fb12815-aae0-49c8-a909-1d22b8550f5b",
+        "c4a9b2d1-2f3b-4d17-8bda-deb760c9ac2c",
+        "2db5c12a-80b5-4bc9-b8ea-1651460f782c",
+        "0d44fe05-4ca2-4b3b-8dea-b56c41e1ee5d",
+        "b15bc0ff-0e16-4823-ab11-37e6ed8981bd",
+        "4311a03a-d4ac-48ff-9408-3e9831927b3c",
+        "15c2e58b-7a3b-47dd-9aba-ba3057a7d396",
+        "87076e63-56c4-44f8-9329-c960ebfb4675",
+        "ce8c2cd9-7157-4043-97ab-ae8c1a2270f6",
+        "6cb169fd-0c1b-490b-898a-6289091f137e",
+        "e81a9c8f-4bb9-4468-89fe-fda19d8ba24a"
+      ]
+    },
+    {
+      "id": "cc9bf526-a77e-44e3-859c-509521711e96",
+      "name": "\u5c0f\u516d\u9ad8\u7ea7\u534e\u65876A\u7b2c3\u8bfe",
+      "vocab": [
+        "f1c4cee5-f6ae-4a55-850f-f44cc8d307d4",
+        "b5ae64a3-723c-4190-9ba0-90e0e9986ed0",
+        "b960868d-0878-4890-a39a-67abdbed6766",
+        "249c23f8-b857-4f8b-8ad8-07eaa31905be",
+        "c79f79ab-1a83-4bd5-818e-7ceda5909d84",
+        "043f98c9-91c5-453d-b6fc-eee816130641",
+        "20776ff6-c839-40fd-9cab-bd08e8abc4d2",
+        "a7ddea73-262b-4dd3-b9a6-d28a6228cefb",
+        "f61f547b-2955-4400-a781-d800c7b31f23",
+        "cc60e9e8-9a8e-4c4b-968d-5de0e36391dc",
+        "842c33a5-d6a1-4540-90f9-812190d627da",
+        "57ddd121-95d7-4320-94b8-6eeee599215c",
+        "9e306807-0620-4f2d-a9b6-4a680634e268",
+        "0496b189-ffe4-426f-8bf3-431e22e27496",
+        "fa899fb5-35f6-4cb2-92b5-93ef73c45bf9",
+        "72610ffe-2a7c-4bda-9077-7d0d4128a9c0",
+        "2eacf4cd-3163-4de0-bc61-076a6c5231c8",
+        "5e7c21b5-1b98-4b51-bf75-9ba908e9b220",
+        "c7da4c60-c04a-4776-9768-b57063ce3822"
+      ]
+    },
+    {
+      "id": "29465dc7-4749-4fc5-baec-ea6319bda942",
+      "name": "\u5c0f\u516d\u9ad8\u7ea7\u534e\u65876A\u7b2c4\u8bfe",
+      "vocab": [
+        "2e5526b5-1a72-4941-badd-fb8ab4a0516e",
+        "da35fbf3-e3f7-49a7-8c49-3f7c06cb2335",
+        "b8cc0e18-02c6-420a-a790-3d8a87da4d1c",
+        "6f7cd300-5823-4795-a21d-a5c662c8288f",
+        "600e58eb-507d-4f74-9cfd-a8d711408b04",
+        "32cd3ce1-72db-4183-a96e-50c4c938c82a",
+        "85aa80ec-f822-480b-a433-007c54d28294",
+        "e7c06583-b5f8-4213-a607-648d9e11c83a",
+        "97d6962e-aa18-4802-ba86-bd92f1f2f5ef",
+        "6f782c56-43ba-41d2-a903-63b97cf03262",
+        "85dad588-33ff-4ed5-91da-4cb24f434827",
+        "b3706d02-84a6-43cc-b219-1adab51eeaf4",
+        "8c7ec54a-70af-4b76-840c-c01d4db426b6",
+        "d29dd4a5-fd83-4bd9-967f-4815cbfcc648",
+        "8ce87b0f-a51d-4c40-80dc-8e04b54ea999",
+        "8428971b-ee55-4011-a988-fd0eae312c72",
+        "279dc3c5-226f-4a6e-9fc0-3dc3e53980aa",
+        "f41b82ad-4a6f-4668-b072-dd8f334c3191"
+      ]
+    },
+    {
+      "id": "a3e8eaca-51bc-4fa1-a603-ec462e9db3cd",
+      "name": "\u5c0f\u516d\u9ad8\u7ea7\u534e\u65876A\u7b2c5\u8bfe",
+      "vocab": [
+        "f5e5cd5a-4ce8-48fb-b939-cb1e3d1ddb1b",
+        "b44892cd-d3c1-40d6-ae86-0fdc6feefe85",
+        "66f414cd-e88e-4ff5-bdcb-d62b25f2ed6f",
+        "a4f2c92e-e0ee-4c98-9b7a-2703ad965097",
+        "43abd86a-a997-4471-a8ed-fd9fb03dc785",
+        "14c6bc42-945d-40e3-91a2-c6ee03e0eebe",
+        "d7b0fc56-e27e-4061-9629-05e4f60f0577",
+        "74219e39-a0df-4f02-af7c-b62a71f0fc2e",
+        "032bcaf4-b89d-43f5-bfbe-6eef2a0e68b5",
+        "1f2ec730-fb55-4509-b145-09723768ab8a",
+        "3089cc4e-ac7d-4131-912c-29630a551a39",
+        "0e05cfe8-ac7d-41dd-a276-f151cf9dd753",
+        "c81ccc23-2744-4dfd-a191-36b10e149759",
+        "130c807a-1abf-46a1-aecf-5610d531dc65",
+        "702749a8-f27a-46ea-b473-636ae83389a2",
+        "86d01394-77c4-45b9-9bbe-4844d2018a05",
+        "74bc48a5-1eb1-4aa2-8252-363ccb8d2ff0",
+        "0520c72f-1898-4a15-b3f2-5b641fef618c"
+      ]
+    },
+    {
+      "id": "916e3b34-a8e9-4e12-9835-2751442d4955",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876A\u7b2c6\u8bfe",
+      "vocab": [
+        "94851f8a-e4a5-41f3-ba15-c610066b485f",
+        "3f54f034-9130-4a29-bada-df7fecdb7981",
+        "4cc452ae-b1c2-4ecb-8874-d4c23d004ebe",
+        "3c446971-95e0-4aac-8735-093fddaa09bd",
+        "4eb03047-065a-4e15-91f7-395a2e515852",
+        "c7c8a6ef-5a63-4346-8ad8-0f1613714c73",
+        "096cf8a7-69de-4486-a658-8a1c425b5c4c",
+        "885535b8-94d1-459b-a28a-00da063e6fff",
+        "56ec8068-697c-417a-8e6b-01f730201ab8",
+        "53e05989-92d0-4c70-ab8c-67cd81b738b1",
+        "cac373ad-ebef-4a5f-97fc-4a79d6734bc4",
+        "603ba022-3c0e-4170-9d87-6abbe1eb5a3a",
+        "32995471-7af0-475a-b967-0d30a28ea7d9",
+        "3b86b7ae-8084-4bb7-ae5d-c028085c730a",
+        "a94e1ae7-bdcd-45bc-93d4-d82a64eed84f",
+        "1f67bec7-014a-421c-aca5-d61149d1a865",
+        "7cd33d13-2d35-43b2-af1c-5a4450702416",
+        "4ad79041-023f-4a70-89c8-898d6f075df8"
+      ]
+    },
+    {
+      "id": "067194e9-6b5f-482c-8d12-0eee36912d0b",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876A\u7b2c7\u8bfe",
+      "vocab": [
+        "ccd7fd95-a164-4c50-b2e3-177ea9f28e72",
+        "95aa7293-ca28-44e9-9d9b-c35135607e92",
+        "f11ac401-56b8-4474-bcb8-8ad14ed363dc",
+        "0c8535f0-8043-4320-9a45-4c8dbdb5a9e3",
+        "ed5a5df8-c1c2-4b39-8f00-c9666e516935",
+        "b4427bfc-cfaf-4240-85de-d4c6ff09e2ab",
+        "a0d41d4d-b59e-4ed6-9ef2-04c08364c11a",
+        "7fd9fe22-9c23-456b-8a13-ad51465dd99a",
+        "c2629185-2afd-4786-b8aa-ff7eee41f8f8",
+        "c7630614-f4d7-4ad2-87d6-291722f8c892",
+        "a4006930-26b0-4660-8c26-a584a7bc89d4",
+        "500a84ea-a6ac-4c6f-a9a2-e20f9daa4cc3",
+        "6657432a-b1f9-49da-8cc9-490138f2376b",
+        "01865e71-946f-41b8-a653-28bb89135fa0",
+        "b858718b-9a99-41b0-a456-40d25ebacbe8",
+        "067df02f-9c9c-468b-a0c8-2bf77a00e852",
+        "d55f5009-f448-486b-9c40-f3d876d0a5bb",
+        "81ec9d44-2289-4f90-a99e-3d2a6e08a551",
+        "f0b7c544-3271-4eec-b284-0403d00c4f46"
+      ]
+    },
+    {
+      "id": "159f53fb-e66c-4003-98a5-d6efcf1481c9",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876B\u7b2c8\u8bfe",
+      "vocab": [
+        "ff116588-2d53-49c3-8aa8-3a2ca328562a",
+        "962be6a3-f4f5-49eb-916f-d59cdf49ae33",
+        "9d756119-4aee-4022-9563-6846251bfd4e",
+        "5a5ed2cc-b475-4ea6-adfc-5cdec9281614",
+        "61f2145d-8a0c-4bbb-afd7-df1600a33c1d",
+        "1ad25064-132c-4f36-9c62-1b150086716e",
+        "a257a9e1-fa71-4327-972c-d5a091030d65",
+        "e70c6bed-8ee1-4b61-bde8-9f89eb19a594",
+        "e9f0dde0-ba5d-42fd-a250-897ebe28ee28",
+        "c92f8583-384b-459c-9041-0e81d5299dc4",
+        "5cb525c6-c037-48aa-b6e0-e9e2ded2283f",
+        "6b605fb9-d584-488c-8c61-b58cc8079824",
+        "737fcf59-5d2a-45a8-9615-4fb9005e408c",
+        "68ae6210-fac3-448b-9ab2-e2418121e2c4",
+        "2d74d1cb-eff9-4b68-8aaa-8fceb0673bd2",
+        "a2f557c8-4136-4b84-ac8e-c8e0e981973a",
+        "1d17ee03-a570-4a3b-9d3a-861e53a41dd7",
+        "09a2ee1a-44a9-44fd-ae7e-c0ad47992645",
+        "a115733c-0855-4186-8f40-a9f91ed1f89d",
+        "b54f5038-1a37-425f-8854-106a656c6d2a",
+        "3351ca76-5f02-4e87-a880-71e3de1c2094",
+        "5016ad5e-0925-43a9-a656-4de582142f40",
+        "a1b85675-5a33-492c-a095-1627aad4878d",
+        "30bc1aee-853b-484e-ad45-3aa514d5263c"
+      ]
+    },
+    {
+      "id": "b0c20db7-762e-4e4e-aa8e-545b7d81f359",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876B\u7b2c9\u8bfe",
+      "vocab": [
+        "ebb4b41e-a7a9-4c68-9966-13cb3437598a",
+        "bcba1958-5d15-4cf1-bfad-cbf26d48d985",
+        "08700ff9-9402-4cf7-8d5f-606a08be94d3",
+        "148e227c-1601-4678-9535-1ea60a1240bd",
+        "5e8334d2-1d15-4d38-8e34-5cb1a08a2b0c",
+        "94b60ae9-ea18-4ca2-a63a-dc3d15ebd687",
+        "1bc88b3f-42f3-4db0-ad70-069c1ecf9713",
+        "fa24fa8e-2ea3-47a1-89c6-8448e943d8d6",
+        "f7de265e-ab43-4309-b16c-19080d14a2e3",
+        "499d5656-1b50-47d2-bfb3-b569e6cb80cb",
+        "17bf02ac-a7b0-4c36-906c-60b0b3ff4674",
+        "5ab03dd5-f2e5-4541-b04c-71d91cabc05f",
+        "fc0b2b42-ed3f-4cb3-90bf-d425ae99b2c2",
+        "2e5e7476-0b24-4a08-a320-79931f849097",
+        "84fc07f6-2c2f-46ac-9326-adaade27c6de"
+      ]
+    },
+    {
+      "id": "7dae2495-71af-45fc-b970-1865adf5ae85",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876B\u7b2c10\u8bfe",
+      "vocab": [
+        "7b3c8e3b-c562-4f07-993b-7fee888faab9",
+        "a6f53636-6fca-4e70-b0b2-3c1e7e59bbb9",
+        "0f06626c-956c-4d4a-94eb-55b01cb8e310",
+        "66dfb8fd-2f68-41f8-a1a1-b44202301f57",
+        "15d7db23-83f2-4d3e-87d8-84f8a39a1d80",
+        "4ca4a469-bb33-4334-b332-086087e6886f",
+        "d1ea8581-1d1f-4fa6-bd37-93044d5c59a2",
+        "d21c199d-9281-40de-98ec-77e40b7fb6e3",
+        "7ec842c1-65e1-4956-9f0b-fd6eb49e57cb",
+        "830606ea-5db2-4192-b0e2-06cecfd3d3f8",
+        "5eaf7d40-509f-4647-b7ba-52537d8dd1a9",
+        "7f0befd1-def9-4a0a-ab8f-5746cbd649f7",
+        "4d6aafff-99e5-4e9a-91e0-2c2fb16b901d",
+        "a0992582-b921-4a4e-9dcd-368c69c0ed93",
+        "f1bbc6da-9258-4a4a-b774-255dc7569c1c",
+        "e89957b5-3ca7-470b-bdb6-80b08ad5c335",
+        "1227df04-df7c-4546-a167-01d3b1f631de",
+        "7b5e5999-559c-44f1-b04f-3825c2fc8a82",
+        "0dfc530a-9d56-47a3-bf4c-672d4e0da931",
+        "c78b3269-deb8-4205-bc84-5a8ba1f0c3d2"
+      ]
+    },
+    {
+      "id": "7fcd71fb-0c34-4b82-9879-3477870f4c99",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876B\u7b2c11\u8bfe",
+      "vocab": [
+        "a3d2cfa6-39a2-48e5-a1a6-76f087288723",
+        "708e7946-1520-4bdc-95e1-c52dd7e7ecb1",
+        "291ebdf3-931f-43d2-a932-3eb9b6154a6f",
+        "b317b1a3-0ce1-4918-8f63-f7afa5188feb",
+        "b4f6bd4a-2901-4658-8c80-0e08bcd558c8",
+        "e8ea10d1-c263-47e0-be97-c454d264976e",
+        "5905fcce-a2c6-4456-aaff-578923726ce4",
+        "81d91274-713b-4f96-b19d-c9a807a9b899",
+        "f8a11d40-f239-4f66-a46c-4c4eeff323e9",
+        "cc0ba7ce-e0e4-45ff-9d1f-915f7f268b3c",
+        "134da51d-74af-4314-bee5-be62e1154ddb",
+        "d7d02d7b-1b19-4ced-a9c5-31d9bcf25248",
+        "1b16d750-e293-4e89-a5a4-31d48de776a2",
+        "b7bee7f4-5278-402e-90e4-6542eaec3339",
+        "d0db3d45-6ea7-4728-a575-736f30811fe1",
+        "5a434d82-b415-4dfe-ace5-e9937ecdd23c",
+        "e7ab006f-2620-4bbb-aa7e-e723deb885b6",
+        "716cd65d-87af-41b2-b293-a2fca35978d0",
+        "34f65ad5-cdb3-4539-8ce6-2e4aebc6fef0",
+        "0ec4eecb-ad14-47a1-b6a4-314564d47ffd",
+        "9c927db4-5fd4-4d5e-9136-3d606dfdebeb"
+      ]
+    },
+    {
+      "id": "db783b27-c981-4639-a898-da87a83b5502",
+      "name": "\u5c0f\u5b66\u9ad8\u7ea7\u534e\u65876B\u7b2c12\u8bfe",
+      "vocab": [
+        "b5aba443-6001-49fc-b4c4-bdb284e21e8c",
+        "d985a0b1-2b94-4b6c-ac69-0d130658f55f",
+        "1e8ca898-3a3a-4ef1-a7ab-3ab109f9e3a1",
+        "8518a911-ce57-45b5-8ad1-7235c259a629",
+        "472a06fe-1eb1-4a5f-b3dd-12163277e60d",
+        "33959058-6137-43ca-892f-c0cf3121b378",
+        "92295dda-4f69-426a-b120-f2572bf0098b",
+        "a3cab854-ae0a-41a7-9e6d-520b7cbdb15e",
+        "9cf588b9-8dd3-46cd-adb7-d67402f4f02d",
+        "62827b1a-1e15-4aa8-bd9b-1b263cfa9efe",
+        "9eeda955-198f-4482-85c8-8ef5e2306d68",
+        "51c739eb-5c5e-491a-9833-317e3d03f2ac",
+        "676cf071-1e4d-479f-9d30-2f0095939463",
+        "3ec83ce4-f6a4-4bd0-aa2b-be96f825b71a",
+        "77ee68ff-a1fa-4dc3-b84d-e1fca4dd4d8e",
+        "5fad02c4-6bca-4ded-baed-1a65fd98c454",
+        "e93a9650-869a-4d1e-88cd-01b0fbdc8398",
+        "c352c5b3-f708-48af-9892-907c0183a134",
+        "141cfed6-4272-41a1-bd2b-7840b6b34b31",
+        "5dd61ba4-c60d-4f42-b684-d6a32e5b7e6a",
+        "c841e04b-9b74-4863-bf90-168af69ea3ea",
+        "ea5ecff0-cbb4-41b1-9530-3dc8f78dad4a",
+        "9508380a-85c1-49ab-9883-22e081a051a4",
+        "e99f0e4d-5bee-4626-a965-a90071e38c64"
+      ]
+    }
+  ],
+  "vocab": [
+    {
+      "id": "12c281c7-9b94-4795-b71f-4efdb375da48",
+      "word": "\u514b\u670d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u53ea\u6709\u514b\u670d\u773c\u524d\u7684\u56f0\u96be\uff0c\u6211\u4eec\u624d\u80fd\u53d6\u5f97\u6700\u540e\u7684\u80dc\u5229\u3002"
+      ],
+      "word_building": [
+        "\u514b\u670d\u56f0\u96be"
+      ],
+      "english_definition": "overcome"
+    },
+    {
+      "id": "10421bcc-c6e4-4352-b620-1b2e990c19b7",
+      "word": "\u953b\u70bc",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u6bcf\u5468\u90fd\u575a\u6301\u953b\u70bc\u8eab\u4f53\uff0c\u56e0\u6b64\u4ed6\u5f88\u5c11\u751f\u75c5\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Exercise or physical fitness training."
+    },
+    {
+      "id": "23bf8c70-6178-4e1e-8320-d2717a5244b2",
+      "word": "\u6d4b\u9a8c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u867d\u7136\u4e0a\u6b21\u534e\u6587\u6d4b\u9a8c\u4f60\u62ff\u5230\u6ee1\u5206\uff0c\u4f46\u662f\u4ee5\u540e\u4e5f\u4e0d\u80fd\u9a84\u50b2\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "test; examination"
+    },
+    {
+      "id": "fdd2fd3b-df61-4e3f-9bec-f8800c08b5d1",
+      "word": "\u61d2\u60f0",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u544a\u8bc9\u5f1f\u5f1f\u4e00\u5b9a\u8981\u6539\u6389\u61d2\u60f0\u7684\u574f\u4e60\u60ef\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "lazy"
+    },
+    {
+      "id": "49ed5c5e-68a1-4e5c-8bbe-b4f01b132e4b",
+      "word": "\u6bcf\u9022",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u9022\u534e\u4eba\u65b0\u5e74\uff0c\u5976\u5976\u90fd\u4f1a\u5305\u7ea2\u5305\u7ed9\u6211\u4eec\u3002"
+      ],
+      "word_building": [
+        "\u6bcf\u9022\u5047\u671f",
+        "\u6bcf\u9022\u4f73\u8282"
+      ],
+      "english_definition": "occasionally; whenever; every time"
+    },
+    {
+      "id": "bf0648c0-0f78-427c-9fc0-39cae867fa40",
+      "word": "\u9c9c\u8273",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4ef6\u8863\u670d\u7684\u989c\u8272\u975e\u5e38\u9c9c\u8273\uff0c\u59d0\u59d0\u4e00\u5b9a\u4f1a\u559c\u6b22\u3002"
+      ],
+      "word_building": [
+        "\u989c\u8272\u9c9c\u8273",
+        "\u8272\u5f69\u9c9c\u8273"
+      ],
+      "english_definition": "bright and vibrant"
+    },
+    {
+      "id": "988fd512-f859-45f2-a3b6-4ca6e4af6e24",
+      "word": "\u8000\u773c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u5757\u5b9d\u77f3\u5728\u9633\u5149\u4e0b\u53d1\u51fa\u8000\u773c\u7684\u5149\u8292\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "bright; dazzling; glaring"
+    },
+    {
+      "id": "47b9cd7a-a091-423f-b592-7b60d2ee1ef5",
+      "word": "\u77f3\u7f1d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u53d1\u73b0\u6709\u7684\u77f3\u7f1d\u91cc\u4f1a\u957f\u51fa\u4e00\u4e9b\u9c9c\u5ae9\u7684\u5c0f\u8349\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "gap between rocks"
+    },
+    {
+      "id": "2c76b96e-0af5-4eae-8ead-ae6cee165783",
+      "word": "\u4f18\u96c5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u4f1a\u8bae\u4e0a\uff0c\u59d0\u59d0\u7684\u4e3e\u6b62\u5341\u5206\u4f18\u96c5\uff0c\u5f97\u5230\u6765\u5bbe\u7684\u4e00\u81f4\u597d\u8bc4\u3002"
+      ],
+      "word_building": [
+        "\u4e3e\u6b62\u4f18\u96c5",
+        "\u73af\u5883\u4f18\u96c5",
+        "\u9ad8\u8d35\u4f18\u96c5"
+      ],
+      "english_definition": "elegant or graceful."
+    },
+    {
+      "id": "3f7295d2-05eb-4b8c-b233-d8f0c6b4db3f",
+      "word": "\u4e0d\u5c48\u4e0d\u6320",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u9047\u5230\u632b\u6298\uff0c\u6211\u4eec\u5e94\u8be5\u4e0d\u5c48\u4e0d\u6320\uff0c\u5207\u4e0d\u53ef\u8f7b\u6613\u653e\u5f03\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Persistent; indomitable"
+    },
+    {
+      "id": "af4bdd46-08cf-4ecf-a14e-c7348f719ffb",
+      "word": "\u699c\u6837",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5bb6\u957f\u662f\u5b69\u5b50\u6700\u597d\u7684\u8001\u5e08\uff0c\u5e94\u8be5\u4ece\u5c0f\u7ed9\u5b69\u5b50\u6811\u7acb\u826f\u597d\u7684\u699c\u6837\u3002"
+      ],
+      "word_building": [
+        "\u6811\u7acb\u699c\u6837"
+      ],
+      "english_definition": "role model"
+    },
+    {
+      "id": "9bd67c78-c31a-443c-93ba-c8da12187306",
+      "word": "\u6076\u52a3",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u65e0\u8bba\u5929\u6c14\u6709\u591a\u4e48\u6076\u52a3\uff0c\u58eb\u5175\u4eec\u90fd\u575a\u6301\u5b88\u536b\u8fb9\u5883\u3002"
+      ],
+      "word_building": [
+        "\u5929\u6c14\u6076\u52a3",
+        "\u73af\u5883\u6076\u52a3"
+      ],
+      "english_definition": "very bad or terrible"
+    },
+    {
+      "id": "a80df399-ac27-466e-b4e2-dd996f979ddb",
+      "word": "\u575a\u5f3a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e0d\u7ba1\u9047\u5230\u591a\u5927\u7684\u56f0\u96be\uff0c\u6211\u4eec\u90fd\u5e94\u8be5\u575a\u5f3a\u9762\u5bf9\uff0c\u4e0d\u80fd\u9000\u7f29\u3002"
+      ],
+      "word_building": [
+        "\u575a\u5f3a\u9762\u5bf9",
+        "\u6027\u683c\u575a\u5f3a\u751f\u5b57\u575a\u56fa",
+        "\u575a\u786c"
+      ],
+      "english_definition": "strong; resolute; tough"
+    },
+    {
+      "id": "7c77bbaf-56c3-44db-a4ff-d0faebf6f3e6",
+      "word": "\u51ed",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u59d0\u59d0\u51ed\u7740\u987d\u5f3a\u7684\u610f\u5fd7\uff0c\u7ec8\u4e8e\u6218\u80dc\u4e86\u75c5\u9b54\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "on the basis of, by means of, relying on"
+    },
+    {
+      "id": "3b60a766-1c82-4a6c-a40f-8ccc93687141",
+      "word": "\u7275",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u6b21\u51fa\u95e8\u7684\u65f6\u5019\uff0c\u5988\u5988\u90fd\u4f1a\u7275\u7740\u6211\u7684\u624b\u3002"
+      ],
+      "word_building": [
+        "\u7275\u624b",
+        "\u7275\u6302",
+        "\u987a\u624b\u7275\u7f8a"
+      ],
+      "english_definition": "to hold or lead someone/something by hand"
+    },
+    {
+      "id": "dda51682-9735-4449-9dbc-b07a7cc27a5d",
+      "word": "\u7956\u5b59",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7237\u7237\u5976\u5976\u975e\u5e38\u7231\u6211\uff0c\u6211\u4eec\u7956\u5b59\u7684\u611f\u60c5\u5f88\u597d\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "relationship between grandparents and grandchildren"
+    },
+    {
+      "id": "abe938b5-8cb8-4b4c-b13b-5b20fffe8846",
+      "word": "\u4fc3\u8fdb",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u513f\u7ae5\u591a\u53c2\u52a0\u4f53\u80b2\u953b\u70bc\u6709\u52a9\u4e8e\u4fc3\u8fdb\u9aa8\u9abc\u7684\u751f\u957f\u3002"
+      ],
+      "word_building": [
+        "\u4fc3\u8fdb\u548c\u8c10",
+        "\u4fc3\u8fdb\u53d1\u5c55"
+      ],
+      "english_definition": "To promote or facilitate something."
+    },
+    {
+      "id": "1fb12815-aae0-49c8-a909-1d22b8550f5b",
+      "word": "\u5bb6\u5ead",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5168\u5bb6\u4eba\u4e00\u8d77\u53c2\u52a0\u6237\u5916\u6d3b\u52a8\u6709\u52a9\u4e8e\u4fc3\u8fdb\u5bb6\u5ead\u548c\u8c10\u3002"
+      ],
+      "word_building": [
+        "\u5bb6\u5ead\u548c\u8c10",
+        "\u5bb6\u5ead\u5e78\u798f",
+        "\u6e29\u6696\u7684\u5bb6\u5ead"
+      ],
+      "english_definition": "Family"
+    },
+    {
+      "id": "c4a9b2d1-2f3b-4d17-8bda-deb760c9ac2c",
+      "word": "\u62e8\u6253",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5982\u679c\u4f60\u6709\u4efb\u4f55\u7591\u95ee\uff0c\u53ef\u4ee5\u62e8\u6253\u70ed\u7ebf\u7535\u8bdd\u3002"
+      ],
+      "word_building": [
+        "\u62e8\u6253\u70ed\u7ebf",
+        "\u62e8\u6253\u7535\u8bdd"
+      ],
+      "english_definition": "To make a phone call."
+    },
+    {
+      "id": "2db5c12a-80b5-4bc9-b8ea-1651460f782c",
+      "word": "\u503e\u659c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8def\u8fb9\u7684\u90a3\u6839\u67f1\u5b50\u6709\u4e00\u4e9b\u503e\u659c\uff0c\u4f60\u8981\u63d0\u9192\u8def\u4eba\u5c0f\u5fc3\u3002"
+      ],
+      "word_building": [
+        "\u96e8\u4f1e\u503e\u659c",
+        "\u5899\u58c1\u503e\u659c"
+      ],
+      "english_definition": "Tilt or incline."
+    },
+    {
+      "id": "0d44fe05-4ca2-4b3b-8dea-b56c41e1ee5d",
+      "word": "\u8e29",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4e0d\u5c0f\u5fc3\u8e29\u5230\u8def\u9762\u4e0a\u7684\u79ef\u6c34\uff0c\u6ed1\u5012\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "step on; tread on"
+    },
+    {
+      "id": "b15bc0ff-0e16-4823-ab11-37e6ed8981bd",
+      "word": "\u8fc5\u901f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u60c5\u51b5\u5341\u5206\u7d27\u6025\uff0c\u8bf7\u4f60\u4eec\u8fc5\u901f\u8d76\u6765\u3002"
+      ],
+      "word_building": [
+        "\u52a8\u4f5c\u8fc5\u901f",
+        "\u8fc5\u901f\u524d\u8fdb",
+        "\u52a8\u4f5c\u8fc5\u901f",
+        "\u8fc5\u901f\u524d\u8fdb"
+      ],
+      "english_definition": "quickly or rapidly"
+    },
+    {
+      "id": "4311a03a-d4ac-48ff-9408-3e9831927b3c",
+      "word": "\u7591\u60d1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u674e\u8001\u5e08\u4eca\u5929\u6ca1\u6709\u6765\u4e0a\u8bfe\uff0c\u540c\u5b66\u4eec\u90fd\u611f\u5230\u5341\u5206\u7591\u60d1\u3002"
+      ],
+      "word_building": [
+        "\u4ea7\u751f\u7591\u60d1",
+        "\u611f\u5230\u7591\u60d1",
+        "\u7591\u60d1\u4e0d\u89e3"
+      ],
+      "english_definition": "confused"
+    },
+    {
+      "id": "15c2e58b-7a3b-47dd-9aba-ba3057a7d396",
+      "word": "\u6362",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5982\u679c\u6211\u8fd9\u6b21\u8003\u8bd5\u6210\u7ee9\u4f18\u5f02\uff0c\u5988\u5988\u5c31\u4f1a\u7ed9\u6211\u6362\u4e00\u53f0\u65b0\u7535\u8111\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "exchange"
+    },
+    {
+      "id": "87076e63-56c4-44f8-9329-c960ebfb4675",
+      "word": "\u6491\u4f1e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e0b\u96e8\u4e86\uff0c\u5988\u5988\u624b\u91cc\u63d0\u7740\u5f88\u591a\u4e1c\u897f\uff0c\u6211\u4e3a\u5979\u6491\u4f1e\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "hold an umbrella for someone"
+    },
+    {
+      "id": "ce8c2cd9-7157-4043-97ab-ae8c1a2270f6",
+      "word": "\u7f8e\u5fb7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5c0a\u8001\u7231\u5e7c\u662f\u534e\u65cf\u7684\u4f20\u7edf\u7f8e\u5fb7\u3002"
+      ],
+      "word_building": [
+        "\u4f20\u7edf\u7f8e\u5fb7",
+        "\u53d1\u626c\u7f8e\u5fb7"
+      ],
+      "english_definition": "Virtue or moral excellence."
+    },
+    {
+      "id": "6cb169fd-0c1b-490b-898a-6289091f137e",
+      "word": "\u57fa\u7840",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u7684\u534e\u6587\u57fa\u7840\u5f88\u624e\u5b9e\uff0c\u6bcf\u6b21\u8003\u8bd5\u90fd\u80fd\u53d6\u5f97\u4f73\u7ee9\u3002"
+      ],
+      "word_building": [
+        "\u57fa\u7840\u77e5\u8bc6",
+        "\u6253\u597d\u57fa\u7840",
+        "\u57fa\u7840\u624e\u5b9e"
+      ],
+      "english_definition": "foundation; basis"
+    },
+    {
+      "id": "e81a9c8f-4bb9-4468-89fe-fda19d8ba24a",
+      "word": "\u667a\u80fd",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u4e70\u4e86\u4e00\u90e8\u6700\u65b0\u6b3e\u7684\u667a\u80fd\u624b\u673a\u9001\u7ed9\u6211\u3002"
+      ],
+      "word_building": [
+        "\u667a\u80fd\u624b\u673a",
+        "\u4eba\u5de5\u667a\u80fd\u751f\u5b57\u673a\u667a",
+        "\u667a\u6167",
+        "\u8db3\u667a\u591a\u8c0b",
+        "\u6025\u4e2d\u751f\u667a"
+      ],
+      "english_definition": "intelligent"
+    },
+    {
+      "id": "f1c4cee5-f6ae-4a55-850f-f44cc8d307d4",
+      "word": "\u654f\u6377",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8b66\u5bdf\u53d4\u53d4\u8eab\u624b\u654f\u6377\uff0c\u5f88\u5feb\u5c31\u6293\u4f4f\u4e86\u90a3\u4e2a\u5c0f\u5077\u3002"
+      ],
+      "word_building": [
+        "\u8eab\u624b\u654f\u6377",
+        "\u5934\u8111\u654f\u6377",
+        "\u8eab\u624b\u654f\u6377",
+        "\u5934\u8111\u654f\u6377"
+      ],
+      "english_definition": "Quick and agile."
+    },
+    {
+      "id": "b5ae64a3-723c-4190-9ba0-90e0e9986ed0",
+      "word": "\u5835\u585e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u4e0a\u4e0b\u73ed\u9ad8\u5cf0\u65f6\u95f4\uff0c\u90a3\u6761\u8def\u7ecf\u5e38\u4f1a\u53d1\u751f\u4ea4\u901a\u5835\u585e\u3002"
+      ],
+      "word_building": [
+        "\u4ea4\u901a\u5835\u585e",
+        "\u6c34\u7ba1\u5835\u585e",
+        "\u6cb3\u9053\u5835\u585e"
+      ],
+      "english_definition": "blockage or congestion"
+    },
+    {
+      "id": "b960868d-0878-4890-a39a-67abdbed6766",
+      "word": "\u6a21\u4eff",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5f1f\u5f1f\u603b\u662f\u559c\u6b22\u6a21\u4eff\u59d0\u59d0\u7684\u4e00\u4e3e\u4e00\u52a8\u3002"
+      ],
+      "word_building": [
+        "\u6a21\u4eff\u52a8\u4f5c\u5f62\u4f3c\u5b57\u9632\u6b62",
+        "\u62dc\u8bbf",
+        "\u59a8\u788d"
+      ],
+      "english_definition": "imitate, copy, mimic"
+    },
+    {
+      "id": "249c23f8-b857-4f8b-8ad8-07eaa31905be",
+      "word": "\u4f8b\u5982",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5976\u5976\u4f1a\u505a\u5f88\u591a\u7f8e\u98df\uff0c\u4f8b\u5982\u8fa3\u6912\u8783\u87f9\u3001\u7ea2\u70e7\u6392\u9aa8\u7b49\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "for example"
+    },
+    {
+      "id": "c79f79ab-1a83-4bd5-818e-7ceda5909d84",
+      "word": "\u4e89\u593a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u660e\u5929\u7684\u51b3\u8d5b\u4e2d\uff0c\u674e\u6587\u548c\u738b\u660e\u5c06\u4e89\u593a\u672c\u6b21\u6f14\u8bb2\u6bd4\u8d5b\u7684\u51a0\u519b\u3002"
+      ],
+      "word_building": [
+        "\u4e89\u593a\u51a0\u519b",
+        "\u4e89\u593a\u8d22\u4ea7\u751f\u5b57\u62a2\u593a",
+        "\u593a\u8d70",
+        "\u63a0\u593a",
+        "\u593a\u53d6\u5f62\u4f3c\u5b57\u6323\u624e",
+        "\u7741\u773c"
+      ],
+      "english_definition": "to compete or fight for; to contend"
+    },
+    {
+      "id": "043f98c9-91c5-453d-b6fc-eee816130641",
+      "word": "\u4f7f\u52b2",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u4e00\u4f7f\u52b2\uff0c\u5c31\u628a\u7403\u8e22\u51fa\u53bb\u597d\u8fdc\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "exert force or effort"
+    },
+    {
+      "id": "20776ff6-c839-40fd-9cab-bd08e8abc4d2",
+      "word": "\u8d22\u4ea7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5bcc\u7fc1\u53bb\u4e16\u4e4b\u540e\uff0c\u4ed6\u7684\u8d22\u4ea7\u7531\u5b50\u5b59\u4eec\u7ee7\u627f\u3002"
+      ],
+      "word_building": [
+        "\u7ee7\u627f\u8d22\u4ea7",
+        "\u4e89\u593a\u8d22\u4ea7"
+      ],
+      "english_definition": "property, assets, wealth"
+    },
+    {
+      "id": "a7ddea73-262b-4dd3-b9a6-d28a6228cefb",
+      "word": "\u4f1f\u5927",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7535\u706f\u662f\u4eba\u7c7b\u5386\u53f2\u4e0a\u4e00\u6b21\u4f1f\u5927\u7684\u53d1\u660e\u3002"
+      ],
+      "word_building": [
+        "\u4f1f\u5927\u7684\u7956\u56fd",
+        "\u4f1f\u5927\u7684\u53d1\u660e",
+        "\u4f1f\u5927\u7684\u6bcd\u7231"
+      ],
+      "english_definition": "great, magnificent, outstanding"
+    },
+    {
+      "id": "f61f547b-2955-4400-a781-d800c7b31f23",
+      "word": "\u667a\u6167",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8981\u628a\u65b0\u52a0\u5761\u5efa\u8bbe\u5f97\u66f4\u597d\uff0c\u5c31\u8981\u4f9d\u9760\u5168\u4f53\u4eba\u6c11\u7684\u667a\u6167\u548c\u529b\u91cf\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "wisdom"
+    },
+    {
+      "id": "cc60e9e8-9a8e-4c4b-968d-5de0e36391dc",
+      "word": "\u8d60\u9001",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3a\u4e86\u56de\u9988\u987e\u5ba2\uff0c\u5546\u5bb6\u5c06\u5728\u534e\u4eba\u65b0\u5e74\u5f53\u5929\u514d\u8d39\u8d60\u9001\u793c\u76d2\u3002"
+      ],
+      "word_building": [
+        "\u514d\u8d39\u8d60\u9001",
+        "\u8d60\u9001\u793c\u7269\u5f62\u4f3c\u5b57\u589e\u52a0",
+        "\u66fe\u7ecf"
+      ],
+      "english_definition": "to give as a gift"
+    },
+    {
+      "id": "842c33a5-d6a1-4540-90f9-812190d627da",
+      "word": "\u575a\u786c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u5757\u5b9d\u77f3\u975e\u5e38\u575a\u786c\uff0c\u5f88\u96be\u5c06\u5b83\u5f04\u788e\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "hard"
+    },
+    {
+      "id": "57ddd121-95d7-4320-94b8-6eeee599215c",
+      "word": "\u9664\u4e86",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u5929\uff0c\u5988\u5988\u9664\u4e86\u8981\u505a\u5de5\uff0c\u8fd8\u8981\u505a\u5f88\u591a\u5bb6\u52a1\uff0c\u975e\u5e38\u8f9b\u82e6\u3002"
+      ],
+      "word_building": [
+        "\u9664\u4e86\u2026\u2026\u8fd8\u2026\u2026"
+      ],
+      "english_definition": "besides, in addition to"
+    },
+    {
+      "id": "9e306807-0620-4f2d-a9b6-4a680634e268",
+      "word": "\u604d\u7136\u5927\u609f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u542c\u4e86\u5988\u5988\u7684\u8bdd\uff0c\u6211\u604d\u7136\u5927\u609f\uff0c\u6df1\u523b\u5730\u8ba4\u8bc6\u5230\u4e86\u81ea\u5df1\u7684\u9519\u8bef\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to suddenly realize or understand something"
+    },
+    {
+      "id": "0496b189-ffe4-426f-8bf3-431e22e27496",
+      "word": "\u84b8\u70e4\u714e\u70b8",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [],
+      "word_building": [],
+      "english_definition": "cooking methods for steaming, baking, pan-frying, and deep-frying"
+    },
+    {
+      "id": "fa899fb5-35f6-4cb2-92b5-93ef73c45bf9",
+      "word": "\u8106\u76ae",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8106\u76ae\u70e4\u9e2d\u662f\u8fd9\u5bb6\u996d\u5e97\u7684\u62db\u724c\u83dc\uff0c\u5f88\u53d7\u98df\u5ba2\u559c\u7231\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "crispy skin"
+    },
+    {
+      "id": "72610ffe-2a7c-4bda-9077-7d0d4128a9c0",
+      "word": "\u54b8",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u672c\u5730\u7684\u5a18\u60f9\u8089\u7cbd\u6709\u54b8\u54b8\u7684\u5473\u9053\uff0c\u5f88\u597d\u5403\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Salty"
+    },
+    {
+      "id": "2eacf4cd-3163-4de0-bc61-076a6c5231c8",
+      "word": "\u7626\u8089\u7ca5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u7ecf\u5e38\u4f1a\u505a\u6709\u8425\u517b\u7684\u7626\u8089\u7ca5\u7ed9\u6211\u4eec\u5403\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "congee made with lean meat"
+    },
+    {
+      "id": "5e7c21b5-1b98-4b51-bf75-9ba908e9b220",
+      "word": "\u9178",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u4e70\u7684\u8461\u8404\u6709\u70b9\u9178\uff0c\u6211\u548c\u7238\u7238\u5403\u5f97\u76f4\u76b1\u7709\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "sour"
+    },
+    {
+      "id": "c7da4c60-c04a-4776-9768-b57063ce3822",
+      "word": "\u79d1\u5b66\u5bb6",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u7684\u53d4\u53d4\u662f\u4e00\u4f4d\u7814\u7a76\u73af\u5883\u95ee\u9898\u7684\u79d1\u5b66\u5bb6\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "scientist"
+    },
+    {
+      "id": "2e5526b5-1a72-4941-badd-fb8ab4a0516e",
+      "word": "\u9879\u94fe",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4e32\u73cd\u73e0\u9879\u94fe\u662f\u7238\u7238\u9001\u7ed9\u5976\u5976\u7684\u751f\u65e5\u793c\u7269\u3002"
+      ],
+      "word_building": [
+        "\u73cd\u73e0\u9879\u94fe",
+        "\u4e00\u4e32\u9879\u94fe"
+      ],
+      "english_definition": "A piece of jewelry worn around the neck."
+    },
+    {
+      "id": "da35fbf3-e3f7-49a7-8c49-3f7c06cb2335",
+      "word": "\u539f\u4ef7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4ef6\u8863\u670d\u539f\u4ef7\u8981\u4e00\u767e\u591a\uff0c\u73b0\u5728\u624d\u5356\u4e94\u5341\u5143\uff0c\u771f\u4e0d\u9519\uff01"
+      ],
+      "word_building": [],
+      "english_definition": "original price"
+    },
+    {
+      "id": "b8cc0e18-02c6-420a-a790-3d8a87da4d1c",
+      "word": "\u4fbf\u5b9c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u5bb6\u5546\u5e97\u552e\u5356\u7684\u8d27\u54c1\u4ef7\u94b1\u4fbf\u5b9c\u3001\u8d28\u91cf\u53c8\u597d\uff0c\u5f88\u53d7\u987e\u5ba2\u6b22\u8fce\u3002"
+      ],
+      "word_building": [
+        "\u4ef7\u94b1\u4fbf\u5b9c"
+      ],
+      "english_definition": "cheap, inexpensive"
+    },
+    {
+      "id": "6f7cd300-5823-4795-a21d-a5c662c8288f",
+      "word": "\u8d28\u91cf",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4e9b\u684c\u6905\u7684\u8d28\u91cf\u5f88\u597d\uff0c\u6211\u4eec\u5df2\u7ecf\u7528\u4e86\u5f88\u591a\u5e74\u4e86\u3002"
+      ],
+      "word_building": [
+        "\u8d28\u91cf\u5f88\u597d",
+        "\u8d28\u91cf\u4f18\u826f",
+        "\u8d28\u91cf\u5dee"
+      ],
+      "english_definition": "quality"
+    },
+    {
+      "id": "600e58eb-507d-4f74-9cfd-a8d711408b04",
+      "word": "\u9500\u552e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u738b\u963f\u59e8\u4ece\u4e8b\u9500\u552e\u5de5\u4f5c\u5df2\u7ecf\u5feb\u4e8c\u5341\u5e74\u4e86\uff0c\u975e\u5e38\u6709\u7ecf\u9a8c\u3002"
+      ],
+      "word_building": [
+        "\u9500\u552e\u8d27\u7269",
+        "\u9500\u552e\u5de5\u4f5c",
+        "\u9500\u552e\u4e00\u7a7a"
+      ],
+      "english_definition": "to sell"
+    },
+    {
+      "id": "32cd3ce1-72db-4183-a96e-50c4c938c82a",
+      "word": "\u635f\u574f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5982\u679c\u6211\u4eec\u53d1\u73b0\u65b0\u4e70\u7684\u8d27\u54c1\u6709\u635f\u574f\uff0c\u53ef\u4ee5\u7acb\u523b\u627e\u5546\u5bb6\u9000\u6362\u3002"
+      ],
+      "word_building": [
+        "\u635f\u574f\u516c\u7269",
+        "\u635f\u574f\u7269\u54c1"
+      ],
+      "english_definition": "to damage or be damaged, to ruin or be ruined"
+    },
+    {
+      "id": "85aa80ec-f822-480b-a433-007c54d28294",
+      "word": "\u4fee\u7406",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u7684\u7238\u7238\u662f\u4e00\u4f4d\u4fee\u7406\u6c7d\u8f66\u7684\u5de5\u4eba\u3002"
+      ],
+      "word_building": [
+        "\u4fee\u7406\u673a\u5668",
+        "\u8d1f\u8d23\u4fee\u7406"
+      ],
+      "english_definition": "To repair or fix something"
+    },
+    {
+      "id": "e7c06583-b5f8-4213-a607-648d9e11c83a",
+      "word": "\u5747\u5300",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6708\u5149\u5747\u5300\u5730\u6d12\u5728\u6e56\u9762\u4e0a\uff0c\u6cdb\u7740\u6de1\u6de1\u7684\u767d\u5149\u3002"
+      ],
+      "word_building": [
+        "\u5927\u5c0f\u5747\u5300",
+        "\u5206\u5e03\u5747\u5300",
+        "\u8d28\u5730\u5747\u5300"
+      ],
+      "english_definition": "uniform or evenly distributed in size, distribution, or texture"
+    },
+    {
+      "id": "97d6962e-aa18-4802-ba86-bd92f1f2f5ef",
+      "word": "\u731b\u7136",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u770b\u5230\u4e00\u8f86\u8f66\u5b50\u98de\u5feb\u5730\u5f00\u6765\uff0c\u4ed6\u731b\u7136\u63a8\u5f00\u4e86\u8eab\u8fb9\u7684\u5c0f\u5973\u5b69\u3002"
+      ],
+      "word_building": [
+        "\u731b\u7136\u53d1\u73b0",
+        "\u731b\u7136\u8f6c\u8eab",
+        "\u731b\u7136\u56de\u5934"
+      ],
+      "english_definition": "A sudden and abrupt movement or action."
+    },
+    {
+      "id": "6f782c56-43ba-41d2-a903-63b97cf03262",
+      "word": "\u666e\u901a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4ef6\u8863\u670d\u7684\u6837\u5f0f\u5f88\u666e\u901a\uff0c\u5230\u5904\u90fd\u53ef\u4ee5\u4e70\u5f97\u5230\u3002"
+      ],
+      "word_building": [
+        "\u6837\u5f0f\u666e\u901a",
+        "\u7a7f\u7740\u666e\u901a",
+        "\u6837\u5f0f\u666e\u901a",
+        "\u7a7f\u7740\u666e\u901a"
+      ],
+      "english_definition": "ordinary"
+    },
+    {
+      "id": "85dad588-33ff-4ed5-91da-4cb24f434827",
+      "word": "\u7cca\u6d82",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5976\u5976\u5e74\u7eaa\u5927\u4e86\uff0c\u6709\u4e9b\u7cca\u6d82\u4e86\uff0c\u9700\u8981\u6211\u4eec\u66f4\u591a\u7684\u5173\u7231\u3002"
+      ],
+      "word_building": [
+        "\u8111\u5b50\u7cca\u6d82",
+        "\u7cca\u6d82\u866b"
+      ],
+      "english_definition": "Confused, muddled, unclear."
+    },
+    {
+      "id": "b3706d02-84a6-43cc-b219-1adab51eeaf4",
+      "word": "\u7701\u5403\u4fed\u7528",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u6bcf\u5929\u7701\u5403\u4fed\u7528\uff0c\u4ed6\u6253\u7b97\u5b58\u94b1\u4e70\u4e00\u53f0\u7535\u8111\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Live frugally and save money."
+    },
+    {
+      "id": "8c7ec54a-70af-4b76-840c-c01d4db426b6",
+      "word": "\u6253\u6270",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u6b63\u5728\u5199\u6bd5\u4e1a\u8bba\u6587\uff0c\u4f60\u5343\u4e07\u522b\u53bb\u6253\u6270\u4ed6\u3002"
+      ],
+      "word_building": [
+        "\u8bf7\u52ff\u6253\u6270",
+        "\u6253\u6270\u90bb\u5c45"
+      ],
+      "english_definition": "bother, disturb, interrupt"
+    },
+    {
+      "id": "d29dd4a5-fd83-4bd9-967f-4815cbfcc648",
+      "word": "\u6148\u7965",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u770b\u7740\u4e00\u5bb6\u4eba\u56e2\u805a\u5728\u4e00\u8d77\uff0c\u5976\u5976\u7684\u8138\u4e0a\u9732\u51fa\u4e86\u6148\u7965\u7684\u7b11\u5bb9\u3002"
+      ],
+      "word_building": [
+        "\u7b11\u5bb9\u6148\u7965",
+        "\u6148\u7965\u7684\u8001\u4eba"
+      ],
+      "english_definition": "Kind and gentle; benevolent or kindly."
+    },
+    {
+      "id": "8ce87b0f-a51d-4c40-80dc-8e04b54ea999",
+      "word": "\u901b",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u661f\u671f\u5929\uff0c\u5988\u5988\u5e26\u6211\u53bb\u901b\u5546\u573a\uff0c\u6211\u4eec\u4e70\u4e86\u5f88\u591a\u4e1c\u897f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to stroll or wander; go shopping"
+    },
+    {
+      "id": "8428971b-ee55-4011-a988-fd0eae312c72",
+      "word": "\u8d9f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3a\u4e86\u770b\u671b\u751f\u75c5\u7684\u5976\u5976\uff0c\u6211\u4eec\u5168\u5bb6\u5468\u672b\u53bb\u4e86\u4e00\u8d9f\u9a6c\u6765\u897f\u4e9a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "a trip"
+    },
+    {
+      "id": "279dc3c5-226f-4a6e-9fc0-3dc3e53980aa",
+      "word": "\u8d81",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8d81\u5927\u5bb6\u4e0d\u6ce8\u610f\uff0c\u5c0f\u5077\u62ff\u8d70\u4e86\u684c\u4e0a\u7684\u94b1\u5305\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "take advantage of; seize an opportunity; while"
+    },
+    {
+      "id": "f41b82ad-4a6f-4668-b072-dd8f334c3191",
+      "word": "\u6001\u5ea6",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6797\u8001\u5e08\u548c\u540c\u5b66\u4eec\u8bf4\u8bdd\u65f6\uff0c\u6001\u5ea6\u603b\u662f\u5f88\u6e29\u548c\u3002"
+      ],
+      "word_building": [
+        "\u6001\u5ea6\u6e29\u548c",
+        "\u6001\u5ea6\u70ed\u60c5",
+        "\u6001\u5ea6\u51b7\u6de1",
+        "\u6001\u5ea6\u6076\u52a3"
+      ],
+      "english_definition": "attitude"
+    },
+    {
+      "id": "f5e5cd5a-4ce8-48fb-b939-cb1e3d1ddb1b",
+      "word": "\u9009\u62e9",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4f60\u53ef\u4ee5\u9009\u62e9\u81ea\u5df1\u559c\u6b22\u7684\u8bfe\u5916\u6d3b\u52a8\uff0c\u7136\u540e\u627e\u8001\u5e08\u62a5\u540d\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to choose or make a selection from options"
+    },
+    {
+      "id": "b44892cd-d3c1-40d6-ae86-0fdc6feefe85",
+      "word": "\u8bb2\u8ff0",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4f60\u5e94\u8be5\u628a\u4e8b\u60c5\u7684\u7ecf\u8fc7\u8be6\u7ec6\u5730\u8bb2\u8ff0\u4e00\u904d\u3002"
+      ],
+      "word_building": [
+        "\u8bb2\u8ff0\u7ecf\u8fc7",
+        "\u8bb2\u8ff0\u8be6\u60c5",
+        "\u8be6\u7ec6\u8bb2\u8ff0",
+        "\u8bb2\u8ff0\u7ecf\u8fc7",
+        "\u8bb2\u8ff0\u8be6\u60c5",
+        "\u8be6\u7ec6\u8bb2\u8ff0"
+      ],
+      "english_definition": "to tell or recount in detail"
+    },
+    {
+      "id": "66f414cd-e88e-4ff5-bdcb-d62b25f2ed6f",
+      "word": "\u65b9\u5f0f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u8bb2\u8bdd\u65f6\u5e94\u8be5\u6ce8\u610f\u81ea\u5df1\u7684\u8868\u8fbe\u65b9\u5f0f\uff0c\u5426\u5219\u5bb9\u6613\u5f15\u8d77\u8bef\u4f1a\u3002"
+      ],
+      "word_building": [
+        "\u8868\u8fbe\u65b9\u5f0f",
+        "\u5b66\u4e60\u65b9\u5f0f",
+        "\u8bf4\u8bdd\u65b9\u5f0f",
+        "\u5448\u73b0\u65b9\u5f0f",
+        "\u5956\u52b1\u65b9\u5f0f"
+      ],
+      "english_definition": "manner or way"
+    },
+    {
+      "id": "a4f2c92e-e0ee-4c98-9b7a-2703ad965097",
+      "word": "\u521b\u610f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7acb\u660e\u7684\u60f3\u6cd5\u975e\u5e38\u6709\u521b\u610f\uff0c\u5f97\u5230\u5927\u5bb6\u7684\u4e00\u81f4\u597d\u8bc4\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "creative; creativity; originality"
+    },
+    {
+      "id": "43abd86a-a997-4471-a8ed-fd9fb03dc785",
+      "word": "\u6027\u522b",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8001\u5e08\u8bf7\u540c\u5b66\u4eec\u628a\u62a5\u540d\u8868\u586b\u5199\u5b8c\u6574\uff0c\u4e0d\u8981\u6f0f\u4e86\u6027\u522b\u4e00\u680f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "gender"
+    },
+    {
+      "id": "14c6bc42-945d-40e3-91a2-c6ee03e0eebe",
+      "word": "\u63a9\u8033\u76d7\u94c3",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u505a\u4e86\u9519\u4e8b\u8fd8\u4e0d\u60f3\u88ab\u522b\u4eba\u53d1\u73b0\uff0c\u771f\u662f\u63a9\u8033\u76d7\u94c3\u7684\u884c\u4e3a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Ignoring the truth; Deceiving oneself."
+    },
+    {
+      "id": "d7b0fc56-e27e-4061-9629-05e4f60f0577",
+      "word": "\u8d2a\u8d22",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u90a3\u4e2a\u6751\u5b50\u91cc\uff0c\u6709\u4e00\u4e2a\u5341\u5206\u8d2a\u8d22\u7684\u5730\u4e3b\uff0c\u4eba\u4eec\u90fd\u4e0d\u559c\u6b22\u4ed6\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "greedy, fond of money, money-grubbing, materialistic"
+    },
+    {
+      "id": "74219e39-a0df-4f02-af7c-b62a71f0fc2e",
+      "word": "\u7838\u788e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5730\u9707\u53d1\u751f\u540e\uff0c\u6551\u63f4\u4eba\u5458\u7838\u788e\u77f3\u677f\uff0c\u6551\u51fa\u538b\u5728\u77f3\u677f\u4e0b\u7684\u4eba\u3002"
+      ],
+      "word_building": [
+        "\u7838\u788e\u51b0\u5c42",
+        "\u7528\u529b\u7838\u788e"
+      ],
+      "english_definition": "smash or break into pieces"
+    },
+    {
+      "id": "032bcaf4-b89d-43f5-bfbe-6eef2a0e68b5",
+      "word": "\u7cdf\u7cd5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7cdf\u7cd5\uff01\u6211\u7adf\u7136\u628a\u505a\u597d\u7684\u529f\u8bfe\u5fd8\u5728\u5bb6\u91cc\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "awful, terrible, bad, unfortunate"
+    },
+    {
+      "id": "1f2ec730-fb55-4509-b145-09723768ab8a",
+      "word": "\u6342\u4f4f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5c4b\u5916\u7684\u58f0\u97f3\u592a\u5435\u4e86\uff0c\u6211\u53ea\u597d\u7528\u624b\u6342\u4f4f\u8033\u6735\u3002"
+      ],
+      "word_building": [
+        "\u6342\u4f4f\u5634\u5df4",
+        "\u6342\u4f4f\u8033\u6735"
+      ],
+      "english_definition": "cover with hand, block, hold tightly"
+    },
+    {
+      "id": "3089cc4e-ac7d-4131-912c-29630a551a39",
+      "word": "\u6beb\u4e0d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u544a\u8beb\u5f1f\u5f1f\u4e0d\u8981\u8eba\u7740\u770b\u4e66\uff0c\u53ef\u662f\u4ed6\u6beb\u4e0d\u5728\u610f\uff0c\u7ed3\u679c\u8fd1\u89c6\u4e86\u3002"
+      ],
+      "word_building": [
+        "\u6beb\u4e0d\u5728\u610f",
+        "\u6beb\u4e0d\u72b9\u8c6b",
+        "\u6beb\u4e0d\u52a8\u6447"
+      ],
+      "english_definition": "Not at all."
+    },
+    {
+      "id": "0e05cfe8-ac7d-41dd-a276-f151cf9dd753",
+      "word": "\u7acb\u5373",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8b66\u5bdf\u4e00\u63a5\u5230\u62a5\u8b66\uff0c\u7acb\u5373\u8d76\u5f80\u73b0\u573a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Immediately, at once, right away."
+    },
+    {
+      "id": "c81ccc23-2744-4dfd-a191-36b10e149759",
+      "word": "\u9510\u5229",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u65b0\u4e70\u4e86\u4e00\u628a\u83dc\u5200\u975e\u5e38\u9510\u5229\uff0c\u5979\u4f7f\u7528\u65f6\u975e\u5e38\u5c0f\u5fc3\u3002"
+      ],
+      "word_building": [
+        "\u9510\u5229\u7684\u5c16\u5200"
+      ],
+      "english_definition": "sharp; keen; acute"
+    },
+    {
+      "id": "130c807a-1abf-46a1-aecf-5610d531dc65",
+      "word": "\u635e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5f1f\u5f1f\u7684\u8db3\u7403\u6389\u8fdb\u4e86\u5c0f\u6cb3\u91cc\uff0c\u4ed6\u60f3\u627e\u4eba\u5e2e\u4ed6\u628a\u8db3\u7403\u635e\u8d77\u6765\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to fish out, to scoop up"
+    },
+    {
+      "id": "702749a8-f27a-46ea-b473-636ae83389a2",
+      "word": "\u8bf4\u8c0e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u505a\u9519\u4e86\u4e8b\u5e94\u8be5\u4e3b\u52a8\u627f\u8ba4\u9519\u8bef\uff0c\u4e0d\u80fd\u8bf4\u8c0e\u6b3a\u9a97\u522b\u4eba\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to lie"
+    },
+    {
+      "id": "86d01394-77c4-45b9-9bbe-4844d2018a05",
+      "word": "\u575a\u56fa",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4e9b\u684c\u6905\u90fd\u5341\u5206\u575a\u56fa\uff0c\u56e0\u4e3a\u5b83\u4eec\u662f\u7279\u6b8a\u6750\u6599\u505a\u6210\u7684\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "strong, sturdy"
+    },
+    {
+      "id": "74bc48a5-1eb1-4aa2-8252-363ccb8d2ff0",
+      "word": "\u62b5\u6321",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5b69\u5b50\u4eec\u7684\u8863\u670d\u592a\u5355\u8584\u4e86\uff0c\u6839\u672c\u65e0\u6cd5\u62b5\u6321\u51ac\u65e5\u7684\u5bd2\u98ce\u3002"
+      ],
+      "word_building": [
+        "\u594b\u529b\u62b5\u6321",
+        "\u65e0\u6cd5\u62b5\u6321"
+      ],
+      "english_definition": "resist or withstand; unable to resist"
+    },
+    {
+      "id": "0520c72f-1898-4a15-b3f2-5b641fef618c",
+      "word": "\u54d1\u53e3\u65e0\u8a00",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u542c\u4e86\u8001\u5e08\u7684\u4e00\u756a\u8bdd\uff0c\u5c0f\u660e\u54d1\u53e3\u65e0\u8a00\uff0c\u7f9e\u6127\u5730\u4f4e\u4e0b\u4e86\u5934\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "speechless, unable to make any response or argument"
+    },
+    {
+      "id": "94851f8a-e4a5-41f3-ba15-c610066b485f",
+      "word": "\u5bf9\u6297",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u573a\u7f51\u7403\u6bd4\u8d5b\u5f88\u7cbe\u5f69\uff0c\u53cc\u65b9\u5bf9\u6297\u4e86\u6570\u5c0f\u65f6\u624d\u5206\u51fa\u80dc\u8d1f\u3002"
+      ],
+      "word_building": [
+        "\u5bf9\u6297\u654c\u4eba",
+        "\u53cc\u65b9\u5bf9\u6297"
+      ],
+      "english_definition": "resist, oppose, confront, challenge"
+    },
+    {
+      "id": "3f54f034-9130-4a29-bada-df7fecdb7981",
+      "word": "\u5fe0\u8bda",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u53e4\u4ee3\uff0c\u4e00\u4e9b\u5b98\u5458\u5bf9\u541b\u4e3b\u5341\u5206\u5fe0\u8bda\u3002"
+      ],
+      "word_building": [
+        "\u5bf9\u4eba\u5fe0\u8bda",
+        "\u5fe0\u8bda\u53ef\u9760\u8fd1\u4e49\u8bcd\u5fe0\u5fc3",
+        "\u5bf9\u4eba\u5fe0\u8bda",
+        "\u5fe0\u8bda\u53ef\u9760\u8fd1\u4e49\u8bcd\u5fe0\u5fc3"
+      ],
+      "english_definition": "Loyal"
+    },
+    {
+      "id": "4cc452ae-b1c2-4ecb-8874-d4c23d004ebe",
+      "word": "\u6770\u51fa",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7231\u8fea\u751f\u662f\u4e00\u4f4d\u6770\u51fa\u7684\u53d1\u660e\u5bb6\u3002"
+      ],
+      "word_building": [
+        "\u6770\u51fa\u8868\u73b0",
+        "\u6770\u51fa\u4eba\u624d"
+      ],
+      "english_definition": "outstanding"
+    },
+    {
+      "id": "3c446971-95e0-4aac-8735-093fddaa09bd",
+      "word": "\u667a\u6167",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u8981\u9605\u8bfb\u5404\u7c7b\u4e66\u7c4d\uff0c\u5f00\u9614\u89c6\u91ce\uff0c\u624d\u80fd\u6210\u4e3a\u6709\u667a\u6167\u7684\u4eba\u3002"
+      ],
+      "word_building": [
+        "\u6709\u667a\u6167",
+        "\u5145\u6ee1\u667a\u6167",
+        "\u667a\u6167\u8fc7\u4eba"
+      ],
+      "english_definition": "Wisdom"
+    },
+    {
+      "id": "4eb03047-065a-4e15-91f7-395a2e515852",
+      "word": "\u82f1\u4fca",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u7684\u54e5\u54e5\u4e0d\u4ec5\u957f\u76f8\u82f1\u4fca\uff0c\u800c\u4e14\u591a\u624d\u591a\u827a\u3002"
+      ],
+      "word_building": [
+        "\u82f1\u4fca\u5e05\u6c14",
+        "\u82f1\u4fca\u5c11\u5e74"
+      ],
+      "english_definition": "Handsome or good-looking."
+    },
+    {
+      "id": "c7c8a6ef-5a63-4346-8ad8-0f1613714c73",
+      "word": "\u5992\u5fcc",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u5e94\u8be5\u5411\u90a3\u4e9b\u6709\u624d\u80fd\u7684\u4eba\u865a\u5fc3\u5b66\u4e60\uff0c\u800c\u4e0d\u5e94\u8be5\u5992\u5fcc\u4ed6\u4eec\u3002"
+      ],
+      "word_building": [
+        "\u62db\u6765\u5992\u5fcc",
+        "\u60f9\u4eba\u5992\u5fcc",
+        "\u5992\u5fcc\u5fc3"
+      ],
+      "english_definition": "Jealousy"
+    },
+    {
+      "id": "096cf8a7-69de-4486-a658-8a1c425b5c4c",
+      "word": "\u8db3\u667a\u591a\u8c0b",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8bf8\u845b\u4eae\u8db3\u667a\u591a\u8c0b\uff0c\u56e0\u6b64\u53d7\u5230\u5218\u5907\u7684\u91cd\u7528\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "cunning and resourceful; full of wisdom and strategy"
+    },
+    {
+      "id": "885535b8-94d1-459b-a28a-00da063e6fff",
+      "word": "\u4e0d\u8c0b\u800c\u5408",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u548c\u660e\u534e\u4e0d\u8c0b\u800c\u5408\uff0c\u51b3\u5b9a\u4e00\u8d77\u53bb\u5e2e\u52a9\u90a3\u4f4d\u72ec\u5c45\u8001\u4eba\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Happen to agree or coincide without planning."
+    },
+    {
+      "id": "56ec8068-697c-417a-8e6b-01f730201ab8",
+      "word": "\u7518\u613f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5982\u679c\u8fd9\u6b21\u8bd5\u9a8c\u6ca1\u6709\u6210\u529f\uff0c\u6211\u7518\u613f\u627f\u62c5\u4e00\u5207\u540e\u679c\u3002"
+      ],
+      "word_building": [
+        "\u7518\u613f\u53d7\u7f5a",
+        "\u7518\u613f\u627f\u62c5"
+      ],
+      "english_definition": "willing to, be willing to"
+    },
+    {
+      "id": "53e05989-92d0-4c70-ab8c-67cd81b738b1",
+      "word": "\u53d7\u7f5a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u8fd9\u5bb6\u516c\u53f8\uff0c\u5982\u679c\u5458\u5de5\u5c61\u6b21\u8fdf\u5230\uff0c\u5c31\u8981\u53d7\u7f5a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to be punished"
+    },
+    {
+      "id": "cac373ad-ebef-4a5f-97fc-4a79d6734bc4",
+      "word": "\u62d6\u5ef6",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u5e94\u8be5\u517b\u6210\u505a\u4e8b\u60c5\u4e0d\u62d6\u5ef6\u7684\u597d\u4e60\u60ef\u3002"
+      ],
+      "word_building": [
+        "\u62d6\u5ef6\u65f6\u95f4",
+        "\u7edd\u4e0d\u62d6\u5ef6"
+      ],
+      "english_definition": "procrastination"
+    },
+    {
+      "id": "603ba022-3c0e-4170-9d87-6abbe1eb5a3a",
+      "word": "\u5429\u5490",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u6709\u4e8b\u8981\u5916\u51fa\uff0c\u5979\u5429\u5490\u6211\u5728\u5bb6\u7167\u987e\u5f1f\u5f1f\u3002"
+      ],
+      "word_building": [
+        "\u5429\u5490\u624b\u4e0b",
+        "\u5429\u5490\u4e8b\u60c5"
+      ],
+      "english_definition": "command, order, instruct"
+    },
+    {
+      "id": "32995471-7af0-475a-b967-0d30a28ea7d9",
+      "word": "\u903c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4ed6\u5df2\u7ecf\u8d70\u4e0d\u52a8\u4e86\uff0c\u4f60\u4eec\u4e0d\u8981\u518d\u903c\u4ed6\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "force or pressure someone in a relentless manner"
+    },
+    {
+      "id": "3b86b7ae-8084-4bb7-ae5d-c028085c730a",
+      "word": "\u50ac",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u773c\u770b\u8981\u8fdf\u5230\u4e86\uff0c\u5988\u5988\u4e0d\u505c\u5730\u50ac\u5f1f\u5f1f\uff0c\u8981\u4ed6\u8d76\u5feb\u51fa\u95e8\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "urge or press someone to do something quickly"
+    },
+    {
+      "id": "a94e1ae7-bdcd-45bc-93d4-d82a64eed84f",
+      "word": "\u57cb\u4f0f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u58eb\u5175\u4eec\u62c5\u5fc3\u524d\u65b9\u6709\u57cb\u4f0f\uff0c\u6240\u4ee5\u7279\u5730\u66f4\u6539\u4e86\u524d\u8fdb\u8def\u7ebf\u3002"
+      ],
+      "word_building": [
+        "\u6709\u57cb\u4f0f",
+        "\u9047\u5230\u57cb\u4f0f",
+        "\u8bbe\u4e0b\u57cb\u4f0f",
+        "\u4e2d\u4e86\u57cb\u4f0f"
+      ],
+      "english_definition": "ambush"
+    },
+    {
+      "id": "1f67bec7-014a-421c-aca5-d61149d1a865",
+      "word": "\u5b9a\u7f6a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6cd5\u5f8b\u662f\u516c\u6b63\u7684\uff0c\u90a3\u4e2a\u574f\u4eba\u7ec8\u4e8e\u88ab\u5b9a\u7f6a\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "To convict; to find someone guilty."
+    },
+    {
+      "id": "7cd33d13-2d35-43b2-af1c-5a4450702416",
+      "word": "\u9075\u547d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u6218\u573a\u4e0a\uff0c\u4e00\u65e6\u5c06\u519b\u4e0b\u8fbe\u547d\u4ee4\uff0c\u58eb\u5175\u4eec\u53ea\u80fd\u9075\u547d\u3002"
+      ],
+      "word_building": [
+        "\u9075\u547d\u884c\u4e8b",
+        "\u9075\u547d\u7167\u529e\u540c\u97f3\u5b57\u5c0a\u656c"
+      ],
+      "english_definition": "To obey or follow orders."
+    },
+    {
+      "id": "4ad79041-023f-4a70-89c8-898d6f075df8",
+      "word": "\u5c04",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u6253\u7b97\u5047\u671f\u53bb\u4ff1\u4e50\u90e8\u5b66\u4e60\u5c04\u51fb\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "shoot"
+    },
+    {
+      "id": "ccd7fd95-a164-4c50-b2e3-177ea9f28e72",
+      "word": "\u9ad8\u5cf0",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u5e0c\u671b\u81ea\u5df1\u957f\u5927\u540e\u80fd\u591f\u767b\u4e0a\u4e16\u754c\u7b2c\u4e00\u9ad8\u5cf0\u3002"
+      ],
+      "word_building": [
+        "\u767b\u4e0a\u9ad8\u5cf0",
+        "\u6500\u767b\u9ad8\u5cf0"
+      ],
+      "english_definition": "peak or summit"
+    },
+    {
+      "id": "95aa7293-ca28-44e9-9d9b-c35135607e92",
+      "word": "\u590f\u5b63",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u590f\u5b63\u662f\u4e00\u5e74\u5f53\u4e2d\u6700\u708e\u70ed\u7684\u5b63\u8282\u3002"
+      ],
+      "word_building": [
+        "\u590f\u5b63\u708e\u70ed"
+      ],
+      "english_definition": "summer"
+    },
+    {
+      "id": "f11ac401-56b8-4474-bcb8-8ad14ed363dc",
+      "word": "\u907f\u6691",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u5ea7\u5c71\u662f\u8457\u540d\u7684\u907f\u6691\u80dc\u5730\uff0c\u6bcf\u5e74\u590f\u5929\u4f1a\u6709\u5f88\u591a\u6e38\u5ba2\u524d\u5f80\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Avoiding summer heat"
+    },
+    {
+      "id": "0c8535f0-8043-4320-9a45-4c8dbdb5a9e3",
+      "word": "\u80dc\u5730",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5723\u6dd8\u6c99\u662f\u65b0\u52a0\u5761\u8457\u540d\u7684\u65c5\u6e38\u80dc\u5730\u3002"
+      ],
+      "word_building": [
+        "\u65c5\u6e38\u80dc\u5730",
+        "\u907f\u6691\u80dc\u5730"
+      ],
+      "english_definition": "tourist destination"
+    },
+    {
+      "id": "ed5a5df8-c1c2-4b39-8f00-c9666e516935",
+      "word": "\u503e\u6cfb",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7011\u5e03\u4ece\u9ad8\u5c71\u4e0a\u503e\u6cfb\u800c\u4e0b\uff0c\u5341\u5206\u58ee\u89c2\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "To pour down forcefully"
+    },
+    {
+      "id": "b4427bfc-cfaf-4240-85de-d4c6ff09e2ab",
+      "word": "\u8de8\u8d8a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5510\u50e7\u5e08\u5f92\u56db\u4eba\u8de8\u8d8a\u5343\u5c71\u4e07\u6c34\uff0c\u5386\u5c3d\u8270\u8f9b\uff0c\u7ec8\u4e8e\u6c42\u5f97\u771f\u7ecf\u3002"
+      ],
+      "word_building": [
+        "\u8de8\u8d8a\u680f\u6746",
+        "\u8de8\u8d8a\u969c\u788d"
+      ],
+      "english_definition": "to cross over; to leap over; to transcend"
+    },
+    {
+      "id": "a0d41d4d-b59e-4ed6-9ef2-04c08364c11a",
+      "word": "\u9707\u8033\u6b32\u804b",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5916\u9762\u4f20\u6765\u9707\u8033\u6b32\u804b\u7684\u54cd\u58f0\uff0c\u597d\u50cf\u662f\u53d1\u751f\u4e86\u7206\u70b8\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Extremely loud sound; deafening"
+    },
+    {
+      "id": "7fd9fe22-9c23-456b-8a13-ad51465dd99a",
+      "word": "\u6d41\u8fde\u5fd8\u8fd4",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u4e2a\u5c0f\u5c9b\u666f\u8272\u4f18\u7f8e\u3001\u7a7a\u6c14\u6e05\u65b0\uff0c\u8ba9\u6e38\u4eba\u6d41\u8fde\u5fd8\u8fd4\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "be reluctant to leave, want to stay indefinitely"
+    },
+    {
+      "id": "c2629185-2afd-4786-b8aa-ff7eee41f8f8",
+      "word": "\u5e73\u5766",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u6761\u9a6c\u8def\u7ecf\u8fc7\u4fee\u7b51\u540e\u53d8\u5f97\u5bbd\u9614\u53c8\u5e73\u5766\u3002"
+      ],
+      "word_building": [
+        "\u9053\u8def\u5e73\u5766",
+        "\u5e73\u5766\u5bbd\u9614"
+      ],
+      "english_definition": "flat and smooth"
+    },
+    {
+      "id": "c7630614-f4d7-4ad2-87d6-291722f8c892",
+      "word": "\u8986\u76d6",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u4e2a\u623f\u95f4\u5f88\u4e45\u6ca1\u4eba\u6253\u626b\u4e86\uff0c\u5730\u677f\u4e0a\u8986\u76d6\u7740\u4e00\u5c42\u539a\u539a\u7684\u7070\u5c18\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to cover or to overlay; coverage; covering layer"
+    },
+    {
+      "id": "a4006930-26b0-4660-8c26-a584a7bc89d4",
+      "word": "\u542b\u76d0\u91cf",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u814c\u5236\u98df\u7269\u7684\u542b\u76d0\u91cf\u5f88\u9ad8\uff0c\u591a\u5403\u4e0d\u5229\u4e8e\u8eab\u4f53\u5065\u5eb7\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "salt content"
+    },
+    {
+      "id": "500a84ea-a6ac-4c6f-a9a2-e20f9daa4cc3",
+      "word": "\u751a\u81f3",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4ed6\u7684\u534e\u6587\u57fa\u7840\u5f88\u5f31\uff0c\u751a\u81f3\u8fde\u4e00\u4e9b\u7b80\u5355\u7684\u8bcd\u8bed\u90fd\u8bfb\u4e0d\u51fa\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "even, or to the extent of"
+    },
+    {
+      "id": "6657432a-b1f9-49da-8cc9-490138f2376b",
+      "word": "\u5174\u81f4",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5c0f\u4e3d\u4e00\u5927\u65e9\u5c31\u5174\u81f4\u52c3\u52c3\u5730\u51fa\u53d1\u4e86\uff0c\u5979\u7ea6\u4e86\u670b\u53cb\u53bb\u91ce\u9910\u3002"
+      ],
+      "word_building": [
+        "\u5174\u81f4\u52c3\u52c3",
+        "\u6fc0\u53d1\u5174\u81f4"
+      ],
+      "english_definition": "enthusiasm"
+    },
+    {
+      "id": "01865e71-946f-41b8-a653-28bb89135fa0",
+      "word": "\u76ca\u5904",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u591a\u5403\u852c\u83dc\u548c\u6c34\u679c\u5bf9\u6211\u4eec\u7684\u8eab\u4f53\u6709\u76ca\u5904\u3002"
+      ],
+      "word_building": [
+        "\u6709\u76ca\u5904",
+        "\u6beb\u65e0\u76ca\u5904"
+      ],
+      "english_definition": "benefit, advantage, positive effect"
+    },
+    {
+      "id": "b858718b-9a99-41b0-a456-40d25ebacbe8",
+      "word": "\u6cbb\u7597",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7237\u7237\u7684\u75c5\u60c5\u5f88\u4e25\u91cd\uff0c\u4e00\u5b9a\u8981\u4f4f\u9662\u63a5\u53d7\u6cbb\u7597\u3002"
+      ],
+      "word_building": [
+        "\u63a5\u53d7\u6cbb\u7597",
+        "\u6cbb\u7597\u75be\u75c5"
+      ],
+      "english_definition": "treatment"
+    },
+    {
+      "id": "067df02f-9c9c-468b-a0c8-2bf77a00e852",
+      "word": "\u4e00\u80a1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4ece\u7a97\u5916\u98d8\u8fdb\u6765\u4e00\u80a1\u996d\u9999\uff0c\u6211\u731c\u4e00\u5b9a\u662f\u90bb\u5c45\u738b\u963f\u59e8\u5728\u716e\u665a\u9910\u3002"
+      ],
+      "word_building": [
+        "\u4e00\u80a1\u5473\u9053",
+        "\u4e00\u80a1\u9999\u6c14"
+      ],
+      "english_definition": "A scent or aroma."
+    },
+    {
+      "id": "d55f5009-f448-486b-9c40-f3d876d0a5bb",
+      "word": "\u6258",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u5750\u5728\u7a97\u524d\uff0c\u53cc\u624b\u6258\u7740\u4e0b\u5df4\uff0c\u6b23\u8d4f\u7740\u773c\u524d\u7684\u7f8e\u666f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to support or hold up with hands or arms"
+    },
+    {
+      "id": "81ec9d44-2289-4f90-a99e-3d2a6e08a551",
+      "word": "\u5389\u5bb3",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u521a\u521a\u4e0d\u5c0f\u5fc3\u8dcc\u5012\u4e86\uff0c\u73b0\u5728\u817f\u75bc\u5f97\u5f88\u5389\u5bb3\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "impressive or formidable"
+    },
+    {
+      "id": "f0b7c544-3271-4eec-b284-0403d00c4f46",
+      "word": "\u6162\u6027\u75be\u75c5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u73b0\u4ee3\u793e\u4f1a\uff0c\u5f88\u591a\u4eba\u6ca1\u6709\u826f\u597d\u7684\u751f\u6d3b\u4e60\u60ef\uff0c\u5f97\u6162\u6027\u75be\u75c5\u7684\u4eba\u8d8a\u6765\u8d8a\u591a\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Chronic disease."
+    },
+    {
+      "id": "ff116588-2d53-49c3-8aa8-3a2ca328562a",
+      "word": "\u5e45",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u4ece\u753b\u5c55\u4e0a\u4e70\u4e86\u4e00\u5e45\u753b\uff0c\u6302\u5728\u5ba2\u5385\u7684\u5899\u4e0a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "piece of cloth or painting; measure word for paintings."
+    },
+    {
+      "id": "962be6a3-f4f5-49eb-916f-d59cdf49ae33",
+      "word": "\u8d5a\u94b1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u662f\u4e00\u540d\u5fb7\u58eb\u53f8\u673a\uff0c\u6bcf\u5929\u90fd\u8f9b\u82e6\u5730\u505a\u5de5\uff0c\u8d5a\u94b1\u517b\u5bb6\u3002"
+      ],
+      "word_building": [
+        "\u8d5a\u94b1\u517b\u5bb6",
+        "\u8f9b\u82e6\u8d5a\u94b1"
+      ],
+      "english_definition": "to earn money"
+    },
+    {
+      "id": "9d756119-4aee-4022-9563-6846251bfd4e",
+      "word": "\u6284\u5199",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8001\u5e08\u5e03\u7f6e\u7684\u529f\u8bfe\u662f\u628a\u65b0\u5b66\u7684\u8bfe\u6587\u6284\u5199\u4e00\u904d\u3002"
+      ],
+      "word_building": [
+        "\u6284\u5199\u8bfe\u6587",
+        "\u6284\u5199\u53e5\u5b50"
+      ],
+      "english_definition": "To transcribe or copy by hand."
+    },
+    {
+      "id": "5a5ed2cc-b475-4ea6-adfc-5cdec9281614",
+      "word": "\u5370\u8c61",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u6b21\u7684\u5047\u671f\u65c5\u884c\u975e\u5e38\u6709\u610f\u601d\uff0c\u7ed9\u6211\u7559\u4e0b\u4e86\u6df1\u523b\u7684\u5370\u8c61\u3002"
+      ],
+      "word_building": [
+        "\u5370\u8c61\u6df1\u523b",
+        "\u5370\u8c61\u6a21\u7cca",
+        "\u52a0\u6df1\u5370\u8c61"
+      ],
+      "english_definition": "impression"
+    },
+    {
+      "id": "61f2145d-8a0c-4bbb-afd7-df1600a33c1d",
+      "word": "\u53c2\u4e0e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8001\u5e08\u5e0c\u671b\u540c\u5b66\u4eec\u90fd\u80fd\u79ef\u6781\u53c2\u4e0e\u5b66\u6821\u4e3e\u529e\u7684\u6d3b\u52a8\u3002"
+      ],
+      "word_building": [
+        "\u53c2\u4e0e\u6d3b\u52a8",
+        "\u79ef\u6781\u53c2\u4e0e"
+      ],
+      "english_definition": "to participate"
+    },
+    {
+      "id": "1ad25064-132c-4f36-9c62-1b150086716e",
+      "word": "\u8d21\u732e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u8981\u4ece\u5c0f\u52aa\u529b\u8bfb\u4e66\uff0c\u957f\u5927\u540e\u624d\u80fd\u4e3a\u793e\u4f1a\u505a\u51fa\u8d21\u732e\u3002"
+      ],
+      "word_building": [
+        "\u505a\u51fa\u8d21\u732e",
+        "\u5de8\u5927\u7684\u8d21\u732e",
+        "\u505a\u51fa\u8d21\u732e",
+        "\u5de8\u5927\u7684\u8d21\u732e"
+      ],
+      "english_definition": "Contribution."
+    },
+    {
+      "id": "a257a9e1-fa71-4327-972c-d5a091030d65",
+      "word": "\u5927\u53a6",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd1\u5e74\u6765\uff0c\u6211\u56fd\u7ecf\u6d4e\u53d1\u5c55\u8fc5\u901f\uff0c\u5f88\u591a\u9ad8\u697c\u5927\u53a6\u62d4\u5730\u800c\u8d77\u3002"
+      ],
+      "word_building": [
+        "\u653f\u5e9c\u5927\u53a6",
+        "\u9ad8\u697c\u5927\u53a6",
+        "\u5927\u53a6\u6797\u7acb"
+      ],
+      "english_definition": "skyscraper"
+    },
+    {
+      "id": "e70c6bed-8ee1-4b61-bde8-9f89eb19a594",
+      "word": "\u82e5\u6709\u6240\u601d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5979\u9759\u9759\u5730\u7ad9\u5728\u6e56\u8fb9\uff0c\u773c\u795e\u5fe7\u90c1\uff0c\u4e00\u526f\u82e5\u6709\u6240\u601d\u7684\u6837\u5b50\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "lost in thought"
+    },
+    {
+      "id": "e9f0dde0-ba5d-42fd-a250-897ebe28ee28",
+      "word": "\u65e0\u5fe7\u65e0\u8651",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4ed6\u975e\u5e38\u6000\u5ff5\u65e0\u5fe7\u65e0\u8651\u7684\u7ae5\u5e74\u65f6\u5149\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "carefree; worry-free"
+    },
+    {
+      "id": "c92f8583-384b-459c-9041-0e81d5299dc4",
+      "word": "\u4f4d\u7f6e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8bf7\u4f60\u544a\u8bc9\u6211\u8d85\u5e02\u7684\u4f4d\u7f6e\uff0c\u6211\u600e\u4e48\u4e5f\u627e\u4e0d\u5230\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "position, location"
+    },
+    {
+      "id": "5cb525c6-c037-48aa-b6e0-e9e2ded2283f",
+      "word": "\u8d70\u5eca",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u5e94\u8be5\u9075\u5b88\u5b66\u6821\u7684\u89c4\u5b9a\uff0c\u4e0d\u80fd\u5728\u8d70\u5eca\u91cc\u8ffd\u9010\u73a9\u95f9\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "hallway"
+    },
+    {
+      "id": "6b605fb9-d584-488c-8c61-b58cc8079824",
+      "word": "\u540a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u7528\u7ef3\u5b50\u628a\u82b1\u76c6\u540a\u8d77\u6765\uff0c\u6302\u5728\u9633\u53f0\u7684\u680f\u6746\u4e0a\u3002"
+      ],
+      "word_building": [
+        "\u540a\u8d77\u6765",
+        "\u540a\u4e0a\u53bb"
+      ],
+      "english_definition": "To hang; suspension using a rope."
+    },
+    {
+      "id": "737fcf59-5d2a-45a8-9615-4fb9005e408c",
+      "word": "\u51fa\u79df",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u53d4\u53d4\u5931\u4e1a\u4e86\uff0c\u4ed6\u51b3\u5b9a\u51fa\u79df\u5bb6\u91cc\u7684\u8001\u623f\u5b50\u8d5a\u53d6\u79df\u91d1\u3002"
+      ],
+      "word_building": [
+        "\u51fa\u79df\u623f\u5c4b",
+        "\u51fa\u79df\u5e97\u94fa"
+      ],
+      "english_definition": "to rent out; for rent; rental"
+    },
+    {
+      "id": "68ae6210-fac3-448b-9ab2-e2418121e2c4",
+      "word": "\u5429\u5490",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u5988\u5988\u51fa\u95e8\u524d\u5429\u5490\u6211\u5728\u5bb6\u8981\u7167\u987e\u597d\u5f1f\u5f1f\u3002"
+      ],
+      "word_building": [
+        "\u5429\u5490\u5b69\u5b50",
+        "\u5429\u5490\u4e8b\u60c5",
+        "\u5429\u5490\u624b\u4e0b"
+      ],
+      "english_definition": "issue instructions or give orders in Chinese"
+    },
+    {
+      "id": "2d74d1cb-eff9-4b68-8aaa-8fceb0673bd2",
+      "word": "\u644a\u5b50",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90bb\u5c45\u963f\u59e8\u5728\u5df4\u5239\u91cc\u79df\u4e86\u4e00\u4e2a\u644a\u5b50\u5356\u8863\u670d\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "A market stall."
+    },
+    {
+      "id": "a2f557c8-4136-4b84-ac8e-c8e0e981973a",
+      "word": "\u6d25\u6d25\u6709\u5473",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u672c\u540d\u8457\u5b9e\u5728\u592a\u597d\u770b\u4e86\uff0c\u6211\u770b\u5f97\u6d25\u6d25\u6709\u5473\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "To be fully engaged or absorbed in something."
+    },
+    {
+      "id": "1d17ee03-a570-4a3b-9d3a-861e53a41dd7",
+      "word": "\u5de6\u90bb\u53f3\u820d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u642c\u5bb6\u65f6\uff0c\u5de6\u90bb\u53f3\u820d\u90fd\u6765\u70ed\u5fc3\u5e2e\u5fd9\uff0c\u7236\u6bcd\u8fde\u8fde\u5411\u5927\u5bb6\u9053\u8c22\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "neighbors on the left and right"
+    },
+    {
+      "id": "09a2ee1a-44a9-44fd-ae7e-c0ad47992645",
+      "word": "\u634f\u4f4f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4ece\u53a8\u623f\u91cc\u98d8\u6765\u5f88\u5927\u7684\u6cb9\u70df\u5473\uff0c\u5f1f\u5f1f\u7acb\u523b\u7528\u624b\u634f\u4f4f\u9f3b\u5b50\u3002"
+      ],
+      "word_building": [
+        "\u634f\u4f4f\u9f3b\u5b50",
+        "\u7528\u624b\u634f\u4f4f"
+      ],
+      "english_definition": "hold with fingers"
+    },
+    {
+      "id": "a115733c-0855-4186-8f40-a9f91ed1f89d",
+      "word": "\u6241\u62c5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u8fc7\u53bb\uff0c\u4eba\u4eec\u5e38\u5e38\u7528\u6241\u62c5\u6311\u8d77\u4e24\u4e2a\u6c34\u6876\u53bb\u88c5\u6c34\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "a long stick used to carry things"
+    },
+    {
+      "id": "b54f5038-1a37-425f-8854-106a656c6d2a",
+      "word": "\u638f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u660e\u534e\u6253\u7b97\u4e70\u4e00\u4e2a\u5305\u5b50\u5403\uff0c\u4e00\u638f\u53e3\u888b\uff0c\u5374\u53d1\u73b0\u81ea\u5df1\u5fd8\u4e86\u5e26\u94b1\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "To take out or pull out."
+    },
+    {
+      "id": "3351ca76-5f02-4e87-a880-71e3de1c2094",
+      "word": "\u51a4\u6789",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u5341\u5206\u751f\u6c14\uff0c\u56e0\u4e3a\u5c0f\u660e\u51a4\u6789\u6211\u5077\u4e86\u4ed6\u7684\u94c5\u7b14\u76d2\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Injustice; wrongly accuse"
+    },
+    {
+      "id": "5016ad5e-0925-43a9-a656-4de582142f40",
+      "word": "\u680f\u6746",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5f53\u6211\u4eec\u8fc7\u9a6c\u8def\u65f6\uff0c\u5343\u4e07\u4e0d\u80fd\u4e3a\u4e86\u65b9\u4fbf\u800c\u8de8\u8d8a\u680f\u6746\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "fence; railing; guardrail"
+    },
+    {
+      "id": "a1b85675-5a33-492c-a095-1627aad4878d",
+      "word": "\u5a31\u4e50",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u5230\u5468\u672b\uff0c\u5988\u5988\u90fd\u4f1a\u5b89\u6392\u4e00\u4e9b\u5a31\u4e50\u8282\u76ee\uff0c\u8ba9\u5927\u5bb6\u653e\u677e\u5fc3\u60c5"
+      ],
+      "word_building": [],
+      "english_definition": "Entertainment."
+    },
+    {
+      "id": "30bc1aee-853b-484e-ad45-3aa514d5263c",
+      "word": "\u8bb2\u53e4",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u7ecf\u5e38\u7ed9\u6211\u4eec\u8bb2\u53e4\uff0c\u8ba9\u6211\u4eec\u77e5\u9053\u4e86\u5f88\u591a\u5386\u53f2\u6545\u4e8b\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "tell ancient stories"
+    },
+    {
+      "id": "ebb4b41e-a7a9-4c68-9966-13cb3437598a",
+      "word": "\u88c5\u9970",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u628a\u6211\u7684\u623f\u95f4\u88c5\u9970\u5f97\u6f02\u4eae\u6781\u4e86\u3002"
+      ],
+      "word_building": [
+        "\u88c5\u9970\u623f\u95f4",
+        "\u88c5\u9970\u7269"
+      ],
+      "english_definition": "decoration"
+    },
+    {
+      "id": "bcba1958-5d15-4cf1-bfad-cbf26d48d985",
+      "word": "\u7ffb\u817e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u65f6\uff0c\u4e00\u80a1\u6012\u706b\u5728\u6211\u5fc3\u4e2d\u7ffb\u817e\uff0c\u6211\u5b9e\u5728\u65e0\u6cd5\u63a7\u5236\u81ea\u5df1\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "surging or seething; boiling"
+    },
+    {
+      "id": "08700ff9-9402-4cf7-8d5f-606a08be94d3",
+      "word": "\u5e72\u88c2",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u4e2a\u5730\u65b9\u5df2\u7ecf\u5f88\u4e45\u6ca1\u6709\u4e0b\u96e8\u4e86\uff0c\u571f\u5730\u90fd\u5e72\u88c2\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to crack or split (due to dryness)"
+    },
+    {
+      "id": "148e227c-1601-4678-9535-1ea60a1240bd",
+      "word": "\u8352\u5e9f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u6700\u8fd1\u6c89\u8ff7\u4e8e\u7f51\u7edc\u6e38\u620f\uff0c\u8352\u5e9f\u4e86\u5b66\u4e1a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "neglect, abandon, or let something go to waste"
+    },
+    {
+      "id": "5e8334d2-1d15-4d38-8e34-5cb1a08a2b0c",
+      "word": "\u65e0\u8f9c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5f1f\u5f1f\u662f\u65e0\u8f9c\u7684\uff0c\u4ed6\u6ca1\u6709\u505a\u9519\u4e8b\uff0c\u4e0d\u5e94\u8be5\u88ab\u60e9\u7f5a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "innocent"
+    },
+    {
+      "id": "94b60ae9-ea18-4ca2-a63a-dc3d15ebd687",
+      "word": "\u4e00\u526f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5373\u4f7f\u53d7\u5230\u4e86\u6279\u8bc4\uff0c\u674e\u660e\u8fd8\u662f\u4e00\u526f\u6ee1\u4e0d\u5728\u4e4e\u7684\u6837\u5b50\u3002"
+      ],
+      "word_building": [
+        "\u4e00\u526f\u773c\u955c",
+        "\u4e00\u526f\u5f97\u610f\u7684\u6837\u5b50",
+        "\u4e00\u526f\u773c\u955c",
+        "\u4e00\u526f\u5f97\u610f\u7684\u6837\u5b50"
+      ],
+      "english_definition": "a pair or set of; a manner or appearance"
+    },
+    {
+      "id": "1bc88b3f-42f3-4db0-ad70-069c1ecf9713",
+      "word": "\u906d\u53d7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u53d4\u53d4\u7a81\u53d1\u91cd\u75c5\uff0c\u8eab\u5fc3\u90fd\u906d\u53d7\u4e86\u6781\u5927\u7684\u75db\u82e6\u3002"
+      ],
+      "word_building": [
+        "\u906d\u53d7\u75db\u82e6",
+        "\u906d\u53d7\u707e\u96be"
+      ],
+      "english_definition": "to suffer or endure something, to experience something negative"
+    },
+    {
+      "id": "fa24fa8e-2ea3-47a1-89c6-8448e943d8d6",
+      "word": "\u6b8b\u5fcd",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u4e9b\u8650\u5f85\u5c0f\u52a8\u7269\u7684\u4eba\u771f\u662f\u592a\u6b8b\u5fcd\u4e86\uff01"
+      ],
+      "word_building": [
+        "\u624b\u6bb5\u6b8b\u5fcd",
+        "\u884c\u4e3a\u6b8b\u5fcd",
+        "\u6b8b\u5fcd\u5730\u5bf9\u5f85"
+      ],
+      "english_definition": "Cruel or ruthless."
+    },
+    {
+      "id": "f7de265e-ab43-4309-b16c-19080d14a2e3",
+      "word": "\u6323\u624e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u5f3a\u5fcd\u7740\u75bc\u75db\uff0c\u6323\u624e\u7740\u7ad9\u4e86\u8d77\u6765\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to struggle or strive in agony or pain."
+    },
+    {
+      "id": "499d5656-1b50-47d2-bfb3-b569e6cb80cb",
+      "word": "\u56fa\u6267",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u59b9\u59b9\u5341\u5206\u56fa\u6267\uff0c\u4ece\u6765\u4e0d\u542c\u522b\u4eba\u7684\u529d\u544a\u3002"
+      ],
+      "word_building": [
+        "\u6027\u683c\u56fa\u6267"
+      ],
+      "english_definition": "Stubborn."
+    },
+    {
+      "id": "17bf02ac-a7b0-4c36-906c-60b0b3ff4674",
+      "word": "\u7206\u7af9",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5c0f\u65f6\u5019\uff0c\u6211\u4eec\u4e00\u5bb6\u4eba\u4f1a\u5728\u8fc7\u8282\u65f6\u71c3\u653e\u7206\u7af9\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "firecracker"
+    },
+    {
+      "id": "5ab03dd5-f2e5-4541-b04c-71d91cabc05f",
+      "word": "\u6743\u529b",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u53e4\u4ee3\uff0c\u7687\u5e1d\u62e5\u6709\u81f3\u9ad8\u65e0\u4e0a\u7684\u6743\u529b\u3002"
+      ],
+      "word_building": [
+        "\u62e5\u6709\u6743\u529b",
+        "\u83b7\u5f97\u6743\u529b"
+      ],
+      "english_definition": "power or authority"
+    },
+    {
+      "id": "fc0b2b42-ed3f-4cb3-90bf-d425ae99b2c2",
+      "word": "\u5141\u8bb8",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u8ba4\u4e3a\u6211\u548c\u5f1f\u5f1f\u5e74\u7eaa\u8fd8\u5c0f\uff0c\u4e0d\u5141\u8bb8\u6211\u4eec\u72ec\u81ea\u5916\u51fa\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "permit, allow, consent"
+    },
+    {
+      "id": "2e5e7476-0b24-4a08-a320-79931f849097",
+      "word": "\u7b4b\u75b2\u529b\u5c3d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u957f\u8dd1\u6bd4\u8d5b\u7ed3\u675f\u540e\uff0c\u5927\u5bb6\u90fd\u89c9\u5f97\u7b4b\u75b2\u529b\u5c3d\uff0c\u9700\u8981\u597d\u597d\u4f11\u606f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "exhausted, physically and mentally drained"
+    },
+    {
+      "id": "84fc07f6-2c2f-46ac-9326-adaade27c6de",
+      "word": "\u7f13\u7f13",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u9047\u5230\u4ea4\u901a\u5835\u585e\uff0c\u8f66\u961f\u53ea\u80fd\u7f13\u7f13\u5730\u5411\u524d\u884c\u9a76\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "slowly, gradually, gently, leisurely"
+    },
+    {
+      "id": "7b3c8e3b-c562-4f07-993b-7fee888faab9",
+      "word": "\u51fa\u7248\u793e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u662f\u4e00\u4e2a\u4e13\u95e8\u51fa\u7248\u534e\u6587\u4e66\u7c4d\u7684\u51fa\u7248\u793e\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "publishing house"
+    },
+    {
+      "id": "a6f53636-6fca-4e70-b0b2-3c1e7e59bbb9",
+      "word": "\u4ecb\u7ecd",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5b66\u957f\u4eec\u4e3a\u5c0f\u4e00\u65b0\u751f\u4ecb\u7ecd\u5b66\u6821\u60c5\u51b5\u3002"
+      ],
+      "word_building": [
+        "\u4ecb\u7ecd\u8bfe\u7a0b",
+        "\u4ecb\u7ecd\u4e66\u7c4d",
+        "\u76f8\u4e92\u4ecb\u7ecd"
+      ],
+      "english_definition": "to introduce"
+    },
+    {
+      "id": "0f06626c-956c-4d4a-94eb-55b01cb8e310",
+      "word": "\u76ee\u5f55",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u62ff\u5230\u4e00\u672c\u65b0\u4e66\u65f6\uff0c\u6211\u90fd\u4f1a\u5148\u6d4f\u89c8\u76ee\u5f55\uff0c\u4e86\u89e3\u4e3b\u8981\u5185\u5bb9\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "catalog"
+    },
+    {
+      "id": "66dfb8fd-2f68-41f8-a1a1-b44202301f57",
+      "word": "\u6587\u7ae0",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u5341\u5206\u559c\u6b22\u9605\u8bfb\u4e00\u4e9b\u62a5\u520a\u6742\u5fd7\u4e0a\u7684\u6587\u7ae0\u3002"
+      ],
+      "word_building": [
+        "\u9605\u8bfb\u6587\u7ae0"
+      ],
+      "english_definition": "Definition: article, essay, written work"
+    },
+    {
+      "id": "15d7db23-83f2-4d3e-87d8-84f8a39a1d80",
+      "word": "\u9875\u7801",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8001\u5e08\u8ba9\u540c\u5b66\u4eec\u770b\u6e05\u695a\u9875\u7801\uff0c\u628a\u4e66\u7ffb\u5230\u7b2c\u516b\u9875\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "page number"
+    },
+    {
+      "id": "4ca4a469-bb33-4334-b332-086087e6886f",
+      "word": "\u6717\u8bfb",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u6b21\u5b66\u4e86\u65b0\u8bfe\u6587\uff0c\u8001\u5e08\u90fd\u4f1a\u8981\u6c42\u6211\u4eec\u5927\u58f0\u5730\u6717\u8bfb\u51e0\u6b21\u3002"
+      ],
+      "word_building": [
+        "\u6717\u8bfb\u8bfe\u6587",
+        "\u6717\u8bfb\u8bd7\u6b4c"
+      ],
+      "english_definition": "to read aloud"
+    },
+    {
+      "id": "d1ea8581-1d1f-4fa6-bd37-93044d5c59a2",
+      "word": "\u5996\u9b54\u9b3c\u602a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u672c\u6545\u4e8b\u4e66\u91cc\u7684\u5996\u9b54\u9b3c\u602a\u7684\u5f62\u8c61\u90fd\u6bd4\u8f83\u53ef\u6015\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "supernatural creatures or monsters"
+    },
+    {
+      "id": "d21c199d-9281-40de-98ec-77e40b7fb6e3",
+      "word": "\u7533\u8bf7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5982\u679c\u5927\u5bb6\u5bf9\u8fd9\u6b21\u6d3b\u52a8\u611f\u5174\u8da3\uff0c\u53ef\u4ee5\u63d0\u524d\u4e0a\u7f51\u7533\u8bf7\u3002"
+      ],
+      "word_building": [
+        "\u4e0a\u7f51\u7533\u8bf7",
+        "\u63d0\u51fa\u7533\u8bf7",
+        "\u7533\u8bf7\u5956\u5b66\u91d1"
+      ],
+      "english_definition": "to apply for; application; apply; request; petition"
+    },
+    {
+      "id": "7ec842c1-65e1-4956-9f0b-fd6eb49e57cb",
+      "word": "\u83b7\u5f97",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7ecf\u8fc7\u52aa\u529b\u8bad\u7ec3\uff0c\u59d0\u59d0\u7ec8\u4e8e\u5728\u6e38\u6cf3\u6bd4\u8d5b\u4e2d\u83b7\u5f97\u7b2c\u4e00\u540d\u3002"
+      ],
+      "word_building": [
+        "\u83b7\u5f97\u5956\u52b1",
+        "\u83b7\u5f97\u6210\u529f",
+        "\u83b7\u5f97\u51a0\u519b"
+      ],
+      "english_definition": "to obtain; to acquire; to gain"
+    },
+    {
+      "id": "830606ea-5db2-4192-b0e2-06cecfd3d3f8",
+      "word": "\u8d2b\u7a77",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u867d\u7136\u7238\u7238\u5c0f\u65f6\u5019\u5bb6\u5883\u8d2b\u7a77\uff0c\u4f46\u4ed6\u5e76\u6ca1\u6709\u56e0\u6b64\u8352\u5e9f\u5b66\u4e1a\uff0c\u800c\u662f\u66f4\u52a0\u523b\u82e6\u52aa\u529b\u5730\u5b66\u4e60\u3002"
+      ],
+      "word_building": [
+        "\u8d2b\u7a77\u7684\u5bb6\u5ead",
+        "\u751f\u6d3b\u8d2b\u7a77"
+      ],
+      "english_definition": "poor; poverty; impoverished; destitute; needy; indigent"
+    },
+    {
+      "id": "5eaf7d40-509f-4647-b7ba-52537d8dd1a9",
+      "word": "\u591a\u4f59",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4f1a\u628a\u591a\u4f59\u7684\u96f6\u7528\u94b1\u90fd\u5b58\u8d77\u6765\uff0c\u4ee5\u540e\u53ef\u4ee5\u7528\u6765\u4e70\u4e00\u4e9b\u6587\u5177\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Excessive or superfluous; surplus."
+    },
+    {
+      "id": "7f0befd1-def9-4a0a-ab8f-5746cbd649f7",
+      "word": "\u5168\u795e\u8d2f\u6ce8",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u6b21\u4e0a\u534e\u6587\u8bfe\u65f6\uff0c\u6211\u90fd\u4f1a\u5168\u795e\u8d2f\u6ce8\u5730\u542c\u8001\u5e08\u8bb2\u8bfe\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to be completely absorbed or focused (on something)"
+    },
+    {
+      "id": "4d6aafff-99e5-4e9a-91e0-2c2fb16b901d",
+      "word": "\u60e7\u6015",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u9047\u5230\u56f0\u96be\uff0c\u6211\u4eec\u4e0d\u5e94\u8be5\u611f\u5230\u60e7\u6015\uff0c\u800c\u8981\u575a\u5f3a\u52c7\u6562\u5730\u9762\u5bf9\u3002"
+      ],
+      "word_building": [
+        "\u611f\u5230\u60e7\u6015",
+        "\u60e7\u6015\u56f0\u96be"
+      ],
+      "english_definition": "to fear or be afraid"
+    },
+    {
+      "id": "a0992582-b921-4a4e-9dcd-368c69c0ed93",
+      "word": "\u7cdf\u7cd5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u4e2a\u6751\u5e84\u906d\u9047\u4e86\u6d2a\u6c34\u7684\u88ad\u51fb\uff0c\u60c5\u51b5\u5341\u5206\u7cdf\u7cd5\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "terrible, awful"
+    },
+    {
+      "id": "f1bbc6da-9258-4a4a-b774-255dc7569c1c",
+      "word": "\u6682\u65f6",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7237\u7237\u7684\u75c5\u60c5\u867d\u7136\u597d\u8f6c\u4e86\uff0c\u4f46\u662f\u533b\u751f\u5efa\u8bae\u4ed6\u6682\u65f6\u4e0d\u8981\u51fa\u9662\uff0c\u8fd8\u8981\u591a\u89c2\u5bdf\u51e0\u5929\u3002"
+      ],
+      "word_building": [
+        "\u6682\u65f6\u505c\u6b62",
+        "\u6682\u65f6\u5173\u95ed"
+      ],
+      "english_definition": "temporarily"
+    },
+    {
+      "id": "e89957b5-3ca7-470b-bdb6-80b08ad5c335",
+      "word": "\u8bf1\u4eba",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u5bb6\u5e97\u91cc\u7684\u86cb\u7cd5\u770b\u8d77\u6765\u5341\u5206\u8bf1\u4eba\uff0c\u6211\u6253\u7b97\u4e70\u4e00\u5757\u6765\u5403\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "tempting"
+    },
+    {
+      "id": "1227df04-df7c-4546-a167-01d3b1f631de",
+      "word": "\u62c5\u5fe7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5976\u5976\u6700\u8fd1\u7684\u8eab\u4f53\u72b6\u51b5\u4e0d\u592a\u597d\uff0c\u8ba9\u7238\u7238\u5f88\u62c5\u5fe7\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "worried, concerned"
+    },
+    {
+      "id": "7b5e5999-559c-44f1-b04f-3825c2fc8a82",
+      "word": "\u7ffb\u8bd1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u6b3e\u624b\u673a\u8f6f\u4ef6\u53ef\u4ee5\u81ea\u52a8\u5c06\u82f1\u6587\u7ffb\u8bd1\u6210\u534e\u6587\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Translate"
+    },
+    {
+      "id": "0dfc530a-9d56-47a3-bf4c-672d4e0da931",
+      "word": "\u6ecb\u5473",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7531\u4e8e\u592a\u8fc7\u8f7b\u654c\uff0c\u54e5\u54e5\u5728\u7fbd\u6bdb\u7403\u6bd4\u8d5b\u4e2d\u5c1d\u5230\u4e86\u5931\u8d25\u7684\u6ecb\u5473\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "taste; flavor; feeling; experience"
+    },
+    {
+      "id": "c78b3269-deb8-4205-bc84-5a8ba1f0c3d2",
+      "word": "\u7bc7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3a\u4e86\u63d0\u9ad8\u4f5c\u6587\u6c34\u5e73\uff0c\u6211\u6bcf\u5468\u90fd\u4f1a\u81ea\u89c9\u5730\u5199\u4e00\u7bc7\u4f5c\u6587\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "piece, article, essay"
+    },
+    {
+      "id": "a3d2cfa6-39a2-48e5-a1a6-76f087288723",
+      "word": "\u7f69",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3a\u4e86\u9632\u6b62\u611f\u67d3\u75c5\u6bd2\uff0c\u6211\u4eec\u51fa\u95e8\u65f6\u4e00\u5b9a\u8981\u8bb0\u5f97\u6234\u53e3\u7f69\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "cover, hood, canopy, to protect or enclose"
+    },
+    {
+      "id": "708e7946-1520-4bdc-95e1-c52dd7e7ecb1",
+      "word": "\u6280\u672f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90a3\u4e2a\u5de5\u4eba\u6280\u672f\u9ad8\u8d85\u53c8\u5403\u82e6\u8010\u52b3\uff0c\u5f88\u5feb\u5f97\u5230\u4e86\u5347\u804c\u3002"
+      ],
+      "word_building": [
+        "\u79d1\u5b66\u6280\u672f",
+        "\u5b66\u4e60\u6280\u672f",
+        "\u6280\u672f\u9ad8\u8d85"
+      ],
+      "english_definition": "technology"
+    },
+    {
+      "id": "291ebdf3-931f-43d2-a932-3eb9b6154a6f",
+      "word": "\u641c\u7d22",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5982\u679c\u4f60\u60f3\u4e86\u89e3\u66f4\u591a\u7684\u4fe1\u606f\uff0c\u53ef\u4ee5\u5728\u7f51\u7edc\u4e0a\u8fdb\u884c\u641c\u7d22\u3002"
+      ],
+      "word_building": [
+        "\u4e0a\u7f51\u641c\u7d22",
+        "\u641c\u7d22\u7f6a\u72af",
+        "\u641c\u7d22\u8d44\u6599",
+        "\u641c\u7d22\u4fe1\u606f"
+      ],
+      "english_definition": "search"
+    },
+    {
+      "id": "b317b1a3-0ce1-4918-8f63-f7afa5188feb",
+      "word": "\u5835\u585e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7531\u4e8e\u9047\u5230\u4e86\u4ea4\u901a\u5835\u585e\uff0c\u7238\u7238\u4e0a\u73ed\u8fdf\u5230\u4e86\u3002"
+      ],
+      "word_building": [
+        "\u4ea4\u901a\u5835\u585e"
+      ],
+      "english_definition": "blockage or congestion; obstruction; to be blocked or congested"
+    },
+    {
+      "id": "b4f6bd4a-2901-4658-8c80-0e08bcd558c8",
+      "word": "\u822a\u884c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5f53\u8239\u53ea\u822a\u884c\u5728\u5927\u6d77\u4e0a\u65f6\uff0c\u603b\u4f1a\u9047\u5230\u4e00\u4e9b\u98ce\u6d6a\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "sailing or navigation"
+    },
+    {
+      "id": "e8ea10d1-c263-47e0-be97-c454d264976e",
+      "word": "\u9690\u5f62",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u76ee\u524d\uff0c\u4e16\u754c\u4e0a\u5f88\u591a\u56fd\u5bb6\u90fd\u5df2\u7ecf\u7814\u5236\u51fa\u4e86\u9690\u5f62\u98de\u673a\u3002"
+      ],
+      "word_building": [
+        "\u9690\u5f62\u773c\u955c"
+      ],
+      "english_definition": "invisible"
+    },
+    {
+      "id": "5905fcce-a2c6-4456-aaff-578923726ce4",
+      "word": "\u5e7b\u60f3",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u5e7b\u60f3\u7740\u81ea\u5df1\u6709\u4e00\u53cc\u7fc5\u8180\uff0c\u8ba9\u6211\u5728\u5929\u7a7a\u4e2d\u81ea\u7531\u81ea\u5728\u5730\u98de\u7fd4\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "fantasy or imagination"
+    },
+    {
+      "id": "81d91274-713b-4f96-b19d-c9a807a9b899",
+      "word": "\u8c03\u8282",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3a\u4e86\u8c03\u8282\u665a\u4f1a\u7684\u6c14\u6c1b\uff0c\u4e3b\u6301\u4eba\u63d0\u8bae\u5927\u5bb6\u4e00\u8d77\u73a9\u4e00\u4e9b\u5c0f\u6e38\u620f\u3002"
+      ],
+      "word_building": [
+        "\u8c03\u8282\u6e29\u5ea6",
+        "\u8c03\u8282\u6c14\u6c1b",
+        "\u8c03\u8282\u6e29\u5ea6",
+        "\u8c03\u8282\u6c14\u6c1b"
+      ],
+      "english_definition": "adjust or regulate"
+    },
+    {
+      "id": "f8a11d40-f239-4f66-a46c-4c4eeff323e9",
+      "word": "\u9010\u6e10",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u8001\u5e08\u7684\u6089\u5fc3\u6559\u5bfc\u4e0b\uff0c\u6211\u7684\u534e\u6587\u6210\u7ee9\u9010\u6e10\u8fdb\u6b65\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "gradually"
+    },
+    {
+      "id": "cc0ba7ce-e0e4-45ff-9d1f-915f7f268b3c",
+      "word": "\u77a7\u89c1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u521a\u521a\u77a7\u89c1\u6709\u4eba\u5077\u62ff\u4e86\u73a9\u5177\u5e97\u91cc\u7684\u73a9\u5177\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "To see."
+    },
+    {
+      "id": "134da51d-74af-4314-bee5-be62e1154ddb",
+      "word": "\u7a83\u7a83\u79c1\u8bed",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u542c\u5230\u8fd9\u4e2a\u6d88\u606f\u540e\uff0c\u540c\u5b66\u4eec\u90fd\u5f00\u59cb\u7a83\u7a83\u79c1\u8bed\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "whispering; murmuring in hushed tones"
+    },
+    {
+      "id": "d7d02d7b-1b19-4ced-a9c5-31d9bcf25248",
+      "word": "\u80c0",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5c0f\u660e\u4e00\u53e3\u6c14\u559d\u5b8c\u4e86\u6574\u74f6\u6c7d\u6c34\uff0c\u4ed6\u89c9\u5f97\u809a\u5b50\u597d\u80c0\u3002"
+      ],
+      "word_building": [
+        "\u809a\u5b50\u80c0",
+        "\u81a8\u80c0"
+      ],
+      "english_definition": "swollen or bloated"
+    },
+    {
+      "id": "1b16d750-e293-4e89-a5a4-31d48de776a2",
+      "word": "\u786e\u5b9a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u8fd8\u6709\u5f88\u591a\u5de5\u4f5c\u8981\u505a\uff0c\u4ed6\u4e0d\u786e\u5b9a\u4ec0\u4e48\u65f6\u95f4\u53ef\u4ee5\u56de\u5bb6\u3002"
+      ],
+      "word_building": [
+        "\u65e0\u6cd5\u786e\u5b9a",
+        "\u975e\u5e38\u786e\u5b9a"
+      ],
+      "english_definition": "to determine"
+    },
+    {
+      "id": "b7bee7f4-5278-402e-90e4-6542eaec3339",
+      "word": "\u63c9",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u5c3d\u91cf\u4e0d\u8981\u7528\u624b\u63c9\u773c\u775b\uff0c\u907f\u514d\u611f\u67d3\u7ec6\u83cc\u3002"
+      ],
+      "word_building": [
+        "\u63c9\u773c\u775b",
+        "\u63c9\u809a\u5b50",
+        "\u63c9\u6413"
+      ],
+      "english_definition": "rub, massage, knead"
+    },
+    {
+      "id": "d0db3d45-6ea7-4728-a575-736f30811fe1",
+      "word": "\u65e0\u5948",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u4e0d\u542c\u5976\u5976\u7684\u529d\u544a\uff0c\u975e\u8981\u73a9\u7535\u8111\u6e38\u620f\uff0c\u5976\u5976\u89c9\u5f97\u5f88\u65e0\u5948\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "helpless, have no choice, no alternative"
+    },
+    {
+      "id": "5a434d82-b415-4dfe-ace5-e9937ecdd23c",
+      "word": "\u5782\u5934\u4e27\u6c14",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u54e5\u54e5\u6ca1\u6709\u5f97\u5230\u4ed6\u60f3\u8981\u7684\u793c\u7269\uff0c\u5782\u5934\u4e27\u6c14\u5730\u8d70\u56de\u4e86\u623f\u95f4\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "feeling down; dejected."
+    },
+    {
+      "id": "e7ab006f-2620-4bbb-aa7e-e723deb885b6",
+      "word": "\u6070\u597d",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u4e70\u4e86\u4e00\u4ef6\u65b0\u8863\u670d\u7ed9\u6211\uff0c\u6070\u597d\u5c31\u662f\u6211\u559c\u6b22\u7684\u6b3e\u5f0f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "precisely or exactly"
+    },
+    {
+      "id": "716cd65d-87af-41b2-b293-a2fca35978d0",
+      "word": "\u89e6\u78b0",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u535a\u7269\u9986\u91cc\uff0c\u6211\u4eec\u4e0d\u53ef\u4ee5\u89e6\u78b0\u4efb\u4f55\u7684\u5c55\u54c1\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "touch; come into contact with something"
+    },
+    {
+      "id": "34f65ad5-cdb3-4539-8ce6-2e4aebc6fef0",
+      "word": "\u50a8\u5b58",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u79cb\u5929\uff0c\u519c\u6c11\u4eec\u4f1a\u628a\u4e30\u6536\u7684\u7cae\u98df\u50a8\u5b58\u5728\u4ed3\u5e93\u91cc\u3002"
+      ],
+      "word_building": [
+        "\u50a8\u5b58\u98df\u7269",
+        "\u50a8\u5b58\u4fe1\u606f"
+      ],
+      "english_definition": "to store, storage, to save; noun: storage"
+    },
+    {
+      "id": "0ec4eecb-ad14-47a1-b6a4-314564d47ffd",
+      "word": "\u8214",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5c0f\u72d7\u559d\u5b8c\u4e86\u8089\u6c64\uff0c\u628a\u76d8\u5b50\u8214\u5f97\u975e\u5e38\u5e72\u51c0\u3002"
+      ],
+      "word_building": [
+        "\u8214\u5634\u5507"
+      ],
+      "english_definition": "to lick or to lap with the tongue"
+    },
+    {
+      "id": "9c927db4-5fd4-4d5e-9136-3d606dfdebeb",
+      "word": "\u6643\u8361",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u59d0\u59d0\u7684\u8fab\u5b50\u53c8\u7c97\u53c8\u957f\uff0c\u5782\u5728\u80cc\u540e\uff0c\u4e0d\u505c\u5730\u6643\u8361\u3002"
+      ],
+      "word_building": [
+        "\u5de6\u53f3\u6643\u8361"
+      ],
+      "english_definition": "sway, swing"
+    },
+    {
+      "id": "b5aba443-6001-49fc-b4c4-bdb284e21e8c",
+      "word": "\u6bd5\u4e1a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3d\u6587\u9a6c\u4e0a\u8981\u5c0f\u516d\u6bd5\u4e1a\u4e86\uff0c\u5979\u5341\u5206\u820d\u4e0d\u5f97\u5979\u7684\u540c\u5b66\u548c\u8001\u5e08\u3002"
+      ],
+      "word_building": [
+        "\u6bd5\u4e1a\u4f1a\u8003",
+        "\u6bd5\u4e1a\u5178\u793c",
+        "\u5c0f\u5b66\u6bd5\u4e1a"
+      ],
+      "english_definition": "to graduate"
+    },
+    {
+      "id": "d985a0b1-2b94-4b6c-ac69-0d130658f55f",
+      "word": "\u5c4a",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u662f\u5b66\u6821\u7b2c\u4e00\u5c4a\u53c2\u52a0\u6bd5\u4e1a\u4f1a\u8003\u7684\u5b66\u751f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "occasion, session, session of a conference, gathering"
+    },
+    {
+      "id": "1e8ca898-3a3a-4ef1-a7ab-3ab109f9e3a1",
+      "word": "\u8bda\u6073",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6797\u4f2f\u4f2f\u5f85\u4eba\u8bda\u6073\u3001\u70ed\u5fc3\u53cb\u5584\uff0c\u90bb\u5c45\u4eec\u90fd\u5341\u5206\u5c0a\u656c\u4ed6\u3002"
+      ],
+      "word_building": [
+        "\u6001\u5ea6\u8bda\u6073",
+        "\u5f85\u4eba\u8bda\u6073"
+      ],
+      "english_definition": "Sincere, honest, earnest, frank, straightforward."
+    },
+    {
+      "id": "8518a911-ce57-45b5-8ad1-7235c259a629",
+      "word": "\u9080\u8bf7",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u59d0\u59d0\u9080\u8bf7\u4e86\u5f88\u591a\u670b\u53cb\u6765\u53c2\u52a0\u5979\u7684\u751f\u65e5\u4f1a\u3002"
+      ],
+      "word_building": [
+        "\u9080\u8bf7\u5361",
+        "\u63a5\u53d7\u9080\u8bf7",
+        "\u62d2\u7edd\u9080\u8bf7",
+        "\u8bda\u6073\u9080\u8bf7"
+      ],
+      "english_definition": "invite"
+    },
+    {
+      "id": "472a06fe-1eb1-4a5f-b3dd-12163277e60d",
+      "word": "\u4eea\u5f0f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bcf\u5929\u65e9\u4e0a\uff0c\u5b66\u6821\u90fd\u4f1a\u51c6\u65f6\u4e3e\u884c\u5347\u65d7\u4eea\u5f0f\u3002"
+      ],
+      "word_building": [
+        "\u4eea\u5f0f\u9686\u91cd",
+        "\u5347\u65d7\u4eea\u5f0f",
+        "\u9881\u5956\u4eea\u5f0f"
+      ],
+      "english_definition": "ceremony, ritual"
+    },
+    {
+      "id": "33959058-6137-43ca-892f-c0cf3121b378",
+      "word": "\u9881\u53d1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6bd5\u4e1a\u5178\u793c\u4e0a\uff0c\u6821\u957f\u4eb2\u81ea\u4e3a\u6bcf\u4e00\u4f4d\u6bd5\u4e1a\u751f\u9881\u53d1\u8bc1\u4e66\u3002"
+      ],
+      "word_building": [
+        "\u9881\u53d1\u8bc1\u4e66",
+        "\u9881\u53d1\u5956\u54c1"
+      ],
+      "english_definition": "award, present, issue"
+    },
+    {
+      "id": "92295dda-4f69-426a-b120-f2572bf0098b",
+      "word": "\u72ec\u594f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u5373\u5c06\u6765\u4e34\u7684\u65b0\u5e74\u5e86\u795d\u4f1a\u4e0a\uff0c\u6211\u5c06\u4e0a\u53f0\u8868\u6f14\u94a2\u7434\u72ec\u594f\u3002"
+      ],
+      "word_building": [
+        "\u94a2\u7434\u72ec\u594f",
+        "\u72ec\u594f\u6f14\u5458"
+      ],
+      "english_definition": "Solo performance on a musical instrument."
+    },
+    {
+      "id": "a3cab854-ae0a-41a7-9e6d-520b7cbdb15e",
+      "word": "\u6717\u8bf5",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4e3a\u6d3b\u8dc3\u540c\u5b66\u4eec\u7684\u8bfe\u4f59\u751f\u6d3b\uff0c\u5b66\u6821\u6210\u7acb\u4e86\u6717\u8bf5\u5c0f\u7ec4\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "recite or read aloud in a clear voice"
+    },
+    {
+      "id": "9cf588b9-8dd3-46cd-adb7-d67402f4f02d",
+      "word": "\u6e29\u99a8",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fc7\u8282\u65f6\uff0c\u4eb2\u4eba\u4eec\u805a\u5728\u4e00\u8d77\u5403\u996d\u804a\u5929\uff0c\u8ba9\u6211\u611f\u5230\u5f88\u6e29\u99a8\u3002"
+      ],
+      "word_building": [
+        "\u6e29\u99a8\u63d0\u9192",
+        "\u611f\u5230\u6e29\u99a8"
+      ],
+      "english_definition": "Warm and cozy"
+    },
+    {
+      "id": "62827b1a-1e15-4aa8-bd9b-1b263cfa9efe",
+      "word": "\u670d\u52a1",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8fd9\u5bb6\u9910\u5385\u670d\u52a1\u5468\u5230\uff0c\u53d7\u5230\u987e\u5ba2\u7684\u597d\u8bc4\u3002"
+      ],
+      "word_building": [
+        "\u4ea4\u901a\u670d\u52a1",
+        "\u670d\u52a1\u5468\u5230",
+        "\u70ed\u60c5\u670d\u52a1"
+      ],
+      "english_definition": "providing service or serving customers in a satisfactory manner"
+    },
+    {
+      "id": "9eeda955-198f-4482-85c8-8ef5e2306d68",
+      "word": "\u5631\u5490",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5988\u5988\u518d\u4e09\u5631\u5490\u6211\u51fa\u95e8\u5728\u5916\u8981\u6ce8\u610f\u5b89\u5168\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to repeatedly instruct or remind; to admonish"
+    },
+    {
+      "id": "51c739eb-5c5e-491a-9833-317e3d03f2ac",
+      "word": "\u5173\u952e",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8003\u524d\u8ba4\u771f\u590d\u4e60\u662f\u8003\u8bd5\u53d6\u5f97\u597d\u6210\u7ee9\u7684\u5173\u952e\u4e00\u6b65\u3002"
+      ],
+      "word_building": [
+        "\u5173\u952e\u95ee\u9898",
+        "\u5173\u952e\u65f6\u523b",
+        "\u5173\u952e\u4eba\u7269"
+      ],
+      "english_definition": "key, crucial, critical"
+    },
+    {
+      "id": "676cf071-1e4d-479f-9d30-2f0095939463",
+      "word": "\u7edd",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u9762\u5bf9\u518d\u5927\u7684\u56f0\u96be\uff0c\u6211\u4e5f\u7edd\u4e0d\u4f1a\u653e\u5f03\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "absolutely not giving up"
+    },
+    {
+      "id": "3ec83ce4-f6a4-4bd0-aa2b-be96f825b71a",
+      "word": "\u7fa1\u6155",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u738b\u5976\u5976\u7684\u5b50\u5973\u90fd\u5f88\u5b5d\u987a\u61c2\u4e8b\uff0c\u4ee4\u90bb\u5c45\u4eec\u5341\u5206\u7fa1\u6155\u3002"
+      ],
+      "word_building": [
+        "\u4ee4\u4eba\u7fa1\u6155",
+        "\u7fa1\u6155\u4e0d\u5df2"
+      ],
+      "english_definition": "to envy or be envious"
+    },
+    {
+      "id": "77ee68ff-a1fa-4dc3-b84d-e1fca4dd4d8e",
+      "word": "\u5f7b\u5e95",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5047\u671f\u7684\u65f6\u5019\uff0c\u6211\u628a\u81ea\u5df1\u7684\u623f\u95f4\u5f7b\u5e95\u6253\u626b\u4e86\u4e00\u904d\u3002"
+      ],
+      "word_building": [
+        "\u5f7b\u5e95\u653e\u5f03",
+        "\u5f7b\u5e95\u8d76\u8d70"
+      ],
+      "english_definition": "completely or thoroughly"
+    },
+    {
+      "id": "5fad02c4-6bca-4ded-baed-1a65fd98c454",
+      "word": "\u7814\u7a76",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7ecf\u8fc7\u6df1\u5165\u7814\u7a76\uff0c\u79d1\u5b66\u5bb6\u4eec\u7ec8\u4e8e\u6709\u4e86\u91cd\u5927\u53d1\u73b0\u3002"
+      ],
+      "word_building": [
+        "\u8fdb\u884c\u7814\u7a76",
+        "\u79d1\u5b66\u7814\u7a76",
+        "\u6df1\u5165\u7814\u7a76"
+      ],
+      "english_definition": "to study in depth"
+    },
+    {
+      "id": "e93a9650-869a-4d1e-88cd-01b0fbdc8398",
+      "word": "\u5b9e\u9a8c",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5728\u79d1\u5b66\u8bfe\u4e0a\uff0c\u8001\u5e08\u7ecf\u5e38\u5e26\u9886\u540c\u5b66\u4eec\u4e00\u8d77\u505a\u5b9e\u9a8c\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "experiment"
+    },
+    {
+      "id": "c352c5b3-f708-48af-9892-907c0183a134",
+      "word": "\u75d5\u8ff9",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u5976\u5976\u544a\u8bc9\u6211\uff0c\u5979\u989d\u5934\u4e0a\u7684\u76b1\u7eb9\u662f\u5c81\u6708\u7684\u75d5\u8ff9\u3002"
+      ],
+      "word_building": [
+        "\u7559\u4e0b\u75d5\u8ff9",
+        "\u75d5\u8ff9\u6a21\u7cca",
+        "\u75d5\u8ff9\u660e\u663e"
+      ],
+      "english_definition": "a mark or trace left by something"
+    },
+    {
+      "id": "141cfed6-4272-41a1-bd2b-7840b6b34b31",
+      "word": "\u7a0d\u5fae",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u8001\u5e08\u89c9\u5f97\u6211\u7684\u4f5c\u6587\u8fdb\u6b65\u5f88\u5927\uff0c\u53ea\u8981\u7a0d\u5fae\u4fee\u6539\u4e00\u4e0b\u5c31\u53ef\u4ee5\u4e86\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "a little"
+    },
+    {
+      "id": "5dd61ba4-c60d-4f42-b684-d6a32e5b7e6a",
+      "word": "\u53ec\u5524",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6d77\u98ce\u547c\u547c\u5730\u5439\uff0c\u597d\u50cf\u5728\u53ec\u5524\u6d77\u4e0a\u7684\u8239\u53ea\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "to summon, to call forth, to evoke"
+    },
+    {
+      "id": "c841e04b-9b74-4863-bf90-168af69ea3ea",
+      "word": "\u5bc2\u5bde",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u7238\u7238\u5988\u5988\u51fa\u56fd\u5de5\u4f5c\u4e86\uff0c\u6211\u4e00\u4e2a\u4eba\u5728\u5bb6\u611f\u5230\u5f88\u5bc2\u5bde\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Feeling lonely or lonely"
+    },
+    {
+      "id": "ea5ecff0-cbb4-41b1-9530-3dc8f78dad4a",
+      "word": "\u6052\u5fc3",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u4ed6\u662f\u4e2a\u65e2\u52aa\u529b\u53c8\u6709\u6052\u5fc3\u7684\u4eba\uff0c\u6240\u4ee5\u624d\u80fd\u53d6\u5f97\u6210\u529f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "perseverance"
+    },
+    {
+      "id": "9508380a-85c1-49ab-9883-22e081a051a4",
+      "word": "\u5b88\u671b",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u90bb\u5c45\u4e4b\u95f4\u5e94\u5f53\u53cb\u597d\u76f8\u5904\uff0c\u5b88\u671b\u76f8\u52a9\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "watch over, keep vigil, be on guard"
+    },
+    {
+      "id": "e99f0e4d-5bee-4626-a965-a90071e38c64",
+      "word": "\u534a\u9014\u800c\u5e9f",
+      "isHCL": true,
+      "definition": "",
+      "model_sentences": [
+        "\u6211\u4eec\u505a\u4e8b\u60c5\u8981\u6709\u59cb\u6709\u7ec8\uff0c\u4e0d\u80fd\u534a\u9014\u800c\u5e9f\u3002"
+      ],
+      "word_building": [],
+      "english_definition": "Give up halfway."
+    }
+  ]
+}

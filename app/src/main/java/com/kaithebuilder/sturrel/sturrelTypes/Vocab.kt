@@ -1,15 +1,19 @@
 package com.kaithebuilder.sturrel.sturrelTypes
 
+import com.google.gson.annotations.SerializedName
 import java.util.*
 
 data class Vocab(
     val id: UUID = UUID.randomUUID(),
-    val word: String,
-    val isHCL: Boolean,
-    val englishDefinition: String,
-    val definition: String,
-    val sentences: List<String>,
-    val wordBuilding: List<String>
+    var word: String,
+    var isHCL: Boolean,
+    @SerializedName("english_definition")
+    var englishDefinition: String,
+    var definition: String,
+    @SerializedName("model_sentences")
+    var sentences: List<String>,
+    @SerializedName("word_building")
+    var wordBuilding: List<String>
 ) {
 
 }

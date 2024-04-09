@@ -67,6 +67,46 @@ private fun VocabDetailViewContents(
                         modifier = Modifier.padding(start = 15.dp, top = 30.dp),
                         color = Color.Gray
                     )
+                    if (vocab.englishDefinition.isNotEmpty()) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(15.dp)
+                        ) {
+                            Text(
+                                text = vocab.englishDefinition,
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                        Divider()
+                    }
+                    if (vocab.definition.isNotEmpty()) {
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(15.dp)
+                        ) {
+                            Text(
+                                text = vocab.definition,
+                                modifier = Modifier.weight(1f)
+                            )
+                        }
+                        Divider()
+                    }
+                }
+            }
+
+            if (vocab.sentences.isNotEmpty()) {
+                item {
+                    Text(
+                        text = "Sentences",
+                        modifier = Modifier.padding(start = 15.dp, top = 30.dp),
+                        color = Color.Gray
+                    )
+                }
+                items(vocab.sentences) { sentence ->
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier
@@ -74,11 +114,23 @@ private fun VocabDetailViewContents(
                             .padding(15.dp)
                     ) {
                         Text(
-                            text = vocab.englishDefinition,
+                            text = sentence,
                             modifier = Modifier.weight(1f)
                         )
                     }
                     Divider()
+                }
+            }
+
+            if (vocab.wordBuilding.isNotEmpty()) {
+                item {
+                    Text(
+                        text = "Words",
+                        modifier = Modifier.padding(start = 15.dp, top = 30.dp),
+                        color = Color.Gray
+                    )
+                }
+                items(vocab.wordBuilding) { word ->
                     Row(
                         verticalAlignment = Alignment.CenterVertically,
                         modifier = Modifier
@@ -86,56 +138,12 @@ private fun VocabDetailViewContents(
                             .padding(15.dp)
                     ) {
                         Text(
-                            text = vocab.definition,
+                            text = word,
                             modifier = Modifier.weight(1f)
                         )
                     }
                     Divider()
                 }
-            }
-
-            item {
-                Text(
-                    text = "Sentences",
-                    modifier = Modifier.padding(start = 15.dp, top = 30.dp),
-                    color = Color.Gray
-                )
-            }
-            items(vocab.sentences) { sentence ->
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(15.dp)
-                ) {
-                    Text(
-                        text = sentence,
-                        modifier = Modifier.weight(1f)
-                    )
-                }
-                Divider()
-            }
-
-            item {
-                Text(
-                    text = "Words",
-                    modifier = Modifier.padding(start = 15.dp, top = 30.dp),
-                    color = Color.Gray
-                )
-            }
-            items(vocab.wordBuilding) { word ->
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(15.dp)
-                ) {
-                    Text(
-                        text = word,
-                        modifier = Modifier.weight(1f)
-                    )
-                }
-                Divider()
             }
         }
     }

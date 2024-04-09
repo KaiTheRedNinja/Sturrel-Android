@@ -50,42 +50,46 @@ private fun FolderListViewContents(
                 .fillMaxWidth()
                 .padding(all = 10.dp)
         ) {
-            item {
-                Text(
-                    text = "Folders",
-                    modifier = Modifier.padding(start = 15.dp, top = 30.dp),
-                    color = Color.Gray
-                )
-            }
-            items(folder.subfolders) { uuid ->
-                Box(
-                    modifier = Modifier.clickable {
-                        println("UUID: $uuid")
-                        nav.navigate("folder/$uuid")
-                    }
-                ) {
-                    FolderListPreview(id = uuid)
+            if (folder.subfolders.isNotEmpty()) {
+                item {
+                    Text(
+                        text = "Folders",
+                        modifier = Modifier.padding(start = 15.dp, top = 30.dp),
+                        color = Color.Gray
+                    )
                 }
-                Divider()
+                items(folder.subfolders) { uuid ->
+                    Box(
+                        modifier = Modifier.clickable {
+                            println("UUID: $uuid")
+                            nav.navigate("folder/$uuid")
+                        }
+                    ) {
+                        FolderListPreview(id = uuid)
+                    }
+                    Divider()
+                }
             }
 
-            item {
-                Text(
-                    text = "Vocab",
-                    modifier = Modifier.padding(start = 15.dp, top = 30.dp),
-                    color = Color.Gray
-                )
-            }
-            items(folder.vocab) { uuid ->
-                Box(
-                    modifier = Modifier.clickable {
-                        println("UUID: $uuid")
-                        nav.navigate("vocab/$uuid")
-                    }
-                ) {
-                    VocabListPreview(id = uuid)
+            if (folder.vocab.isNotEmpty()) {
+                item {
+                    Text(
+                        text = "Vocab",
+                        modifier = Modifier.padding(start = 15.dp, top = 30.dp),
+                        color = Color.Gray
+                    )
                 }
-                Divider()
+                items(folder.vocab) { uuid ->
+                    Box(
+                        modifier = Modifier.clickable {
+                            println("UUID: $uuid")
+                            nav.navigate("vocab/$uuid")
+                        }
+                    ) {
+                        VocabListPreview(id = uuid)
+                    }
+                    Divider()
+                }
             }
         }
     }

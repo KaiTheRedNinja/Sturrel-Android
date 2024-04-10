@@ -3,14 +3,11 @@ package com.kaithebuilder.sturrel.ui.quiz
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
-import androidx.compose.material3.Divider
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.Icon
@@ -24,7 +21,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.ViewModel
 import androidx.navigation.NavHostController
@@ -33,9 +29,12 @@ import com.kaithebuilder.sturrel.base.sturrelTypes.Vocab
 import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Quiz
+import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.ui.components.ListItem
+import com.kaithebuilder.sturrel.ui.components.ListSectionHeader
 import com.kaithebuilder.sturrel.ui.components.NavList
+import com.kaithebuilder.sturrel.ui.screens.FolderListView
 import java.util.UUID
 
 class QuizSetupManager(
@@ -46,7 +45,27 @@ class QuizSetupManager(
 ): ViewModel() {
     fun includedVocab(): List<UUID> {
         // TODO: get this to actually return all the vocab
-        return emptyList<UUID>()
+        val hierarchy: MutableList<Pair<VocabFolder, Int>> = mutableListOf(Pair(folder, -1))
+        val vocab: MutableList<UUID> = mutableListOf()
+        while (hierarchy.isNotEmpty()) {
+            val curFolder = hierarchy.last().first
+            // mark previous child as explored
+            hierarchy[hierarchy.count()-1] = Pair(curFolder, hierarchy.last().second+1)
+
+            // explore the next child
+            if (curFolder.subfolders.count() > hierarchy.last().second) {
+                val nextId = curFolder.subfolders[hierarchy.last().second]
+                val nextFolder = FoldersDataManager.instance.getFolder(nextId)!!
+                // add its children
+                vocab += nextFolder.vocab
+                // explore it
+                hierarchy += Pair(nextFolder, -1)
+            } else {
+                // no more children to explore, remove this from the hierarchy
+                hierarchy.removeLast()
+            }
+        }
+        return vocab
     }
 
     fun produceQuestions(): List<Question> {
@@ -77,6 +96,14 @@ enum class QAType {
             HANZI -> "Han Zi"
             PINYIN -> "Pin Yin"
             DEFINITION -> "Definition"
+        }
+    }
+
+    fun deconflict(): QAType {
+        return when (this) {
+            HANZI -> PINYIN
+            PINYIN -> DEFINITION
+            DEFINITION -> HANZI
         }
     }
 
@@ -156,6 +183,10 @@ private fun QuizSetupView(
                                     Text(case.description())
                                 }, onClick = {
                                     questionType = case
+                                    if (answerType == case) {
+                                        answerType = case.deconflict()
+                                        onUpdateAnswerType(case.deconflict())
+                                    }
                                     onUpdateQuestionType(case)
                                 })
                             }
@@ -193,6 +224,10 @@ private fun QuizSetupView(
                                     Text(case.description())
                                 }, onClick = {
                                     answerType = case
+                                    if (questionType == case) {
+                                        questionType = case.deconflict()
+                                        onUpdateQuestionType(case.deconflict())
+                                    }
                                     onUpdateAnswerType(case)
                                 })
                             }
@@ -223,23 +258,30 @@ private fun QuizSetupView(
             }
         }
 
-        val questions = setupManager.produceQuestions()
-        val qnCount = questions.count()
-        itemsIndexed(questions) { index, item ->
-            ListItem(index = index, totalSize = qnCount) {
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .padding(15.dp)
-                ) {
-                    Text(
-                        text = item.question,
-                        modifier = Modifier.weight(1f)
-                    )
-                    Text(
-                        text = item.answer
-                    )
+        if (questionType != answerType) {
+            val questions = setupManager.produceQuestions()
+            val qnCount = questions.count()
+            item {
+                ListSectionHeader(header = "$qnCount Words")
+            }
+            itemsIndexed(questions) { index, item ->
+                ListItem(index = index, totalSize = qnCount) {
+                    Row(
+                        verticalAlignment = Alignment.CenterVertically,
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(15.dp)
+                    ) {
+                        Text(
+                            text = item.question,
+                            modifier = Modifier.weight(1f)
+                        )
+                        Text(
+                            text = item.answer,
+                            modifier = Modifier.fillMaxWidth(0.65f),
+                            maxLines = 2
+                        )
+                    }
                 }
             }
         }

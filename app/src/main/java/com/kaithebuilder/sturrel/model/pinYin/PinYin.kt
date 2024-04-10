@@ -36,7 +36,7 @@ class PinYin private constructor() {
         return pinyin.replaceFirst(oldValue = pinyinChar, newValue = formattedChar).dropLast(n = 1)
     }
 
-    fun getPinyinString(input: String): String {
+    fun getPinyinString(input: String, format: Boolean = true): String {
         val pinyinBuilder = StringBuilder()
 
         for (char in input) {
@@ -44,7 +44,11 @@ class PinYin private constructor() {
             val pinyinArray = getPinyin(unicodeScalar)
 
             if (pinyinArray.isNotEmpty()) {
-                pinyinBuilder.append(formattedPinYin(pinyin = pinyinArray[0]) + " ")
+                if (format) {
+                    pinyinBuilder.append(formattedPinYin(pinyin = pinyinArray[0]) + " ")
+                } else {
+                    pinyinBuilder.append(pinyinArray[0])
+                }
             }
         }
 

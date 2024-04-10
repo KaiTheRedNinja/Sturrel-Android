@@ -27,9 +27,16 @@ fun NavList(
     nav: NavHostController,
     topBar: @Composable() () -> Unit = {},
     actions: @Composable() RowScope.() -> Unit = {},
+    floatingActionButton: @Composable() () -> Unit = {},
     view: LazyListScope.() -> Unit
 ) {
-    ToolbarView(title = title, nav = nav, topBar = topBar, actions = actions) {
+    ToolbarView(
+        title = title,
+        nav = nav,
+        topBar = topBar,
+        actions = actions,
+        floatingActionButton = floatingActionButton
+    ) {
         Column(
             modifier = Modifier.padding(top = it.calculateTopPadding())
         ) {

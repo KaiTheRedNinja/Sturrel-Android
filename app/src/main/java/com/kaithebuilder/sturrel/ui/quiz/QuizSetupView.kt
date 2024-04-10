@@ -8,8 +8,10 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.outlined.PlayArrow
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
@@ -34,7 +36,6 @@ import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.ui.components.ListItem
 import com.kaithebuilder.sturrel.ui.components.ListSectionHeader
 import com.kaithebuilder.sturrel.ui.components.NavList
-import com.kaithebuilder.sturrel.ui.screens.FolderListView
 import java.util.UUID
 
 class QuizSetupManager(
@@ -143,7 +144,13 @@ private fun QuizSetupView(
     var questionExpanded by remember { mutableStateOf(false) }
     var answerExpanded by remember { mutableStateOf(false) }
 
-    NavList(title = "Quiz Setup", nav = nav) {
+    NavList(title = "Quiz Setup", nav = nav, floatingActionButton = {
+        FloatingActionButton(onClick = {
+            // TODO: play the quiz
+        }) {
+            Icon(Icons.Outlined.PlayArrow, contentDescription = "Play")
+        }
+    }) {
         item {
             ListItem(index = 0, totalSize = 2) {
                 Row(

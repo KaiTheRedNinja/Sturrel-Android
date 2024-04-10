@@ -28,6 +28,7 @@ fun ToolbarView(
     nav: NavHostController,
     topBar: @Composable() () -> Unit = {},
     actions: @Composable() RowScope.() -> Unit = {},
+    floatingActionButton: @Composable() () -> Unit = {},
     content: @Composable() (PaddingValues) -> Unit
 ) {
     Scaffold(
@@ -74,7 +75,8 @@ fun ToolbarView(
                 )
                 topBar()
             }
-        }
+        },
+        floatingActionButton = floatingActionButton
     ) { padding ->
         content(padding)
     }

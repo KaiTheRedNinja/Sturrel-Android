@@ -10,6 +10,7 @@ import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -44,21 +45,13 @@ private fun FolderListViewContents(
     folder: VocabFolder,
     nav: NavHostController
 ) {
-    ToolbarView(title = folder.name, nav = nav) {
-        LazyColumn(
-            Modifier
-                .fillMaxWidth()
-                .padding(all = 10.dp)
-        ) {
-            if (folder.subfolders.isNotEmpty()) {
-                item {
-                    Text(
-                        text = "Folders",
-                        modifier = Modifier.padding(start = 15.dp, top = 30.dp),
-                        color = Color.Gray
-                    )
-                }
-                items(folder.subfolders) { uuid ->
+    NavList(title = folder.name, nav = nav) {
+        if (folder.subfolders.isNotEmpty()) {
+            item {
+                ListSectionHeader(header = "Folders")
+            }
+            itemsIndexed(folder.subfolders) { index, uuid ->
+                ListItem(index = index, totalSize = folder.subfolders.count()) {
                     Box(
                         modifier = Modifier.clickable {
                             println("UUID: $uuid")
@@ -67,19 +60,16 @@ private fun FolderListViewContents(
                     ) {
                         FolderListPreview(id = uuid)
                     }
-                    Divider()
                 }
             }
+        }
 
-            if (folder.vocab.isNotEmpty()) {
-                item {
-                    Text(
-                        text = "Vocab",
-                        modifier = Modifier.padding(start = 15.dp, top = 30.dp),
-                        color = Color.Gray
-                    )
-                }
-                items(folder.vocab) { uuid ->
+        if (folder.vocab.isNotEmpty()) {
+            item {
+                ListSectionHeader(header = "Vocab")
+            }
+            itemsIndexed(folder.vocab) { index, uuid ->
+                ListItem(index = index, totalSize = folder.vocab.count()) {
                     Box(
                         modifier = Modifier.clickable {
                             println("UUID: $uuid")
@@ -88,7 +78,6 @@ private fun FolderListViewContents(
                     ) {
                         VocabListPreview(id = uuid)
                     }
-                    Divider()
                 }
             }
         }
@@ -98,7 +87,6 @@ private fun FolderListViewContents(
 @Composable
 private fun FolderListPreview(id: UUID) {
     val folderDetails = FoldersDataManager.instance.getFolder(id)!!
-
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.padding(15.dp)

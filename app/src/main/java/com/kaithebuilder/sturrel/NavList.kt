@@ -1,5 +1,6 @@
 package com.kaithebuilder.sturrel
 
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -24,8 +25,15 @@ fun NavList(title: String, nav: NavHostController, view: LazyListScope.() -> Uni
                 .fillMaxWidth()
                 .padding(all = 10.dp)
                 .padding(horizontal = 10.dp),
-            content = view
-        )
+        ) {
+            item {
+                Spacer(
+                    modifier = Modifier
+                        .padding(top = 50.dp)
+                )
+            }
+            view()
+        }
     }
 }
 

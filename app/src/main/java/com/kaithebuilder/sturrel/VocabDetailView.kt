@@ -67,8 +67,6 @@ private fun VocabDetailViewContents(
     NavList(title = "Vocab", nav = nav) {
         item {
             if (vocab.isHCL) {
-                Spacer(modifier = Modifier
-                    .padding(top = 50.dp))
                 ListSectionHeader(header = "Higher Chinese")
             }
             WordSection(word = vocab.word)

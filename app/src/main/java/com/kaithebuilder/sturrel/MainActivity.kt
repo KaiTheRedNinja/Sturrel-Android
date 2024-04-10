@@ -30,61 +30,39 @@ class MainActivity : ComponentActivity() {
 
         FileManager.instance.filesDir = this.filesDir
 
-        /*
-        val sampleFolders = mutableListOf<VocabFolder>()
-        for (i in 1..5) {
-            val folderName = "Sample Folder $i"
-            val vocabFolder = VocabFolder(name = folderName, subfolders = emptyList(), vocab = emptyList())
-            sampleFolders.add(vocabFolder)
-            FoldersDataManager.instance.saveFolder(vocabFolder)
-        }
-
-        val sampleVocabs = mutableListOf<Vocab>()
-        for (i in 1..10) {
-            val vocabName = "你好世界 $i"
-            val vocab = Vocab(
-                word = vocabName,
-                isHCL = false,
-                englishDefinition =  "",
-                definition = "",
-                sentences = emptyList(),
-                wordBuilding = emptyList()
-            )
-            sampleVocabs.add(vocab)
-            VocabDataManager.instance.saveVocab(vocab)
-        }
+        val levels = listOf("P1", "P2", "P3", "P4", "P5", "P6", "S1", "S2", "S3")
 
         val rootFolder = VocabFolder(
-            name = "Root",
-            subfolders = sampleFolders.map { it.id },
-            vocab = sampleVocabs.map { it.id }
-        )
-
-        FoldersDataManager.instance.saveFolder(rootFolder)
-        */
-
-        val p1FileName = FileName()
-        p1FileName.path = "DEFAULT_P1.json"
-
-        val p1DefaultFolder = FileManager.instance.read(
-            stream = this.assets.open("DEFAULT_P1.json"),
-            decodeType = DefaultFolder::class.java
-        )
-
-        val p1Folder = VocabFolder(
-            name = "P1",
-            subfolders = p1DefaultFolder.folders.map { it.id },
+            name = "Folders",
+            subfolders = emptyList(),
             vocab = emptyList()
         )
 
-        for (folder in p1DefaultFolder.folders) {
-            folder.subfolders = emptyList()
-            FoldersDataManager.instance.saveFolder(folder = folder)
+        for (level in levels) {
+            val defaultFolder = FileManager.instance.read(
+                stream = this.assets.open("DEFAULT_$level.json"),
+                decodeType = DefaultFolder::class.java
+            )
+
+            val levelFolder = VocabFolder(
+                name = level,
+                subfolders = defaultFolder.folders.map { it.id },
+                vocab = emptyList()
+            )
+
+            for (folder in defaultFolder.folders) {
+                folder.subfolders = emptyList()
+                FoldersDataManager.instance.saveFolder(folder = folder)
+            }
+            for (vocab in defaultFolder.vocab) {
+                VocabDataManager.instance.saveVocab(vocab = vocab)
+            }
+
+            FoldersDataManager.instance.saveFolder(folder = levelFolder)
+            rootFolder.subfolders += levelFolder.id
         }
-        for (vocab in p1DefaultFolder.vocab) {
-            VocabDataManager.instance.saveVocab(vocab = vocab)
-        }
-        FoldersDataManager.instance.saveFolder(folder = p1Folder)
+
+        FoldersDataManager.instance.saveFolder(folder = rootFolder)
 
         setContent {
             SturrelTheme {
@@ -97,7 +75,7 @@ class MainActivity : ComponentActivity() {
                     NavHost(navController = navController, startDestination = "root") {
                         composable("root") {
                             FolderListView(
-                                folderId = p1Folder.id,
+                                folderId = rootFolder.id,
                                 nav = navController
                             )
                         }

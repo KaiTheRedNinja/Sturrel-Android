@@ -1,4 +1,4 @@
-package com.kaithebuilder.sturrel.sturrelTypes
+package com.kaithebuilder.sturrel.base.sturrelTypes
 
 import java.util.*
 

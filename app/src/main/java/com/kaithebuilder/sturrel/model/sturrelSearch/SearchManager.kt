@@ -1,12 +1,12 @@
-package com.kaithebuilder.sturrel.model.search
+package com.kaithebuilder.sturrel.model.sturrelSearch
 
-import com.kaithebuilder.sturrel.model.pinYin.PinYin
+import com.kaithebuilder.sturrel.base.pinYin.PinYin
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
-import com.kaithebuilder.sturrel.sturrelTypes.FolderOrVocab
-import com.kaithebuilder.sturrel.sturrelTypes.FolderOrVocabID
-import com.kaithebuilder.sturrel.sturrelTypes.Vocab
-import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.base.sturrelTypes.FolderOrVocab
+import com.kaithebuilder.sturrel.base.sturrelTypes.FolderOrVocabID
+import com.kaithebuilder.sturrel.base.sturrelTypes.Vocab
+import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import java.util.UUID
 
 class SearchManager private constructor() {

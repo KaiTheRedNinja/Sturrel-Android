@@ -21,9 +21,9 @@ import androidx.navigation.compose.rememberNavController
 import com.kaithebuilder.sturrel.ui.components.ListItem
 import com.kaithebuilder.sturrel.ui.components.ListSectionHeader
 import com.kaithebuilder.sturrel.ui.components.NavList
-import com.kaithebuilder.sturrel.model.pinYin.PinYin
+import com.kaithebuilder.sturrel.base.pinYin.PinYin
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
-import com.kaithebuilder.sturrel.sturrelTypes.Vocab
+import com.kaithebuilder.sturrel.base.sturrelTypes.Vocab
 import java.util.UUID
 
 @Composable

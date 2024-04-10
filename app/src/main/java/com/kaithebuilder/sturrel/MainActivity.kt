@@ -14,11 +14,10 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.kaithebuilder.sturrel.model.sturrelVocab.FileManager
-import com.kaithebuilder.sturrel.model.sturrelVocab.FileName
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
-import com.kaithebuilder.sturrel.sturrelTypes.DefaultFolder
-import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.base.sturrelTypes.DefaultFolder
+import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.ui.screens.FolderListView
 import com.kaithebuilder.sturrel.ui.screens.VocabDetailView
 import com.kaithebuilder.sturrel.ui.theme.SturrelTheme

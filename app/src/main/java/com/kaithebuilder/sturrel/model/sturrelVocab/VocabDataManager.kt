@@ -1,6 +1,6 @@
 package com.kaithebuilder.sturrel.model.sturrelVocab
 
-import com.kaithebuilder.sturrel.sturrelTypes.Vocab
+import com.kaithebuilder.sturrel.base.sturrelTypes.Vocab
 import java.util.UUID
 
 class VocabDataManager private constructor() {

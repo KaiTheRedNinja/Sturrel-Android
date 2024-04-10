@@ -1,6 +1,4 @@
-package com.kaithebuilder.sturrel.sturrelTypes
-
-import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+package com.kaithebuilder.sturrel.base.sturrelTypes
 
 data class DefaultFolder(
     var name: String,

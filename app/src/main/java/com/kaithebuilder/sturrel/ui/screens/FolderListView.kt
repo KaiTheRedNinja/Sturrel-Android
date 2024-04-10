@@ -1,9 +1,6 @@
 package com.kaithebuilder.sturrel.ui.screens
 
-import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
-import androidx.compose.foundation.clickable
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -26,12 +23,12 @@ import com.kaithebuilder.sturrel.ui.components.ListItem
 import com.kaithebuilder.sturrel.ui.components.ListSectionHeader
 import com.kaithebuilder.sturrel.ui.components.NavList
 import com.kaithebuilder.sturrel.R
-import com.kaithebuilder.sturrel.model.pinYin.PinYin
-import com.kaithebuilder.sturrel.model.search.SearchManager
+import com.kaithebuilder.sturrel.base.pinYin.PinYin
+import com.kaithebuilder.sturrel.model.sturrelSearch.SearchManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
-import com.kaithebuilder.sturrel.sturrelTypes.FolderOrVocab
-import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.base.sturrelTypes.FolderOrVocab
+import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.ui.components.EmbeddedSearchBar
 import com.kaithebuilder.sturrel.ui.components.NavBox
 import java.util.UUID

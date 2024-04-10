@@ -1,6 +1,6 @@
-package com.kaithebuilder.sturrel.model.search
+package com.kaithebuilder.sturrel.model.sturrelSearch
 
-import com.kaithebuilder.sturrel.sturrelTypes.FolderOrVocabID
+import com.kaithebuilder.sturrel.base.sturrelTypes.FolderOrVocabID
 import java.util.UUID
 
 data class SearchResult(

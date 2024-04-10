@@ -1,7 +1,6 @@
 package com.kaithebuilder.sturrel.model.sturrelVocab
 
-import android.content.Context
-import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import java.util.UUID
 
 class FoldersDataManager private constructor() {

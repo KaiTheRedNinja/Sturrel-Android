@@ -1,4 +1,4 @@
-package com.kaithebuilder.sturrel.model.pinYin
+package com.kaithebuilder.sturrel.base.pinYin
 
 class PinYin private constructor() {
     companion object {

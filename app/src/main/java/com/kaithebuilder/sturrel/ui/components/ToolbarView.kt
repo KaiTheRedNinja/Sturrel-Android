@@ -1,6 +1,7 @@
 package com.kaithebuilder.sturrel.ui.components
 
 import android.annotation.SuppressLint
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -18,27 +19,31 @@ import androidx.navigation.NavHostController
 fun ToolbarView(
     title: String,
     nav: NavHostController,
+    topBar: @Composable() () -> Unit = {},
     content: @Composable() (PaddingValues) -> Unit
 ) {
     Scaffold(
         topBar = {
-            CenterAlignedTopAppBar(
-                title = {
-                    Text(text = title)
-                },
-                navigationIcon = {
-                    if (nav.currentDestination?.route != "root") {
-                        IconButton(onClick = {
-                            nav.popBackStack()
-                        }) {
-                            Icon(
-                                imageVector = Icons.Filled.ArrowBack,
-                                contentDescription = "Localized description"
-                            )
+            Column {
+                CenterAlignedTopAppBar(
+                    title = {
+                        Text(text = title)
+                    },
+                    navigationIcon = {
+                        if (nav.currentDestination?.route != "root") {
+                            IconButton(onClick = {
+                                nav.popBackStack()
+                            }) {
+                                Icon(
+                                    imageVector = Icons.Filled.ArrowBack,
+                                    contentDescription = "Localized description"
+                                )
+                            }
                         }
-                    }
-                },
-            )
+                    },
+                )
+                topBar()
+            }
         }
     ) { padding ->
         content(padding)

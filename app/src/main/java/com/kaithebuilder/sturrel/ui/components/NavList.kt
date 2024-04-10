@@ -21,13 +21,16 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 
 @Composable
-fun NavList(title: String, nav: NavHostController, view: LazyListScope.() -> Unit) {
-    ToolbarView(title = title, nav = nav) {
-        Column {
-            Spacer(
-                modifier = Modifier
-                    .padding(top = 50.dp)
-            )
+fun NavList(
+    title: String,
+    nav: NavHostController,
+    topBar: @Composable() () -> Unit = {},
+    view: LazyListScope.() -> Unit
+) {
+    ToolbarView(title = title, nav = nav, topBar = topBar) {
+        Column(
+            modifier = Modifier.padding(top = it.calculateTopPadding())
+        ) {
             LazyColumn(
                 Modifier
                     .fillMaxWidth()

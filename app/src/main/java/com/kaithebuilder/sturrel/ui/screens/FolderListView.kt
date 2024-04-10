@@ -10,6 +10,10 @@ import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.painterResource
@@ -23,6 +27,7 @@ import com.kaithebuilder.sturrel.model.pinYin.PinYin
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.ui.components.EmbeddedSearchBar
 import java.util.UUID
 
 @Composable
@@ -40,7 +45,22 @@ private fun FolderListViewContents(
     folder: VocabFolder,
     nav: NavHostController
 ) {
-    NavList(title = folder.name, nav = nav) {
+    var searchTerm by remember { mutableStateOf("") }
+    var searchActive by remember { mutableStateOf(false) }
+
+    NavList(title = folder.name, nav = nav, topBar = {
+        EmbeddedSearchBar(
+            onQueryChange = {
+                searchTerm = it
+            },
+            isSearchActive = searchActive,
+            onActiveChanged = {
+                searchActive = it
+            }
+        ) {
+
+        }
+    }) {
         if (folder.subfolders.isNotEmpty()) {
             stickyHeader {
                 ListSectionHeader(header = "Folders")

@@ -1,9 +1,9 @@
 package com.kaithebuilder.sturrel.ui.components
 
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -102,5 +102,19 @@ fun ListItem(
                 color = Color.Gray.copy(alpha = 0.2f)
             )
         }
+    }
+}
+
+@Composable
+fun NavBox(
+    nav: NavHostController,
+    dest: String,
+    content: @Composable() () -> Unit) {
+    Box(
+        modifier = Modifier.clickable {
+            nav.navigate(dest)
+        }
+    ) {
+        content()
     }
 }

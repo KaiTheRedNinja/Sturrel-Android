@@ -6,6 +6,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Text
@@ -24,10 +26,13 @@ import com.kaithebuilder.sturrel.ui.components.ListSectionHeader
 import com.kaithebuilder.sturrel.ui.components.NavList
 import com.kaithebuilder.sturrel.R
 import com.kaithebuilder.sturrel.model.pinYin.PinYin
+import com.kaithebuilder.sturrel.model.search.SearchManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
+import com.kaithebuilder.sturrel.sturrelTypes.FolderOrVocab
 import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.ui.components.EmbeddedSearchBar
+import com.kaithebuilder.sturrel.ui.components.NavBox
 import java.util.UUID
 
 @Composable
@@ -58,7 +63,25 @@ private fun FolderListViewContents(
                 searchActive = it
             }
         ) {
-
+            LazyColumn {
+                items(SearchManager.instance.searchResultsWithin(
+                    folderId = folder.id,
+                    searchText = searchTerm
+                )) {
+                    when (it.result.contains) {
+                        FolderOrVocab.FOLDER -> {
+                            NavBox(nav, "folder/${it.result.id}") {
+                                FolderListPreview(id = it.result.id)
+                            }
+                        }
+                        FolderOrVocab.VOCAB -> {
+                            NavBox(nav, "vocab/${it.result.id}") {
+                                VocabListPreview(id = it.result.id)
+                            }
+                        }
+                    }
+                }
+            }
         }
     }) {
         if (folder.subfolders.isNotEmpty()) {
@@ -67,12 +90,7 @@ private fun FolderListViewContents(
             }
             itemsIndexed(folder.subfolders) { index, uuid ->
                 ListItem(index = index, totalSize = folder.subfolders.count()) {
-                    Box(
-                        modifier = Modifier.clickable {
-                            println("UUID: $uuid")
-                            nav.navigate("folder/$uuid")
-                        }
-                    ) {
+                    NavBox(nav, "folder/$uuid") {
                         FolderListPreview(id = uuid)
                     }
                 }
@@ -85,12 +103,7 @@ private fun FolderListViewContents(
             }
             itemsIndexed(folder.vocab) { index, uuid ->
                 ListItem(index = index, totalSize = folder.vocab.count()) {
-                    Box(
-                        modifier = Modifier.clickable {
-                            println("UUID: $uuid")
-                            nav.navigate("vocab/$uuid")
-                        }
-                    ) {
+                    NavBox(nav, "vocab/$uuid") {
                         VocabListPreview(id = uuid)
                     }
                 }

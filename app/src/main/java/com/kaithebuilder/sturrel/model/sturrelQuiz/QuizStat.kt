@@ -4,7 +4,6 @@ import androidx.compose.ui.graphics.Color
 
 enum class QuizStat {
     TOTAL, COMPLETED, REMAINING, WRONG, CORRECT;
-
     fun color(): Color {
         return when (this) {
             TOTAL -> Color(0xFFFFA500) // Orange
@@ -13,5 +12,9 @@ enum class QuizStat {
             WRONG -> Color.Red
             CORRECT -> Color.Green
         }
+    }
+
+    companion object {
+        val allCases: Array<QuizStat> = arrayOf(TOTAL, COMPLETED, REMAINING, WRONG, CORRECT)
     }
 }

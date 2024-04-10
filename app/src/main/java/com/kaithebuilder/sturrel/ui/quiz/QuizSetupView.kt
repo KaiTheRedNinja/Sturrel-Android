@@ -49,9 +49,8 @@ class QuizSetupManager(
     private var includedVocab = internalIncludedVocab()
 
     private fun internalIncludedVocab(): List<UUID> {
-        // TODO: get this to actually return all the vocab
         val hierarchy: MutableList<Pair<VocabFolder, Int>> = mutableListOf(Pair(folder, -1))
-        val vocab: MutableList<UUID> = mutableListOf()
+        val vocab: MutableList<UUID> = folder.vocab.toMutableList()
         while (hierarchy.isNotEmpty()) {
             val curFolder = hierarchy.last().first
             // mark previous child as explored

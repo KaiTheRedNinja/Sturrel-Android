@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -114,10 +115,9 @@ private fun WordSection(word: String) {
         Text(
             text = word,
             style = TextStyle(
-                fontSize = 36.sp, // Adjust the font size as needed
-                color = Color.Black, // Customize the color
+                fontSize = 36.sp,
+                color = MaterialTheme.colorScheme.primary,
                 fontWeight = FontWeight.Bold
-                // You can customize other properties such as font family, letter spacing, etc. here
             ),
             modifier = Modifier
                 .padding(vertical = 16.dp) // Adjust the padding as needed

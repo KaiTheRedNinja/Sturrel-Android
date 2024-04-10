@@ -18,6 +18,8 @@ import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.base.sturrelTypes.DefaultFolder
 import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.model.sturrelQuiz.Quiz
+import com.kaithebuilder.sturrel.ui.quiz.QuizSetupView
 import com.kaithebuilder.sturrel.ui.screens.FolderListView
 import com.kaithebuilder.sturrel.ui.screens.VocabDetailView
 import com.kaithebuilder.sturrel.ui.theme.SturrelTheme
@@ -121,6 +123,32 @@ class MainActivity : ComponentActivity() {
                                         .getString("vocabId")!!
                                         .toString()
                                 ),
+                                nav = navController
+                            )
+                        }
+                        composable(
+                            "q{folderId}",
+                            arguments = listOf(navArgument("folderId") { type = NavType.StringType }),
+                            enterTransition = {
+                                slideIntoContainer(
+                                    towards = AnimatedContentTransitionScope.SlideDirection.Left
+                                )
+                            },
+                            exitTransition = {
+                                slideOutOfContainer(
+                                    towards = AnimatedContentTransitionScope.SlideDirection.Right
+                                )
+                            }
+                        ) { backStackEntry ->
+                            val folderId = UUID.fromString(
+                                backStackEntry.arguments!!
+                                    .getString("folderId")!!
+                                    .toString()
+                            )
+                            val folder = FoldersDataManager.instance.getFolder(folderId)!!
+                            QuizSetupView(
+                                folder = folder,
+                                quiz = Quiz.DRAG_AND_MATCH,
                                 nav = navController
                             )
                         }

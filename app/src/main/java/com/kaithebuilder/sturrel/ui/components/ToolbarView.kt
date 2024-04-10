@@ -3,6 +3,7 @@ package com.kaithebuilder.sturrel.ui.components
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.width
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
@@ -26,6 +27,7 @@ fun ToolbarView(
     title: String,
     nav: NavHostController,
     topBar: @Composable() () -> Unit = {},
+    actions: @Composable() RowScope.() -> Unit = {},
     content: @Composable() (PaddingValues) -> Unit
 ) {
     Scaffold(
@@ -45,7 +47,7 @@ fun ToolbarView(
                                 }) {
                                     Icon(
                                         imageVector = Icons.Filled.ArrowBack,
-                                        contentDescription = "Localized description"
+                                        contentDescription = "Back"
                                     )
                                 }
                                 if (nav.previousBackStackEntry?.destination?.route == "root") {
@@ -66,6 +68,9 @@ fun ToolbarView(
                             }
                         }
                     },
+                    actions = {
+                        actions()
+                    }
                 )
                 topBar()
             }

@@ -3,7 +3,7 @@ package com.kaithebuilder.sturrel.model.sturrelQuiz
 import java.util.UUID
 
 data class QuestionAttempt(
-    var id: UUID,
+    var id: UUID = UUID.randomUUID(),
     var question: Question,
     var givenAnswer: String
 ) {

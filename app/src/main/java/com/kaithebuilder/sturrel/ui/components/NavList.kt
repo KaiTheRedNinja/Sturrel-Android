@@ -4,6 +4,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
@@ -25,9 +26,10 @@ fun NavList(
     title: String,
     nav: NavHostController,
     topBar: @Composable() () -> Unit = {},
+    actions: @Composable() RowScope.() -> Unit = {},
     view: LazyListScope.() -> Unit
 ) {
-    ToolbarView(title = title, nav = nav, topBar = topBar) {
+    ToolbarView(title = title, nav = nav, topBar = topBar, actions = actions) {
         Column(
             modifier = Modifier.padding(top = it.calculateTopPadding())
         ) {

@@ -7,7 +7,6 @@ import androidx.compose.animation.AnimatedContentTransitionScope
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -19,10 +18,10 @@ import com.kaithebuilder.sturrel.model.sturrelVocab.FileName
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.sturrelTypes.DefaultFolder
-import com.kaithebuilder.sturrel.sturrelTypes.Vocab
 import com.kaithebuilder.sturrel.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.ui.screens.FolderListView
+import com.kaithebuilder.sturrel.ui.screens.VocabDetailView
 import com.kaithebuilder.sturrel.ui.theme.SturrelTheme
-import java.io.File
 import java.util.UUID
 
 class MainActivity : ComponentActivity() {

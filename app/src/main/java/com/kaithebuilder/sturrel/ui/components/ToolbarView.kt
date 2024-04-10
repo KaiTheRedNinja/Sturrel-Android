@@ -1,4 +1,4 @@
-package com.kaithebuilder.sturrel
+package com.kaithebuilder.sturrel.ui.components
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.layout.PaddingValues

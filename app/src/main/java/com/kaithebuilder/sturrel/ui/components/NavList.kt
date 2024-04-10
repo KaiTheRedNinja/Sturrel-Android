@@ -1,4 +1,4 @@
-package com.kaithebuilder.sturrel
+package com.kaithebuilder.sturrel.ui.components
 
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth

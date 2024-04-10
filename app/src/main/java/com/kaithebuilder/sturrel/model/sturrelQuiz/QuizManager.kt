@@ -7,6 +7,10 @@ class QuizManager(
     var attempts: List<QuestionAttempt> = emptyList(),
     var inPlay: Boolean = true
 ) {
+    companion object {
+        var current: QuizManager? = null
+    }
+
     fun nextQuestion(): Question? {
         if (questions.count() <= questionIndex) {
             return null

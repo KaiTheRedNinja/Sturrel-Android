@@ -31,6 +31,8 @@ import com.kaithebuilder.sturrel.base.sturrelTypes.Vocab
 import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Quiz
+import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
+import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizStat
 import com.kaithebuilder.sturrel.model.sturrelVocab.FoldersDataManager
 import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.ui.components.ListItem
@@ -39,12 +41,14 @@ import com.kaithebuilder.sturrel.ui.components.NavList
 import java.util.UUID
 
 class QuizSetupManager(
-    var folder: VocabFolder,
+    private var folder: VocabFolder,
     var questionType: QAType = QAType.HANZI,
     var answerType: QAType = QAType.PINYIN,
     var randomised: Boolean = true
 ): ViewModel() {
-    fun includedVocab(): List<UUID> {
+    private var includedVocab = internalIncludedVocab()
+
+    private fun internalIncludedVocab(): List<UUID> {
         // TODO: get this to actually return all the vocab
         val hierarchy: MutableList<Pair<VocabFolder, Int>> = mutableListOf(Pair(folder, -1))
         val vocab: MutableList<UUID> = mutableListOf()
@@ -70,7 +74,7 @@ class QuizSetupManager(
     }
 
     fun produceQuestions(): List<Question> {
-        return includedVocab().map { vocabId ->
+        return includedVocab.map { vocabId ->
             val vocab = VocabDataManager.instance.getVocab(vocabId)!!
             Question(
                 associatedVocab = vocab,
@@ -125,7 +129,14 @@ fun QuizSetupView(
         nav = nav,
         onUpdateQuestionType = { setupManager.questionType = it },
         onUpdateAnswerType = { setupManager.answerType = it },
-        onUpdateRandomised = { setupManager.randomised = it }
+        onUpdateRandomised = { setupManager.randomised = it },
+        onQuizFinish = {
+            QuizManager.current = QuizManager(
+                statsToShow = setOf(QuizStat.REMAINING, QuizStat.CORRECT, QuizStat.WRONG),
+                questions = it
+            )
+            nav.navigate(quiz.id())
+        }
     )
 }
 
@@ -136,6 +147,7 @@ private fun QuizSetupView(
     onUpdateQuestionType: (QAType) -> Unit,
     onUpdateAnswerType: (QAType) -> Unit,
     onUpdateRandomised: (Boolean) -> Unit,
+    onQuizFinish: (List<Question>) -> Unit
 ) {
     var questionType by remember { mutableStateOf(setupManager.questionType) }
     var answerType by remember { mutableStateOf(setupManager.answerType) }
@@ -146,7 +158,7 @@ private fun QuizSetupView(
 
     NavList(title = "Quiz Setup", nav = nav, floatingActionButton = {
         FloatingActionButton(onClick = {
-            // TODO: play the quiz
+            onQuizFinish(setupManager.produceQuestions())
         }) {
             Icon(Icons.Outlined.PlayArrow, contentDescription = "Play")
         }

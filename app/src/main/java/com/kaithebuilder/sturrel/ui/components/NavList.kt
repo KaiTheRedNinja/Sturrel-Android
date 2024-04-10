@@ -1,5 +1,8 @@
 package com.kaithebuilder.sturrel.ui.components
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -20,30 +23,40 @@ import androidx.navigation.NavHostController
 @Composable
 fun NavList(title: String, nav: NavHostController, view: LazyListScope.() -> Unit) {
     ToolbarView(title = title, nav = nav) {
-        LazyColumn(
-            Modifier
-                .fillMaxWidth()
-                .padding(all = 10.dp)
-                .padding(horizontal = 10.dp),
-        ) {
-            item {
-                Spacer(
-                    modifier = Modifier
-                        .padding(top = 50.dp)
-                )
+        Column {
+            Spacer(
+                modifier = Modifier
+                    .padding(top = 50.dp)
+            )
+            LazyColumn(
+                Modifier
+                    .fillMaxWidth()
+                    .padding(all = 10.dp)
+                    .padding(horizontal = 10.dp),
+            ) {
+                view()
             }
-            view()
         }
     }
 }
 
 @Composable
 fun ListSectionHeader(header: String) {
-    Text(
-        text = header,
-        modifier = Modifier.padding(start = 15.dp, top = 10.dp),
-        color = Color.Gray
-    )
+    Box(
+        modifier = Modifier
+            .padding(start = 10.dp, top = 10.dp)
+            .background(
+                color = MaterialTheme.colorScheme.background,
+                shape = RoundedCornerShape(5.dp)
+            ),
+    ) {
+        Text(
+            text = header,
+            modifier = Modifier
+                .padding(horizontal = 5.dp),
+            color = Color.Gray
+        )
+    }
 }
 
 @Composable

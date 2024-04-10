@@ -1,5 +1,6 @@
 package com.kaithebuilder.sturrel.ui.screens
 
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Row
@@ -33,6 +34,7 @@ fun FolderListView(
     FolderListViewContents(folder = folder, nav = nav)
 }
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 private fun FolderListViewContents(
     folder: VocabFolder,
@@ -40,7 +42,7 @@ private fun FolderListViewContents(
 ) {
     NavList(title = folder.name, nav = nav) {
         if (folder.subfolders.isNotEmpty()) {
-            item {
+            stickyHeader {
                 ListSectionHeader(header = "Folders")
             }
             itemsIndexed(folder.subfolders) { index, uuid ->
@@ -58,7 +60,7 @@ private fun FolderListViewContents(
         }
 
         if (folder.vocab.isNotEmpty()) {
-            item {
+            stickyHeader {
                 ListSectionHeader(header = "Vocab")
             }
             itemsIndexed(folder.vocab) { index, uuid ->

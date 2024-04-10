@@ -109,10 +109,19 @@ fun ListItem(
 fun NavBox(
     nav: NavHostController,
     dest: String,
+    content: @Composable() () -> Unit
+) = NavBox(nav, listOf(dest), content)
+
+@Composable
+fun NavBox(
+    nav: NavHostController,
+    dest: List<String>,
     content: @Composable() () -> Unit) {
     Box(
         modifier = Modifier.clickable {
-            nav.navigate(dest)
+            for (part in dest) {
+                nav.navigate(part)
+            }
         }
     ) {
         content()

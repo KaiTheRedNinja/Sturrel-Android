@@ -1,5 +1,6 @@
 package com.kaithebuilder.sturrel.ui.screens
 
+import android.util.Log
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -68,14 +69,15 @@ private fun FolderListViewContents(
                     folderId = folder.id,
                     searchText = searchTerm
                 )) {
+                    val dest = it.steps.reversed().map { item -> "f$item" }
                     when (it.result.contains) {
                         FolderOrVocab.FOLDER -> {
-                            NavBox(nav, "folder/${it.result.id}") {
+                            NavBox(nav, dest + "f${it.result.id}") {
                                 FolderListPreview(id = it.result.id)
                             }
                         }
                         FolderOrVocab.VOCAB -> {
-                            NavBox(nav, "vocab/${it.result.id}") {
+                            NavBox(nav, dest + "v${it.result.id}") {
                                 VocabListPreview(id = it.result.id)
                             }
                         }
@@ -90,7 +92,7 @@ private fun FolderListViewContents(
             }
             itemsIndexed(folder.subfolders) { index, uuid ->
                 ListItem(index = index, totalSize = folder.subfolders.count()) {
-                    NavBox(nav, "folder/$uuid") {
+                    NavBox(nav, "f$uuid") {
                         FolderListPreview(id = uuid)
                     }
                 }
@@ -103,7 +105,7 @@ private fun FolderListViewContents(
             }
             itemsIndexed(folder.vocab) { index, uuid ->
                 ListItem(index = index, totalSize = folder.vocab.count()) {
-                    NavBox(nav, "vocab/$uuid") {
+                    NavBox(nav, "v$uuid") {
                         VocabListPreview(id = uuid)
                     }
                 }

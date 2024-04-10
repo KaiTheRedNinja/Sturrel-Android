@@ -80,7 +80,7 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(
-                            "folder/{folderId}",
+                            "f{folderId}",
                             arguments = listOf(navArgument("folderId") { type = NavType.StringType }),
                             enterTransition = {
                                 slideIntoContainer(
@@ -103,7 +103,7 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(
-                            "vocab/{vocabId}",
+                            "v{vocabId}",
                             arguments = listOf(navArgument("vocabId") { type = NavType.StringType }),
                             enterTransition = {
                                 slideIntoContainer(

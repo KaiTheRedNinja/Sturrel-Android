@@ -129,7 +129,9 @@ private fun FolderListPreview(id: UUID) {
     val folderDetails = FoldersDataManager.instance.getFolder(id)!!
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.padding(15.dp)
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(15.dp)
     ) {
         Icon(
             painter = painterResource(id = R.drawable.baseline_folder_24),

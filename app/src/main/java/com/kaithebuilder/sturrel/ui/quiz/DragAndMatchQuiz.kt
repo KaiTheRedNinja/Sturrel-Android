@@ -43,6 +43,7 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
+import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuestionAttempt
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
@@ -56,10 +57,15 @@ import kotlin.math.roundToInt
 
 @Composable
 fun DragAndMatchQuiz(
-    manager: QuizManager
+    manager: QuizManager,
+    nav: NavHostController
 ) {
     var loadedQuestions by remember {
         mutableStateOf(listOf<Question>())
+    }
+
+    var inPlay by remember {
+        mutableStateOf(manager.inPlay)
     }
 
     var gameStateCounter by remember {
@@ -98,35 +104,55 @@ fun DragAndMatchQuiz(
         if (newQn != null) {
             loadedQuestions += newQn
         }
+
+        if (loadedQuestions.isEmpty()) {
+            inPlay = false
+            manager.inPlay = false
+        }
     }
 
-    Column(
-        modifier = Modifier
-            .background(color = flashColorState)
-    ) {
-        key(gameStateCounter) {
-            QuizInfoView(manager = manager, endGame = { manager.inPlay = false })
+    if (inPlay) {
+        Column(
+            modifier = Modifier
+                .background(color = flashColorState)
+        ) {
+            key(gameStateCounter) {
+                QuizInfoView(manager = manager, endGame = {
+                    inPlay = false
+                    manager.inPlay = false
+                })
+            }
+
+            DragAndMatchQuizContents(
+                loadedQuestions = loadedQuestions,
+                didAttemptQuestion = { attempt ->
+                    if (attempt.isCorrect()) {
+                        flashColor = Color.Green.copy(alpha = 0.5f)
+                        // load next question
+                        newQuestion(solvedQuestion = attempt.question.id)
+                    } else {
+                        flashColor = Color.Red.copy(alpha = 0.5f)
+                    }
+
+                    manager.makeAttempt(attempt)
+
+                    gameStateCounter += 1
+
+                    CoroutineScope(Dispatchers.Main).launch {
+                        delay(300)
+                        flashColor = Color.Unspecified
+                    }
+                }
+            )
         }
-
-        DragAndMatchQuizContents(
-            loadedQuestions = loadedQuestions,
-            didAttemptQuestion = { attempt ->
-                if (attempt.isCorrect()) {
-                    flashColor = Color.Green.copy(alpha = 0.5f)
-                    // load next question
-                    newQuestion(solvedQuestion = attempt.question.id)
-                } else {
-                    flashColor = Color.Red.copy(alpha = 0.5f)
-                }
-
-                manager.makeAttempt(attempt)
-
-                gameStateCounter += 1
-
-                CoroutineScope(Dispatchers.Main).launch {
-                    delay(300)
-                    flashColor = Color.Unspecified
-                }
+    } else {
+        // results
+        QuizResultsView(
+            manager = manager,
+            nav = nav,
+            resetGame = {
+                inPlay = true
+                manager.inPlay = true
             }
         )
     }

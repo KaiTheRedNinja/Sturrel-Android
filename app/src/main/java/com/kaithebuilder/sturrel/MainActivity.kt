@@ -167,7 +167,10 @@ class MainActivity : ComponentActivity() {
                                 )
                             }
                         ) {
-                            DragAndMatchQuiz(manager = QuizManager.current!!)
+                            DragAndMatchQuiz(
+                                manager = QuizManager.current!!,
+                                nav = navController
+                            )
                         }
                     }
                 }

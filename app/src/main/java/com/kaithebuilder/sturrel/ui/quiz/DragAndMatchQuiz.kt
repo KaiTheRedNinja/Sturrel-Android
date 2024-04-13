@@ -2,6 +2,7 @@ package com.kaithebuilder.sturrel.ui.quiz
 
 import android.graphics.Point
 import android.util.Log
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
@@ -22,6 +23,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableFloatStateOf
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -42,12 +44,14 @@ import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
+import com.kaithebuilder.sturrel.model.sturrelQuiz.QuestionAttempt
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import java.util.UUID
 import kotlin.math.roundToInt
 
 @Composable
@@ -58,12 +62,8 @@ fun DragAndMatchQuiz(
         mutableStateOf(listOf<Question>())
     }
 
-    var rightPosition by remember {
-        mutableStateOf(Offset.Zero)
-    }
-
-    var rightHeight by remember {
-        mutableIntStateOf(0)
+    var gameStateCounter by remember {
+        mutableIntStateOf(1)
     }
 
     var flashColor by remember {
@@ -80,98 +80,142 @@ fun DragAndMatchQuiz(
         }
     }
 
+    fun newQuestion(solvedQuestion: UUID?) {
+        // determine the question to remove
+        if (solvedQuestion != null) {
+            val removeIndex = loadedQuestions.indexOfFirst {
+                it.id == solvedQuestion
+            }
+            if (removeIndex != -1) {
+                loadedQuestions =
+                    loadedQuestions.subList(0, removeIndex) +
+                    loadedQuestions.subList(removeIndex + 1, loadedQuestions.count())
+            }
+        }
+
+        // new question
+        val newQn = manager.nextQuestion()
+        if (newQn != null) {
+            loadedQuestions += newQn
+        }
+    }
+
     Column(
         modifier = Modifier
             .background(color = flashColorState)
     ) {
-        if (manager.inPlay) {
+        key(gameStateCounter) {
             QuizInfoView(manager = manager, endGame = { manager.inPlay = false })
+        }
 
-            Row(
-                horizontalArrangement = Arrangement.SpaceBetween,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .fillMaxHeight()
-                    .padding(all = 10.dp)
-            ) {
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .weight(1f)
-                        .zIndex(2f),
-                    verticalArrangement = Arrangement.spacedBy(10.dp)
-                ) {
-                    loadedQuestions.forEachIndexed { index, item ->
+        DragAndMatchQuizContents(
+            loadedQuestions = loadedQuestions,
+            didAttemptQuestion = { attempt ->
+                if (attempt.isCorrect()) {
+                    flashColor = Color.Green.copy(alpha = 0.5f)
+                    // load next question
+                    newQuestion(solvedQuestion = attempt.question.id)
+                } else {
+                    flashColor = Color.Red.copy(alpha = 0.5f)
+                }
+
+                manager.makeAttempt(attempt)
+
+                gameStateCounter += 1
+
+                CoroutineScope(Dispatchers.Main).launch {
+                    delay(300)
+                    flashColor = Color.Unspecified
+                }
+            }
+        )
+    }
+}
+
+@Composable
+fun DragAndMatchQuizContents(
+    loadedQuestions: List<Question>,
+    didAttemptQuestion: (QuestionAttempt) -> Unit
+) {
+    Log.d("QUESTIONS", "Loaded: ${loadedQuestions.map { it.question }}")
+
+    var rightPosition by remember {
+        mutableStateOf(Offset.Zero)
+    }
+
+    var rightHeight by remember {
+        mutableIntStateOf(0)
+    }
+
+    fun verifyAnswer(index: Int, pos: Offset) {
+        val item = loadedQuestions[index]
+
+        if (!(pos.x > rightPosition.x)) {
+            return
+        }
+
+        // determine which item it was on
+        val boxHeight = rightHeight / loadedQuestions.count()
+        val boxNo = ((pos.y - rightPosition.y) / boxHeight).toInt()
+
+        val attempt = QuestionAttempt(question = item, givenAnswer = loadedQuestions[boxNo].answer)
+
+        didAttemptQuestion(attempt)
+    }
+
+    Row(
+        horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight()
+            .padding(all = 10.dp)
+    ) {
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f)
+                .zIndex(2f),
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            key(loadedQuestions) {
+                loadedQuestions.forEachIndexed { index, item ->
+                    key(item.question) {
                         DragMatchCard(
                             text = item.question,
                             color = Color(0xFFFFA500), // orange
                             onDrop = { pos ->
-                                if (pos.x > rightPosition.x) {
-                                    // determine which item it was on
-                                    Log.d("QUESTION", "RPOS: $rightPosition, H: $rightHeight")
-                                    val boxHeight = rightHeight/loadedQuestions.count()
-                                    val boxNo = ((pos.y-rightPosition.y)/boxHeight).toInt()
-                                    if (boxNo == index) {
-
-                                        Log.d("QUESTION", "Y BOX $boxNo")
-
-                                        // new question
-                                        val newQn = manager.nextQuestion()
-
-                                        loadedQuestions =
-                                            loadedQuestions.subList(0, index) +
-                                            loadedQuestions.subList(index + 1, loadedQuestions.count())
-
-                                        if (newQn != null) {
-                                            loadedQuestions += newQn
-                                        }
-
-                                        flashColor = Color.Green.copy(alpha = 0.5f)
-                                        CoroutineScope(Dispatchers.Main).launch {
-                                            delay(300)
-                                            flashColor = Color.Unspecified
-                                        }
-                                    } else {
-                                        // wrong
-
-                                        Log.d("QUESTION", "N BOX $boxNo")
-
-                                        flashColor = Color.Red.copy(alpha = 0.5f)
-                                        CoroutineScope(Dispatchers.Main).launch {
-                                            delay(300)
-                                            flashColor = Color.Unspecified
-                                        }
-                                    }
-                                }
+                                verifyAnswer(index, pos)
                             }
                         )
                     }
                 }
+            }
+        }
 
-                Spacer(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .weight(1f)
-                )
+        Spacer(
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f)
+        )
 
-                Column(
-                    modifier = Modifier
-                        .fillMaxWidth()
-                        .weight(1f)
-                        .zIndex(1f)
-                        .onGloballyPositioned { coordinates ->
-                            rightPosition = coordinates.positionInRoot()
-                            rightHeight = coordinates.size.height
-                        },
-                    verticalArrangement = Arrangement.spacedBy(10.dp)
-                ) {
-                    loadedQuestions.forEach { item ->
-                        DragMatchCard(
-                            text = item.answer,
-                            color = Color.Blue,
-                            onDrop = null
-                        )
-                    }
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .weight(1f)
+                .zIndex(1f)
+                .onGloballyPositioned { coordinates ->
+                    rightPosition = coordinates.positionInRoot()
+                    rightHeight = coordinates.size.height
+                },
+            verticalArrangement = Arrangement.spacedBy(10.dp)
+        ) {
+            loadedQuestions.forEach { item ->
+                key(item.answer) {
+                    DragMatchCard(
+                        text = item.answer,
+                        color = Color.Blue,
+                        onDrop = null
+                    )
                 }
             }
         }
@@ -184,11 +228,11 @@ private fun ColumnScope.DragMatchCard(
     color: Color,
     onDrop: ((Offset) -> Unit)?
 ) {
-    var offsetX by remember { mutableFloatStateOf(0f) }
-    var offsetY by remember { mutableFloatStateOf(0f) }
+    var offsetX by remember(text) { mutableFloatStateOf(0f) }
+    var offsetY by remember(text) { mutableFloatStateOf(0f) }
 
     var boxSize by remember { mutableStateOf(IntSize.Zero) }
-    var positionInRootTopBar by remember { mutableStateOf(Offset.Zero) }
+    var positionInRootTopBar by remember(text) { mutableStateOf(Offset.Zero) }
 
     val offsetXState = animateFloatAsState(targetValue = offsetX, label = "offsetX")
     val offsetYState = animateFloatAsState(targetValue = offsetY, label = "offsetY")

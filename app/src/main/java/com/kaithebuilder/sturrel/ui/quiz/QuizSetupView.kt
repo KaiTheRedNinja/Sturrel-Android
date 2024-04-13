@@ -17,7 +17,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -73,7 +75,13 @@ class QuizSetupManager(
     }
 
     fun produceQuestions(): List<Question> {
-        return includedVocab.map { vocabId ->
+        val ordered = if (randomised) {
+            includedVocab.shuffled()
+        } else {
+            includedVocab
+        }
+
+        return ordered.map { vocabId ->
             val vocab = VocabDataManager.instance.getVocab(vocabId)!!
             Question(
                 associatedVocab = vocab,
@@ -123,12 +131,26 @@ fun QuizSetupView(
     nav: NavHostController,
     setupManager: QuizSetupManager = QuizSetupManager(folder)
 ) {
+    var questions by remember {
+        mutableStateOf(setupManager.produceQuestions())
+    }
+
     QuizSetupView(
         setupManager = setupManager,
         nav = nav,
-        onUpdateQuestionType = { setupManager.questionType = it },
-        onUpdateAnswerType = { setupManager.answerType = it },
-        onUpdateRandomised = { setupManager.randomised = it },
+        questions = questions,
+        onUpdateQuestionType = {
+            setupManager.questionType = it
+            questions = setupManager.produceQuestions()
+        },
+        onUpdateAnswerType = {
+            setupManager.answerType = it
+            questions = setupManager.produceQuestions()
+        },
+        onUpdateRandomised = {
+            setupManager.randomised = it
+            questions = setupManager.produceQuestions()
+        },
         onQuizFinish = {
             QuizManager.current = QuizManager(
                 statsToShow = setOf(QuizStat.REMAINING, QuizStat.CORRECT, QuizStat.WRONG),
@@ -143,6 +165,7 @@ fun QuizSetupView(
 private fun QuizSetupView(
     nav: NavHostController,
     setupManager: QuizSetupManager,
+    questions: List<Question>,
     onUpdateQuestionType: (QAType) -> Unit,
     onUpdateAnswerType: (QAType) -> Unit,
     onUpdateRandomised: (Boolean) -> Unit,
@@ -277,7 +300,6 @@ private fun QuizSetupView(
         }
 
         if (questionType != answerType) {
-            val questions = setupManager.produceQuestions()
             val qnCount = questions.count()
             item {
                 ListSectionHeader(header = "$qnCount Words")

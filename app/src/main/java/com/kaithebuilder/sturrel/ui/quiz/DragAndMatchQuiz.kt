@@ -163,14 +163,20 @@ fun DragAndMatchQuizContents(
     loadedQuestions: List<Question>,
     didAttemptQuestion: (QuestionAttempt) -> Unit
 ) {
-    Log.d("QUESTIONS", "Loaded: ${loadedQuestions.map { it.question }}")
-
     var rightPosition by remember {
         mutableStateOf(Offset.Zero)
     }
 
     var rightHeight by remember {
         mutableIntStateOf(0)
+    }
+
+    var answers by remember {
+        mutableStateOf<List<Question>>(emptyList())
+    }
+
+    LaunchedEffect(loadedQuestions) {
+        answers = loadedQuestions.shuffled()
     }
 
     fun verifyAnswer(index: Int, pos: Offset) {
@@ -184,7 +190,7 @@ fun DragAndMatchQuizContents(
         val boxHeight = rightHeight / loadedQuestions.count()
         val boxNo = ((pos.y - rightPosition.y) / boxHeight).toInt()
 
-        val attempt = QuestionAttempt(question = item, givenAnswer = loadedQuestions[boxNo].answer)
+        val attempt = QuestionAttempt(question = item, givenAnswer = answers[boxNo].answer)
 
         didAttemptQuestion(attempt)
     }
@@ -203,7 +209,7 @@ fun DragAndMatchQuizContents(
                 .zIndex(2f),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            key(loadedQuestions) {
+            key(loadedQuestions, answers) {
                 loadedQuestions.forEachIndexed { index, item ->
                     key(item.question) {
                         DragMatchCard(
@@ -235,7 +241,7 @@ fun DragAndMatchQuizContents(
                 },
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
-            loadedQuestions.forEach { item ->
+            answers.forEach { item ->
                 key(item.answer) {
                     DragMatchCard(
                         text = item.answer,

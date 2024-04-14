@@ -33,6 +33,7 @@ import androidx.compose.ui.unit.sp
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QAType
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuestionAttempt
+import com.kaithebuilder.sturrel.ui.theme.PastelColor
 import kotlinx.coroutines.selects.select
 import java.util.Random
 import java.util.UUID
@@ -101,8 +102,7 @@ fun QuestionAnswerQuizContents(
                 textAlign = TextAlign.Center,
                 style = TextStyle(
                     fontSize = 50.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Black // Adjust color as needed
+                    fontWeight = FontWeight.Bold
                 ),
             )
         }
@@ -166,14 +166,14 @@ fun ColumnScope.QuestionAnswerCard(
         colors = CardDefaults.cardColors(
             containerColor = when (solveState) {
                 null -> when (optionNumber) {
-                    0 -> Color.Green
-                    1 -> Color.Blue
-                    2 -> Color.Yellow
-                    3 -> Color(0xFFFFA500) // orange
+                    0 -> PastelColor.Green
+                    1 -> PastelColor.Blue
+                    2 -> PastelColor.Yellow
+                    3 -> PastelColor.Orange
                     else -> Color.Gray
                 }
-                SolveState.CORRECT -> Color.Green
-                SolveState.WRONG -> Color.Red
+                SolveState.CORRECT -> PastelColor.Green
+                SolveState.WRONG -> PastelColor.Red
                 SolveState.UNSELECTED -> Color.Gray
             }
         ),

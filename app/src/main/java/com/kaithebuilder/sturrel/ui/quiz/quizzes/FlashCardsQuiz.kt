@@ -37,6 +37,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuestionAttempt
+import com.kaithebuilder.sturrel.ui.theme.PastelColor
 
 @Composable
 fun FlashCardsQuizContents(
@@ -61,7 +62,7 @@ fun FlashCardsQuizContents(
                 .height(100.dp)
         ) {
             Button(
-                colors = ButtonDefaults.buttonColors(containerColor = Color.Green),
+                colors = ButtonDefaults.buttonColors(containerColor = PastelColor.Green),
                 onClick = {
                 knownCards += 1
                 didAttemptQuestion(QuestionAttempt(question = question, givenAnswer = question.answer))
@@ -82,7 +83,7 @@ fun FlashCardsQuizContents(
             }
 
             Button(
-                colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+                colors = ButtonDefaults.buttonColors(containerColor = PastelColor.Red),
                 onClick = {
                 unknownCards += 1
                 didAttemptQuestion(QuestionAttempt(question = question, givenAnswer = "Unfamiliar"))

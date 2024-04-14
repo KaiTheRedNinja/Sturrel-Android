@@ -22,6 +22,7 @@ import com.kaithebuilder.sturrel.ui.quiz.quizzes.DragAndMatchQuizContents
 import com.kaithebuilder.sturrel.ui.quiz.quizzes.FlashCardsQuizContents
 import com.kaithebuilder.sturrel.ui.quiz.quizzes.MemoryCardsQuizContents
 import com.kaithebuilder.sturrel.ui.quiz.quizzes.QuestionAnswerQuizContents
+import com.kaithebuilder.sturrel.ui.theme.PastelColor
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import java.util.Timer
@@ -151,11 +152,11 @@ fun QuizAdaptor(
 
     fun attemptQuestion(attempt: QuestionAttempt) {
         if (attempt.isCorrect()) {
-            flashColor = Color.Green.copy(alpha = 0.5f)
+            flashColor = PastelColor.Green.copy(alpha = 0.5f)
             // load next question
             newQuestion(solvedQuestion = attempt.question.id)
         } else {
-            flashColor = Color.Red.copy(alpha = 0.5f)
+            flashColor = PastelColor.Red.copy(alpha = 0.5f)
             if (quizType == Quiz.QNA || quizType == Quiz.FLASH_CARDS) {
                 // load next question
                 newQuestion(solvedQuestion = attempt.question.id)

@@ -30,6 +30,7 @@ import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
 import com.kaithebuilder.sturrel.ui.components.ListItem
 import com.kaithebuilder.sturrel.ui.components.NavList
+import com.kaithebuilder.sturrel.ui.theme.PastelColor
 
 enum class AttemptType {
     CORRECT, WRONG, ALL;
@@ -169,7 +170,7 @@ fun QuizResultsView(
                         Text(attempt.question.question)
                         Card(
                             colors = CardDefaults.cardColors(
-                                containerColor = Color.Green
+                                containerColor = PastelColor.Green
                             ),
                             modifier = Modifier.fillMaxWidth()
                         ) {
@@ -181,7 +182,7 @@ fun QuizResultsView(
                         if (!attempt.isCorrect()) {
                             Card(
                                 colors = CardDefaults.cardColors(
-                                    containerColor = Color.Red
+                                    containerColor = PastelColor.Red
                                 ),
                                 modifier = Modifier.fillMaxWidth()
                             ) {

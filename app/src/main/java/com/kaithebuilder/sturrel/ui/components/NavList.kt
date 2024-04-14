@@ -93,7 +93,7 @@ fun ListItem(
     ElevatedCard(
         modifier = cardMod,
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.surfaceVariant,
+            containerColor = MaterialTheme.colorScheme.primaryContainer,
         ),
         elevation = CardDefaults.cardElevation(1.dp),
         shape = when (totalSize) {

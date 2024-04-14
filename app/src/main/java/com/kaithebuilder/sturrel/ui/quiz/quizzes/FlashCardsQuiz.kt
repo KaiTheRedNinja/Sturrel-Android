@@ -9,11 +9,13 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.ColumnScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -46,27 +48,58 @@ fun FlashCardsQuizContents(
     var flipped by remember { mutableStateOf(false) }
 
     Column(
-        modifier = Modifier.padding(all = 30.dp)
+        verticalArrangement = Arrangement.SpaceBetween,
+        modifier = Modifier
+            .padding(horizontal = 30.dp)
+            .padding(bottom = 50.dp)
     ) {
         FlashCard(question = question, flipped = flipped, onTap = { flipped = !flipped })
         Row(
-            horizontalArrangement = Arrangement.SpaceBetween,
+            horizontalArrangement = Arrangement.SpaceAround,
             modifier = Modifier
                 .fillMaxWidth()
-                .height(60.dp)
+                .height(100.dp)
         ) {
-            Button(onClick = {
+            Button(
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Green),
+                onClick = {
                 knownCards += 1
                 didAttemptQuestion(QuestionAttempt(question = question, givenAnswer = question.answer))
             }) {
-                Text("$knownCards I know this")
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.SpaceAround
+                ) {
+                    Text(
+                        "$knownCards",
+                        style = TextStyle(
+                            fontSize = 30.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    )
+                    Text("I know this")
+                }
             }
 
-            Button(onClick = {
+            Button(
+                colors = ButtonDefaults.buttonColors(containerColor = Color.Red),
+                onClick = {
                 unknownCards += 1
                 didAttemptQuestion(QuestionAttempt(question = question, givenAnswer = "Unfamiliar"))
             }) {
-                Text("$unknownCards I don't know this")
+                Column(
+                    horizontalAlignment = Alignment.CenterHorizontally,
+                    verticalArrangement = Arrangement.SpaceAround
+                ) {
+                    Text(
+                        "$unknownCards",
+                        style = TextStyle(
+                            fontSize = 30.sp,
+                            fontWeight = FontWeight.Bold
+                        )
+                    )
+                    Text("I don't know this")
+                }
             }
         }
     }
@@ -95,11 +128,13 @@ fun ColumnScope.FlashCard(
         modifier = Modifier
             .fillMaxWidth()
             .fillMaxHeight()
+            .aspectRatio(0.7f)
             .padding(all = 30.dp)
             .weight(1f)
             .clickable { onTap() }
             .graphicsLayer {
                 rotationY = rotationState.value
+                cameraDistance = 30f
             }
     ) {
         Box(
@@ -117,8 +152,7 @@ fun ColumnScope.FlashCard(
                 textAlign = TextAlign.Center,
                 style = TextStyle(
                     fontSize = 50.sp,
-                    fontWeight = FontWeight.Bold,
-                    color = Color.Black // Adjust color as needed
+                    fontWeight = FontWeight.Bold
                 ),
                 modifier = Modifier
                     .graphicsLayer {

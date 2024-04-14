@@ -20,8 +20,8 @@ enum class Quiz() {
     @Composable
     fun icon(): Painter {
         return when(this) {
-            DRAG_AND_MATCH -> painterResource(id = R.drawable.baseline_double_arrow_24)
-            MEMORY_CARDS -> painterResource(id = R.drawable.baseline_credit_card_24)
+            DRAG_AND_MATCH -> painterResource(id = R.drawable.baseline_filter_none_24)
+            MEMORY_CARDS -> painterResource(id = R.drawable.baseline_grid_view_24)
             QNA -> painterResource(id = R.drawable.baseline_question_answer_24)
             FLASH_CARDS -> painterResource(id = R.drawable.baseline_flash_on_24)
         }

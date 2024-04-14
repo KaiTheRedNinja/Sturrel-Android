@@ -3,6 +3,7 @@ package com.kaithebuilder.sturrel.ui.components
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -28,6 +29,7 @@ fun NavList(
     topBar: @Composable() () -> Unit = {},
     actions: @Composable() RowScope.() -> Unit = {},
     floatingActionButton: @Composable() () -> Unit = {},
+    overlay: @Composable() BoxScope.() -> Unit = {},
     view: LazyListScope.() -> Unit
 ) {
     ToolbarView(
@@ -37,17 +39,21 @@ fun NavList(
         actions = actions,
         floatingActionButton = floatingActionButton
     ) {
-        Column(
-            modifier = Modifier.padding(top = it.calculateTopPadding())
-        ) {
-            LazyColumn(
-                Modifier
-                    .fillMaxWidth()
-                    .padding(all = 10.dp)
-                    .padding(horizontal = 10.dp),
+        Box {
+            Column(
+                modifier = Modifier.padding(top = it.calculateTopPadding())
             ) {
-                view()
+                LazyColumn(
+                    Modifier
+                        .fillMaxWidth()
+                        .padding(all = 10.dp)
+                        .padding(horizontal = 10.dp),
+                ) {
+                    view()
+                }
             }
+
+            overlay()
         }
     }
 }

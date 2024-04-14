@@ -1,25 +1,28 @@
 package com.kaithebuilder.sturrel.ui.quiz
 
+import android.util.Log
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.itemsIndexed
+import androidx.compose.material.ExperimentalMaterialApi
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.KeyboardArrowDown
+import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.material.icons.outlined.PlayArrow
 import androidx.compose.material3.DropdownMenu
 import androidx.compose.material3.DropdownMenuItem
-import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -40,6 +43,10 @@ import com.kaithebuilder.sturrel.model.sturrelVocab.VocabDataManager
 import com.kaithebuilder.sturrel.ui.components.ListItem
 import com.kaithebuilder.sturrel.ui.components.ListSectionHeader
 import com.kaithebuilder.sturrel.ui.components.NavList
+import com.leinardi.android.speeddial.compose.FabWithLabel
+import com.leinardi.android.speeddial.compose.SpeedDial
+import com.leinardi.android.speeddial.compose.SpeedDialOverlay
+import com.leinardi.android.speeddial.compose.SpeedDialState
 import java.util.UUID
 
 class QuizSetupManager(
@@ -161,6 +168,7 @@ fun QuizSetupView(
     )
 }
 
+@OptIn(ExperimentalAnimationApi::class, ExperimentalMaterialApi::class)
 @Composable
 private fun QuizSetupView(
     nav: NavHostController,
@@ -178,12 +186,57 @@ private fun QuizSetupView(
     var questionExpanded by remember { mutableStateOf(false) }
     var answerExpanded by remember { mutableStateOf(false) }
 
+    var speedDialState by remember { mutableStateOf(SpeedDialState.Collapsed) }
+    var overlayVisible: Boolean by remember { mutableStateOf(speedDialState.isExpanded()) }
+
     NavList(title = "Quiz Setup", nav = nav, floatingActionButton = {
-        FloatingActionButton(onClick = {
-            onQuizFinish(setupManager.produceQuestions())
-        }) {
-            Icon(Icons.Outlined.PlayArrow, contentDescription = "Play")
+        SpeedDial(
+            state = speedDialState,
+            onFabClick = { expanded ->
+                overlayVisible = !expanded
+                speedDialState = if (expanded) {
+                    SpeedDialState.Collapsed
+                } else {
+                    SpeedDialState.Expanded
+                }
+            },
+            fabClosedContent = {
+                Icon(Icons.Outlined.PlayArrow, contentDescription = "Play")
+            },
+            fabOpenedContent = {
+                Icon(Icons.Outlined.PlayArrow, contentDescription = "Play")
+            },
+            fabClosedBackgroundColor = MaterialTheme.colorScheme.secondaryContainer,
+            fabOpenedBackgroundColor = MaterialTheme.colorScheme.secondaryContainer
+        ) {
+            for (quizType in Quiz.allCases) {
+                item {
+                    FabWithLabel(
+                        onClick = {
+                            Log.d("PlayButton", "Clicked item: ${quizType.description()}")
+                            onQuizFinish(setupManager.produceQuestions())
+                        },
+                        labelContent = { Text(text = quizType.description()) },
+                        fabBackgroundColor = when (quizType) {
+                            Quiz.DRAG_AND_MATCH -> MaterialTheme.colorScheme.tertiaryContainer
+                            Quiz.MEMORY_CARDS -> MaterialTheme.colorScheme.surfaceTint
+                            Quiz.QNA -> MaterialTheme.colorScheme.surfaceVariant
+                            Quiz.FLASH_CARDS -> MaterialTheme.colorScheme.primaryContainer
+                        }
+                    ) {
+                        Icon(quizType.icon(), null)
+                    }
+                }
+            }
         }
+    }, overlay = {
+        SpeedDialOverlay(
+            visible = overlayVisible,
+            onClick = {
+                overlayVisible = false
+                speedDialState = speedDialState.toggle()
+            }
+        )
     }) {
         item {
             ListItem(index = 0, totalSize = 2) {

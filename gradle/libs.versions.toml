@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.0"
+coreKtxVersion = "2.0.2-alpha"
 gson = "2.10.1"
 kotlin = "1.9.0"
 coreKtx = "1.10.1"
@@ -9,11 +10,15 @@ espressoCore = "3.5.1"
 lifecycleRuntimeKtx = "2.6.1"
 activityCompose = "1.8.2"
 composeBom = "2023.08.00"
+material = "1.6.5"
 navigationCompose = "2.7.7"
+speedDialCompose = "1.0.0-alpha04"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
+core-ktx = { module = "com.github.prime-zs.toolkit:core-ktx", version.ref = "coreKtxVersion" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -28,6 +33,7 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+speed-dial-compose = { module = "com.leinardi.android:speed-dial.compose", version.ref = "speedDialCompose" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

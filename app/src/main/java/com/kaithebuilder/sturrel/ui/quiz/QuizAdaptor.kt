@@ -46,6 +46,10 @@ fun QuizAdaptor(
         mutableIntStateOf(1)
     }
 
+    var questionSet by remember { // this will only be used by MemoryCardsQuiz
+        mutableIntStateOf(0)
+    }
+
     var flashColor by remember {
         mutableStateOf(Color.Unspecified)
     }
@@ -69,6 +73,8 @@ fun QuizAdaptor(
                 }
             }
         }
+
+        questionSet += 1
     }
 
     fun newQuestion(solvedQuestion: UUID?) {
@@ -106,6 +112,8 @@ fun QuizAdaptor(
                             loadedQuestions += newQn
                         }
                     }
+
+                    questionSet += 1
                 }
             }
             else -> {
@@ -167,6 +175,7 @@ fun QuizAdaptor(
                 Quiz.MEMORY_CARDS -> {
                     MemoryCardsQuizContents(
                         loadedQuestions = loadedQuestions,
+                        questionSet = questionSet,
                         didAttemptQuestion = { attempt ->
                             attemptQuestion(attempt = attempt)
                         }

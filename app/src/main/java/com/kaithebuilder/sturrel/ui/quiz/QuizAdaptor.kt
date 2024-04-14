@@ -56,7 +56,8 @@ fun QuizAdaptor(
         loadedQuestions = emptyList()
         when (quizType) {
             Quiz.DRAG_AND_MATCH, Quiz.MEMORY_CARDS -> {
-                for (i in 0..<5) {
+                val qnCount = if (quizType == Quiz.DRAG_AND_MATCH) { 5 } else { 8 }
+                for (i in 0..<qnCount) {
                     val qn = manager.nextQuestion() ?: break
                     loadedQuestions += qn
                 }
@@ -71,24 +72,52 @@ fun QuizAdaptor(
     }
 
     fun newQuestion(solvedQuestion: UUID?) {
-        // determine the question to remove
-        if (solvedQuestion != null) {
-            val removeIndex = loadedQuestions.indexOfFirst {
-                it.id == solvedQuestion
+        // if its drag and match, remove the question and replace it
+        // if its memory quiz, remove the question. Only replace once all empty.
+        // if its qna or flashcards, set the qn to the next one
+
+        // remove question
+        when (quizType) {
+            Quiz.DRAG_AND_MATCH, Quiz.MEMORY_CARDS -> {
+                // determine the question to remove
+                if (solvedQuestion != null) {
+                    val removeIndex = loadedQuestions.indexOfFirst {
+                        it.id == solvedQuestion
+                    }
+                    if (removeIndex != -1) {
+                        loadedQuestions =
+                            loadedQuestions.subList(0, removeIndex) +
+                                    loadedQuestions.subList(removeIndex + 1, loadedQuestions.count())
+                    }
+                }
             }
-            if (removeIndex != -1) {
-                loadedQuestions =
-                    loadedQuestions.subList(0, removeIndex) +
-                            loadedQuestions.subList(removeIndex + 1, loadedQuestions.count())
+            Quiz.QNA, Quiz.FLASH_CARDS -> {
+                loadedQuestions = emptyList()
             }
         }
 
-        // new question
-        val newQn = manager.nextQuestion()
-        if (newQn != null) {
-            loadedQuestions += newQn
+        // add questions
+        when (quizType) {
+            Quiz.MEMORY_CARDS -> {
+                if (loadedQuestions.isEmpty()) {
+                    for (i in 0..<8) {
+                        val newQn = manager.nextQuestion()
+                        if (newQn != null) {
+                            loadedQuestions += newQn
+                        }
+                    }
+                }
+            }
+            else -> {
+                // new question
+                val newQn = manager.nextQuestion()
+                if (newQn != null) {
+                    loadedQuestions += newQn
+                }
+            }
         }
 
+        // if the loaded questions are empty, game over.
         if (loadedQuestions.isEmpty()) {
             inPlay = false
             manager.inPlay = false
@@ -145,7 +174,7 @@ fun QuizAdaptor(
                 }
                 Quiz.QNA -> {
                     QuestionAnswerQuizContents(
-                        question = loadedQuestions.first(),
+                        question = loadedQuestions.last(),
                         didAttemptQuestion = { attempt ->
                             attemptQuestion(attempt = attempt)
                         }
@@ -153,7 +182,7 @@ fun QuizAdaptor(
                 }
                 Quiz.FLASH_CARDS -> {
                     FlashCardsQuizContents(
-                        question = loadedQuestions.first(),
+                        question = loadedQuestions.last(),
                         didAttemptQuestion = { attempt ->
                             attemptQuestion(attempt = attempt)
                         }

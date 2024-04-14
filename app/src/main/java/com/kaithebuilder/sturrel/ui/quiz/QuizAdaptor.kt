@@ -168,7 +168,7 @@ fun QuizAdaptor(
 
         Timer().schedule(timerTask {
             flashColor = Color.Unspecified
-        }, 300)
+        }, 800)
     }
 
     if (inPlay) {

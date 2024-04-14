@@ -156,6 +156,10 @@ fun QuizAdaptor(
             newQuestion(solvedQuestion = attempt.question.id)
         } else {
             flashColor = Color.Red.copy(alpha = 0.5f)
+            if (quizType == Quiz.QNA || quizType == Quiz.FLASH_CARDS) {
+                // load next question
+                newQuestion(solvedQuestion = attempt.question.id)
+            }
         }
 
         manager.makeAttempt(attempt)

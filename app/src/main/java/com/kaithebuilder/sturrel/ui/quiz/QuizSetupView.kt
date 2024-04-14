@@ -34,6 +34,7 @@ import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.base.pinYin.PinYin
 import com.kaithebuilder.sturrel.base.sturrelTypes.Vocab
 import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
+import com.kaithebuilder.sturrel.model.sturrelQuiz.QAType
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Quiz
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
@@ -99,38 +100,6 @@ class QuizSetupManager(
     }
 }
 
-enum class QAType {
-    HANZI, PINYIN, DEFINITION;
-
-    fun forVocab(vocab: Vocab): String {
-        return when (this) {
-            HANZI -> vocab.word
-            PINYIN -> PinYin.instance.getPinyinString(vocab.word)
-            DEFINITION -> vocab.englishDefinition
-        }
-    }
-
-    fun description(): String {
-        return when (this) {
-            HANZI -> "Han Zi"
-            PINYIN -> "Pin Yin"
-            DEFINITION -> "Definition"
-        }
-    }
-
-    fun deconflict(): QAType {
-        return when (this) {
-            HANZI -> PINYIN
-            PINYIN -> DEFINITION
-            DEFINITION -> HANZI
-        }
-    }
-
-    companion object {
-        val allCases: Array<QAType> = arrayOf(QAType.HANZI, QAType.PINYIN, DEFINITION)
-    }
-}
-
 @Composable
 fun QuizSetupView(
     folder: VocabFolder,
@@ -160,6 +129,8 @@ fun QuizSetupView(
         onQuizFinish = { qns, quizType ->
             QuizManager.current = QuizManager(
                 statsToShow = setOf(QuizStat.REMAINING, QuizStat.CORRECT, QuizStat.WRONG),
+                questionType = setupManager.questionType,
+                answerType = setupManager.answerType,
                 questions = qns
             )
             nav.navigate(quizType.id())

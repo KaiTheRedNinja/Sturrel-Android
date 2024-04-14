@@ -3,6 +3,8 @@ package com.kaithebuilder.sturrel.model.sturrelQuiz
 class QuizManager(
     var statsToShow: Set<QuizStat>,
     var questions: List<Question>,
+    var questionType: QAType,
+    var answerType: QAType,
     var questionIndex: Int = 0,
     var attempts: List<QuestionAttempt> = emptyList(),
     var inPlay: Boolean = true

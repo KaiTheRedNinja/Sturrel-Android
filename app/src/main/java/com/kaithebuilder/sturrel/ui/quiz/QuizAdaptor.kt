@@ -82,6 +82,7 @@ fun QuizAdaptor(
         // if its memory quiz, remove the question. Only replace once all empty.
         // if its qna or flashcards, set the qn to the next one
 
+        var newQuestions = emptyList<Question>()
         // remove question
         when (quizType) {
             Quiz.DRAG_AND_MATCH, Quiz.MEMORY_CARDS -> {
@@ -91,44 +92,60 @@ fun QuizAdaptor(
                         it.id == solvedQuestion
                     }
                     if (removeIndex != -1) {
-                        loadedQuestions =
+                        newQuestions =
                             loadedQuestions.subList(0, removeIndex) +
                                     loadedQuestions.subList(removeIndex + 1, loadedQuestions.count())
                     }
                 }
             }
             Quiz.QNA, Quiz.FLASH_CARDS -> {
-                loadedQuestions = emptyList()
+                newQuestions = emptyList()
             }
         }
 
         // add questions
         when (quizType) {
             Quiz.MEMORY_CARDS -> {
-                if (loadedQuestions.isEmpty()) {
+                if (newQuestions.isEmpty()) {
                     for (i in 0..<8) {
                         val newQn = manager.nextQuestion()
                         if (newQn != null) {
-                            loadedQuestions += newQn
+                            newQuestions = newQuestions + newQn
                         }
                     }
-
-                    questionSet += 1
                 }
             }
             else -> {
                 // new question
                 val newQn = manager.nextQuestion()
                 if (newQn != null) {
-                    loadedQuestions += newQn
+                    newQuestions = newQuestions + newQn
                 }
             }
         }
 
         // if the loaded questions are empty, game over.
-        if (loadedQuestions.isEmpty()) {
-            inPlay = false
-            manager.inPlay = false
+        val endGame = newQuestions.isEmpty()
+
+        // apply the changes
+        when (quizType) {
+            Quiz.DRAG_AND_MATCH, Quiz.MEMORY_CARDS -> {
+                loadedQuestions = newQuestions
+                if (endGame) {
+                    inPlay = false
+                    manager.inPlay = false
+                }
+                questionSet += 1
+            }
+            Quiz.FLASH_CARDS, Quiz.QNA -> {
+                Timer().schedule(timerTask {
+                    loadedQuestions = newQuestions
+                    if (endGame) {
+                        inPlay = false
+                        manager.inPlay = false
+                    }
+                }, 1000)
+            }
         }
     }
 
@@ -181,20 +198,26 @@ fun QuizAdaptor(
                     )
                 }
                 Quiz.QNA -> {
-                    QuestionAnswerQuizContents(
-                        question = loadedQuestions.last(),
-                        didAttemptQuestion = { attempt ->
-                            attemptQuestion(attempt = attempt)
-                        }
-                    )
+                    if (loadedQuestions.isNotEmpty()) {
+                        QuestionAnswerQuizContents(
+                            question = loadedQuestions.last(),
+                            answerType = manager.answerType,
+                            questionPool = manager.questions,
+                            didAttemptQuestion = { attempt ->
+                                attemptQuestion(attempt = attempt)
+                            }
+                        )
+                    }
                 }
                 Quiz.FLASH_CARDS -> {
-                    FlashCardsQuizContents(
-                        question = loadedQuestions.last(),
-                        didAttemptQuestion = { attempt ->
-                            attemptQuestion(attempt = attempt)
-                        }
-                    )
+                    if (loadedQuestions.isNotEmpty()) {
+                        FlashCardsQuizContents(
+                            question = loadedQuestions.last(),
+                            didAttemptQuestion = { attempt ->
+                                attemptQuestion(attempt = attempt)
+                            }
+                        )
+                    }
                 }
             }
         }

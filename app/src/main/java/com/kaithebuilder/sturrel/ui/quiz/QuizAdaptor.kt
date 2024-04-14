@@ -24,9 +24,9 @@ import com.kaithebuilder.sturrel.ui.quiz.quizzes.MemoryCardsQuizContents
 import com.kaithebuilder.sturrel.ui.quiz.quizzes.QuestionAnswerQuizContents
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import java.util.Timer
 import java.util.UUID
+import kotlin.concurrent.timerTask
 
 @Composable
 fun QuizAdaptor(
@@ -145,10 +145,9 @@ fun QuizAdaptor(
 
         gameStateCounter += 1
 
-        CoroutineScope(Dispatchers.Main).launch {
-            delay(300)
+        Timer().schedule(timerTask {
             flashColor = Color.Unspecified
-        }
+        }, 300)
     }
 
     if (inPlay) {

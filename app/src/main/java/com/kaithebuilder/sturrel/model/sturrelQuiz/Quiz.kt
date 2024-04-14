@@ -1,14 +1,9 @@
 package com.kaithebuilder.sturrel.model.sturrelQuiz
 
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.automirrored.filled.ArrowForward
-import androidx.compose.material.icons.filled.FavoriteBorder
-import androidx.compose.material.icons.filled.Info
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.painter.Painter
+import androidx.compose.ui.res.painterResource
+import com.kaithebuilder.sturrel.R
 
 enum class Quiz() {
     DRAG_AND_MATCH, MEMORY_CARDS, QNA, FLASH_CARDS;
@@ -22,12 +17,13 @@ enum class Quiz() {
         }
     }
 
-    fun icon(): ImageVector {
+    @Composable
+    fun icon(): Painter {
         return when(this) {
-            DRAG_AND_MATCH -> Icons.AutoMirrored.Filled.ArrowForward
-            MEMORY_CARDS -> Icons.Default.Menu
-            QNA -> Icons.Default.Info
-            FLASH_CARDS -> Icons.Default.FavoriteBorder
+            DRAG_AND_MATCH -> painterResource(id = R.drawable.baseline_double_arrow_24)
+            MEMORY_CARDS -> painterResource(id = R.drawable.baseline_credit_card_24)
+            QNA -> painterResource(id = R.drawable.baseline_question_answer_24)
+            FLASH_CARDS -> painterResource(id = R.drawable.baseline_flash_on_24)
         }
     }
 

@@ -134,7 +134,6 @@ enum class QAType {
 @Composable
 fun QuizSetupView(
     folder: VocabFolder,
-    quiz: Quiz,
     nav: NavHostController,
     setupManager: QuizSetupManager = QuizSetupManager(folder)
 ) {
@@ -158,12 +157,12 @@ fun QuizSetupView(
             setupManager.randomised = it
             questions = setupManager.produceQuestions()
         },
-        onQuizFinish = {
+        onQuizFinish = { qns, quizType ->
             QuizManager.current = QuizManager(
                 statsToShow = setOf(QuizStat.REMAINING, QuizStat.CORRECT, QuizStat.WRONG),
-                questions = it
+                questions = qns
             )
-            nav.navigate(quiz.id())
+            nav.navigate(quizType.id())
         }
     )
 }
@@ -177,7 +176,7 @@ private fun QuizSetupView(
     onUpdateQuestionType: (QAType) -> Unit,
     onUpdateAnswerType: (QAType) -> Unit,
     onUpdateRandomised: (Boolean) -> Unit,
-    onQuizFinish: (List<Question>) -> Unit
+    onQuizFinish: (List<Question>, Quiz) -> Unit
 ) {
     var questionType by remember { mutableStateOf(setupManager.questionType) }
     var answerType by remember { mutableStateOf(setupManager.answerType) }
@@ -190,14 +189,22 @@ private fun QuizSetupView(
     var overlayVisible: Boolean by remember { mutableStateOf(speedDialState.isExpanded()) }
 
     NavList(title = "Quiz Setup", nav = nav, floatingActionButton = {
+        val dialColor = if (questions.isEmpty()) {
+            MaterialTheme.colorScheme.error
+        } else {
+            MaterialTheme.colorScheme.secondaryContainer
+        }
+
         SpeedDial(
             state = speedDialState,
             onFabClick = { expanded ->
-                overlayVisible = !expanded
-                speedDialState = if (expanded) {
-                    SpeedDialState.Collapsed
-                } else {
-                    SpeedDialState.Expanded
+                if (questions.isNotEmpty()) {
+                    overlayVisible = !expanded
+                    speedDialState = if (expanded) {
+                        SpeedDialState.Collapsed
+                    } else {
+                        SpeedDialState.Expanded
+                    }
                 }
             },
             fabClosedContent = {
@@ -206,15 +213,15 @@ private fun QuizSetupView(
             fabOpenedContent = {
                 Icon(Icons.Outlined.PlayArrow, contentDescription = "Play")
             },
-            fabClosedBackgroundColor = MaterialTheme.colorScheme.secondaryContainer,
-            fabOpenedBackgroundColor = MaterialTheme.colorScheme.secondaryContainer
+            fabClosedBackgroundColor = dialColor,
+            fabOpenedBackgroundColor = dialColor
         ) {
             for (quizType in Quiz.allCases) {
                 item {
                     FabWithLabel(
                         onClick = {
                             Log.d("PlayButton", "Clicked item: ${quizType.description()}")
-                            onQuizFinish(setupManager.produceQuestions())
+                            onQuizFinish(setupManager.produceQuestions(), quizType)
                         },
                         labelContent = { Text(text = quizType.description()) },
                         fabBackgroundColor = when (quizType) {
@@ -356,6 +363,16 @@ private fun QuizSetupView(
             val qnCount = questions.count()
             item {
                 ListSectionHeader(header = "$qnCount Words")
+            }
+            if (qnCount == 0) {
+                item {
+                    ListItem(index = 0, totalSize = 1) {
+                        Text(
+                            "You need at least one word to play",
+                            modifier = Modifier.padding(15.dp)
+                        )
+                    }
+                }
             }
             itemsIndexed(questions) { index, item ->
                 ListItem(index = index, totalSize = qnCount) {

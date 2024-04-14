@@ -20,7 +20,7 @@ import com.kaithebuilder.sturrel.base.sturrelTypes.DefaultFolder
 import com.kaithebuilder.sturrel.base.sturrelTypes.VocabFolder
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Quiz
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
-import com.kaithebuilder.sturrel.ui.quiz.DragAndMatchQuiz
+import com.kaithebuilder.sturrel.ui.quiz.QuizAdaptor
 import com.kaithebuilder.sturrel.ui.quiz.QuizSetupView
 import com.kaithebuilder.sturrel.ui.screens.FolderListView
 import com.kaithebuilder.sturrel.ui.screens.VocabDetailView
@@ -150,27 +150,29 @@ class MainActivity : ComponentActivity() {
                             val folder = FoldersDataManager.instance.getFolder(folderId)!!
                             QuizSetupView(
                                 folder = folder,
-                                quiz = Quiz.DRAG_AND_MATCH,
                                 nav = navController
                             )
                         }
-                        composable(
-                            Quiz.DRAG_AND_MATCH.id(),
-                            enterTransition = {
-                                slideIntoContainer(
-                                    towards = AnimatedContentTransitionScope.SlideDirection.Left
-                                )
-                            },
-                            exitTransition = {
-                                slideOutOfContainer(
-                                    towards = AnimatedContentTransitionScope.SlideDirection.Right
+                        for (quizType in Quiz.allCases) {
+                            composable(
+                                quizType.id(),
+                                enterTransition = {
+                                    slideIntoContainer(
+                                        towards = AnimatedContentTransitionScope.SlideDirection.Left
+                                    )
+                                },
+                                exitTransition = {
+                                    slideOutOfContainer(
+                                        towards = AnimatedContentTransitionScope.SlideDirection.Right
+                                    )
+                                }
+                            ) {
+                                QuizAdaptor(
+                                    manager = QuizManager.current!!,
+                                    nav = navController,
+                                    quizType = quizType
                                 )
                             }
-                        ) {
-                            DragAndMatchQuiz(
-                                manager = QuizManager.current!!,
-                                nav = navController
-                            )
                         }
                     }
                 }

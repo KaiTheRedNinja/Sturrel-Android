@@ -1,11 +1,7 @@
-package com.kaithebuilder.sturrel.ui.quiz
+package com.kaithebuilder.sturrel.ui.quiz.quizzes
 
-import android.graphics.Point
 import android.util.Log
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateFloatAsState
-import androidx.compose.foundation.background
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -33,8 +29,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
-import androidx.compose.ui.geometry.Rect
-import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.onGloballyPositioned
@@ -44,120 +38,9 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
-import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuestionAttempt
-import com.kaithebuilder.sturrel.model.sturrelQuiz.QuizManager
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.coroutineScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import java.util.UUID
 import kotlin.math.roundToInt
-
-@Composable
-fun DragAndMatchQuiz(
-    manager: QuizManager,
-    nav: NavHostController
-) {
-    var loadedQuestions by remember {
-        mutableStateOf(listOf<Question>())
-    }
-
-    var inPlay by remember {
-        mutableStateOf(manager.inPlay)
-    }
-
-    var gameStateCounter by remember {
-        mutableIntStateOf(1)
-    }
-
-    var flashColor by remember {
-        mutableStateOf(Color.Unspecified)
-    }
-
-    val flashColorState by animateColorAsState(targetValue = flashColor, label = "flashColor")
-
-    LaunchedEffect(manager) {
-        loadedQuestions = emptyList()
-        for (i in 0..<5) {
-            val qn = manager.nextQuestion() ?: break
-            loadedQuestions += qn
-        }
-    }
-
-    fun newQuestion(solvedQuestion: UUID?) {
-        // determine the question to remove
-        if (solvedQuestion != null) {
-            val removeIndex = loadedQuestions.indexOfFirst {
-                it.id == solvedQuestion
-            }
-            if (removeIndex != -1) {
-                loadedQuestions =
-                    loadedQuestions.subList(0, removeIndex) +
-                    loadedQuestions.subList(removeIndex + 1, loadedQuestions.count())
-            }
-        }
-
-        // new question
-        val newQn = manager.nextQuestion()
-        if (newQn != null) {
-            loadedQuestions += newQn
-        }
-
-        if (loadedQuestions.isEmpty()) {
-            inPlay = false
-            manager.inPlay = false
-        }
-    }
-
-    if (inPlay) {
-        Column(
-            modifier = Modifier
-                .background(color = flashColorState)
-        ) {
-            key(gameStateCounter) {
-                QuizInfoView(manager = manager, endGame = {
-                    inPlay = false
-                    manager.inPlay = false
-                })
-            }
-
-            DragAndMatchQuizContents(
-                loadedQuestions = loadedQuestions,
-                didAttemptQuestion = { attempt ->
-                    if (attempt.isCorrect()) {
-                        flashColor = Color.Green.copy(alpha = 0.5f)
-                        // load next question
-                        newQuestion(solvedQuestion = attempt.question.id)
-                    } else {
-                        flashColor = Color.Red.copy(alpha = 0.5f)
-                    }
-
-                    manager.makeAttempt(attempt)
-
-                    gameStateCounter += 1
-
-                    CoroutineScope(Dispatchers.Main).launch {
-                        delay(300)
-                        flashColor = Color.Unspecified
-                    }
-                }
-            )
-        }
-    } else {
-        // results
-        QuizResultsView(
-            manager = manager,
-            nav = nav,
-            resetGame = {
-                inPlay = true
-                manager.inPlay = true
-            }
-        )
-    }
-}
 
 @Composable
 fun DragAndMatchQuizContents(

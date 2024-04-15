@@ -29,6 +29,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.key
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -66,31 +67,36 @@ fun FlashCardsQuizContents(
             .padding(horizontal = 30.dp)
             .padding(bottom = 50.dp)
     ) {
-        Column(modifier = Modifier.fillMaxWidth().fillMaxHeight().weight(1f)) {
-            AnimatedVisibility(
-                visible = attempt == null,
-                enter = slideInVertically {
-                    it*2
-                } + expandVertically(
-                    // Expand from the top.
-                    expandFrom = Alignment.Top
-                ) + fadeIn(
-                    // Fade in with the initial alpha of 0.3f.
-                    initialAlpha = 0.3f
-                ),
-                exit = slideOutHorizontally {
-                    if (attempt?.isCorrect() == true) {
-                        -it
-                    } else {
-                        it
-                    }
-                } + fadeOut()
-            ) {
-                FlashCard(
-                    question = question,
-                    flipped = flipped,
-                    onTap = { flipped = !flipped }
-                )
+        Column(modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight()
+            .weight(1f)) {
+            key(question) {
+                AnimatedVisibility(
+                    visible = attempt == null,
+                    enter = slideInVertically {
+                        it*2
+                    } + expandVertically(
+                        // Expand from the top.
+                        expandFrom = Alignment.Top
+                    ) + fadeIn(
+                        // Fade in with the initial alpha of 0.3f.
+                        initialAlpha = 0.3f
+                    ),
+                    exit = slideOutHorizontally {
+                        if (attempt?.isCorrect() == true) {
+                            -it
+                        } else {
+                            it
+                        }
+                    } + fadeOut()
+                ) {
+                    FlashCard(
+                        question = question,
+                        flipped = flipped,
+                        onTap = { flipped = !flipped }
+                    )
+                }
             }
         }
         Row(

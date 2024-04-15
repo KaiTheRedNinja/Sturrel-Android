@@ -145,7 +145,7 @@ fun QuizAdaptor(
                         inPlay = false
                         manager.inPlay = false
                     }
-                }, 1000)
+                }, if (quizType == Quiz.FLASH_CARDS) { 500 } else { 1000 })
             }
         }
     }
@@ -161,6 +161,10 @@ fun QuizAdaptor(
                 // load next question
                 newQuestion(solvedQuestion = attempt.question.id)
             }
+        }
+
+        if (quizType == Quiz.FLASH_CARDS) {
+            flashColor = Color.Unspecified
         }
 
         manager.makeAttempt(attempt)

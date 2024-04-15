@@ -1,7 +1,13 @@
 package com.kaithebuilder.sturrel.ui.quiz.quizzes
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateFloatAsState
+import androidx.compose.animation.expandVertically
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInVertically
+import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -21,6 +27,7 @@ import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -47,6 +54,11 @@ fun FlashCardsQuizContents(
     var knownCards by remember { mutableIntStateOf(0) }
     var unknownCards by remember { mutableIntStateOf(0) }
     var flipped by remember { mutableStateOf(false) }
+    var attempt by remember { mutableStateOf<QuestionAttempt?>(null) }
+
+    LaunchedEffect(key1 = question) {
+        attempt = null
+    }
 
     Column(
         verticalArrangement = Arrangement.SpaceBetween,
@@ -54,53 +66,57 @@ fun FlashCardsQuizContents(
             .padding(horizontal = 30.dp)
             .padding(bottom = 50.dp)
     ) {
-        FlashCard(question = question, flipped = flipped, onTap = { flipped = !flipped })
+        Column(modifier = Modifier.fillMaxWidth().fillMaxHeight().weight(1f)) {
+            AnimatedVisibility(
+                visible = attempt == null,
+                enter = slideInVertically {
+                    it*2
+                } + expandVertically(
+                    // Expand from the top.
+                    expandFrom = Alignment.Top
+                ) + fadeIn(
+                    // Fade in with the initial alpha of 0.3f.
+                    initialAlpha = 0.3f
+                ),
+                exit = slideOutHorizontally {
+                    if (attempt?.isCorrect() == true) {
+                        -it
+                    } else {
+                        it
+                    }
+                } + fadeOut()
+            ) {
+                FlashCard(
+                    question = question,
+                    flipped = flipped,
+                    onTap = { flipped = !flipped }
+                )
+            }
+        }
         Row(
-            horizontalArrangement = Arrangement.SpaceAround,
+            horizontalArrangement = Arrangement.spacedBy(40.dp),
             modifier = Modifier
                 .fillMaxWidth()
                 .height(100.dp)
         ) {
-            Button(
-                colors = ButtonDefaults.buttonColors(containerColor = PastelColor.Green),
-                onClick = {
+            FlashCardButton(
+                value = knownCards,
+                text = "I know this",
+                color = PastelColor.Green
+            ) {
                 knownCards += 1
-                didAttemptQuestion(QuestionAttempt(question = question, givenAnswer = question.answer))
-            }) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.SpaceAround
-                ) {
-                    Text(
-                        "$knownCards",
-                        style = TextStyle(
-                            fontSize = 30.sp,
-                            fontWeight = FontWeight.Bold
-                        )
-                    )
-                    Text("I know this")
-                }
+                attempt = QuestionAttempt(question = question, givenAnswer = question.answer)
+                didAttemptQuestion(attempt!!)
             }
 
-            Button(
-                colors = ButtonDefaults.buttonColors(containerColor = PastelColor.Red),
-                onClick = {
+            FlashCardButton(
+                value = unknownCards,
+                text = "I don't know this",
+                color = PastelColor.Red
+            ) {
                 unknownCards += 1
-                didAttemptQuestion(QuestionAttempt(question = question, givenAnswer = "Unfamiliar"))
-            }) {
-                Column(
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.SpaceAround
-                ) {
-                    Text(
-                        "$unknownCards",
-                        style = TextStyle(
-                            fontSize = 30.sp,
-                            fontWeight = FontWeight.Bold
-                        )
-                    )
-                    Text("I don't know this")
-                }
+                attempt = QuestionAttempt(question = question, givenAnswer = "Unfamiliar")
+                didAttemptQuestion(attempt!!)
             }
         }
     }
@@ -160,6 +176,44 @@ fun ColumnScope.FlashCard(
                         rotationY = rotationState.value
                     }
             )
+        }
+    }
+}
+
+@Composable
+fun RowScope.FlashCardButton(
+    value: Int,
+    text: String,
+    color: Color,
+    onTap: () -> Unit
+) {
+    Card(
+        colors = CardDefaults.cardColors(containerColor = color),
+        modifier = Modifier
+            .fillMaxWidth()
+            .fillMaxHeight()
+            .weight(1f)
+            .clickable { onTap() }
+    ) {
+        Box(
+            contentAlignment = Alignment.Center,
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight()
+        ) {
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.SpaceAround
+            ) {
+                Text(
+                    "$value",
+                    style = TextStyle(
+                        fontSize = 30.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                )
+                Text(text)
+            }
         }
     }
 }

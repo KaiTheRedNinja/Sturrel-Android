@@ -1,8 +1,13 @@
 package com.kaithebuilder.sturrel.ui.quiz
 
+import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
+import androidx.compose.animation.core.animateFloatAsState
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxHeight
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -12,7 +17,9 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
 import androidx.navigation.NavHostController
 import com.kaithebuilder.sturrel.model.sturrelQuiz.Question
 import com.kaithebuilder.sturrel.model.sturrelQuiz.QuestionAttempt
@@ -55,7 +62,14 @@ fun QuizAdaptor(
         mutableStateOf(Color.Unspecified)
     }
 
-    val flashColorState by animateColorAsState(targetValue = flashColor, label = "flashColor")
+    var showFlash by remember {
+        mutableStateOf(false)
+    }
+
+    val animatedAlpha by animateFloatAsState(
+        targetValue = if (showFlash) 1.0f else 0f,
+        label = "alpha"
+    )
 
     LaunchedEffect(manager) {
         loadedQuestions = emptyList()
@@ -165,6 +179,8 @@ fun QuizAdaptor(
 
         if (quizType == Quiz.FLASH_CARDS) {
             flashColor = Color.Unspecified
+        } else {
+            showFlash = true
         }
 
         manager.makeAttempt(attempt)
@@ -172,60 +188,71 @@ fun QuizAdaptor(
         gameStateCounter += 1
 
         Timer().schedule(timerTask {
-            flashColor = Color.Unspecified
+            showFlash = false
         }, 800)
     }
 
     if (inPlay) {
-        Column(
-            modifier = Modifier
-                .background(color = flashColorState)
-        ) {
-            key(gameStateCounter) {
-                QuizInfoView(manager = manager, endGame = {
-                    inPlay = false
-                    manager.inPlay = false
-                })
-            }
+        Box {
+            Box(
+                modifier = Modifier
+                    .graphicsLayer {
+                        alpha = animatedAlpha
+                    }
+                    .background(color = flashColor)
+                    .fillMaxWidth()
+                    .fillMaxHeight()
+            ) {}
+            Column {
+                key(gameStateCounter) {
+                    QuizInfoView(manager = manager, endGame = {
+                        inPlay = false
+                        manager.inPlay = false
+                    })
+                }
 
-            when (quizType) {
-                Quiz.DRAG_AND_MATCH -> {
-                    DragAndMatchQuizContents(
-                        loadedQuestions = loadedQuestions,
-                        didAttemptQuestion = { attempt ->
-                            attemptQuestion(attempt = attempt)
-                        }
-                    )
-                }
-                Quiz.MEMORY_CARDS -> {
-                    MemoryCardsQuizContents(
-                        loadedQuestions = loadedQuestions,
-                        questionSet = questionSet,
-                        didAttemptQuestion = { attempt ->
-                            attemptQuestion(attempt = attempt)
-                        }
-                    )
-                }
-                Quiz.QNA -> {
-                    if (loadedQuestions.isNotEmpty()) {
-                        QuestionAnswerQuizContents(
-                            question = loadedQuestions.last(),
-                            answerType = manager.answerType,
-                            questionPool = manager.questions,
+                when (quizType) {
+                    Quiz.DRAG_AND_MATCH -> {
+                        DragAndMatchQuizContents(
+                            loadedQuestions = loadedQuestions,
                             didAttemptQuestion = { attempt ->
                                 attemptQuestion(attempt = attempt)
                             }
                         )
                     }
-                }
-                Quiz.FLASH_CARDS -> {
-                    if (loadedQuestions.isNotEmpty()) {
-                        FlashCardsQuizContents(
-                            question = loadedQuestions.last(),
+
+                    Quiz.MEMORY_CARDS -> {
+                        MemoryCardsQuizContents(
+                            loadedQuestions = loadedQuestions,
+                            questionSet = questionSet,
                             didAttemptQuestion = { attempt ->
                                 attemptQuestion(attempt = attempt)
                             }
                         )
+                    }
+
+                    Quiz.QNA -> {
+                        if (loadedQuestions.isNotEmpty()) {
+                            QuestionAnswerQuizContents(
+                                question = loadedQuestions.last(),
+                                answerType = manager.answerType,
+                                questionPool = manager.questions,
+                                didAttemptQuestion = { attempt ->
+                                    attemptQuestion(attempt = attempt)
+                                }
+                            )
+                        }
+                    }
+
+                    Quiz.FLASH_CARDS -> {
+                        if (loadedQuestions.isNotEmpty()) {
+                            FlashCardsQuizContents(
+                                question = loadedQuestions.last(),
+                                didAttemptQuestion = { attempt ->
+                                    attemptQuestion(attempt = attempt)
+                                }
+                            )
+                        }
                     }
                 }
             }

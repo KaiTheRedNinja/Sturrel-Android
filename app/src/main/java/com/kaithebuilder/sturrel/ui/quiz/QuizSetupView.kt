@@ -126,12 +126,12 @@ fun QuizSetupView(
             setupManager.randomised = it
             questions = setupManager.produceQuestions()
         },
-        onQuizFinish = { qns, quizType ->
+        onQuizFinish = { quizType ->
             QuizManager.current = QuizManager(
                 statsToShow = setOf(QuizStat.REMAINING, QuizStat.CORRECT, QuizStat.WRONG),
                 questionType = setupManager.questionType,
                 answerType = setupManager.answerType,
-                questions = qns
+                questions = questions
             )
             nav.navigate(quizType.id())
         }
@@ -147,7 +147,7 @@ private fun QuizSetupView(
     onUpdateQuestionType: (QAType) -> Unit,
     onUpdateAnswerType: (QAType) -> Unit,
     onUpdateRandomised: (Boolean) -> Unit,
-    onQuizFinish: (List<Question>, Quiz) -> Unit
+    onQuizFinish: (Quiz) -> Unit
 ) {
     var questionType by remember { mutableStateOf(setupManager.questionType) }
     var answerType by remember { mutableStateOf(setupManager.answerType) }
@@ -192,7 +192,7 @@ private fun QuizSetupView(
                     FabWithLabel(
                         onClick = {
                             Log.d("PlayButton", "Clicked item: ${quizType.description()}")
-                            onQuizFinish(setupManager.produceQuestions(), quizType)
+                            onQuizFinish(quizType)
                         },
                         labelContent = { Text(text = quizType.description()) },
                         fabBackgroundColor = when (quizType) {
